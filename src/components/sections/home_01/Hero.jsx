@@ -23,13 +23,13 @@ const Hero = () => {
               >
                 <Link
                   to='/contact'
-                  className='button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
+                  className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
                 >
                   Start A Free Consultation
                 </Link>
                 <Link
                   to='/about'
-                  className='button rounded-[50px] border-2 border-black bg-transparent py-4 text-black after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
+                  className='button border-0 bg-transparent py-4'
                 >
                    Or read more about us
                 </Link>

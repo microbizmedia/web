@@ -32,7 +32,7 @@
   }
 }
 
-.button {
+.button, .button-micro {
   position: relative;
   z-index: 1;
   display: inline-flex;
@@ -45,11 +45,22 @@
   text-align: center;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 700;
+  /* font-weight: 500; */
   line-height: 1.5;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+}
+.button-micro:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 4px solid #2a2d31;
+  border-radius: 9px;
 }
 
 .button::after {
@@ -133,7 +144,7 @@
   padding-right: 1.5rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  font-weight: 700;
+  /* font-weight: 700; */ 
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
@@ -212,7 +223,7 @@
   column-gap: 2.75rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .breadcrumb-nav li {

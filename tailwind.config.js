@@ -38,6 +38,7 @@ export default {
         colorLinenRuffle: "#EFEAE3",
         colorViolet: "#321CA4",
         colorGreen: "#39FF14",
+        colorPurple:"#746eb8",
       },
     },
   },
