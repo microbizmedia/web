@@ -81,7 +81,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             className='nav-item nav-item-has-children'
           >
             <Link to='#' className='nav-link-item drop-trigger'>
-              Demo
+              Work
               <img
                 className='dropdown-icon'
                 src='assets/img/icon-black-cheveron-right.svg'
@@ -110,7 +110,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
           </li>
           <li className='nav-item'>
             <Link to='/about' className='nav-link-item'>
-              About
+              Services
             </Link>
           </li>
           <li
@@ -118,7 +118,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             className='nav-item nav-item-has-children'
           >
             <Link to='#' className='nav-link-item drop-trigger'>
-              Services
+              Process
               <img
                 className='dropdown-icon'
                 src='assets/img/icon-black-cheveron-right.svg'
@@ -144,7 +144,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             className='nav-item nav-item-has-children'
           >
             <Link to='#' className='nav-link-item drop-trigger'>
-              Pages
+              Carrers
               <img
                 className='dropdown-icon'
                 src='assets/img/icon-black-cheveron-right.svg'
@@ -312,7 +312,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
           </li>
           <li className='nav-item'>
             <Link to='/contact' className='nav-link-item'>
-              Contact
+              About
             </Link>
           </li>
         </ul>

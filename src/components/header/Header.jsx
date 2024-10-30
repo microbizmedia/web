@@ -13,7 +13,7 @@ const Header = ({ loginCSS, signupCSS, navColor, light }) => {
       id='sticky-menu'
     >
       <div className='global-container'>
-        <div className='flex items-center justify-between gap-x-8'>
+        <div className='flex items-center justify-between gap-x-8 '>
           {/* Header Logo */}
           <Logo light={light} />
           {/* Header Logo */}
@@ -26,11 +26,11 @@ const Header = ({ loginCSS, signupCSS, navColor, light }) => {
           {/* Header Navigation */}
           {/* Header User Event */}
           <div className='flex items-center gap-6'>
-            <Link to='/login' className={loginCSS}>
+            {/* <Link to='/login' className={loginCSS}>
               Login
-            </Link>
+            </Link> */}
             <Link to='/signup' className={signupCSS}>
-              Sign up free
+              Pricing
             </Link>
             {/* Responsive Off-canvas Menu Button */}
             <div className='block lg:hidden'>

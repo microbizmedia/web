@@ -39,6 +39,7 @@ export default {
         colorViolet: "#321CA4",
         colorGreen: "#39FF14",
         colorPurple:"#746eb8",
+        colorBackground:" #0c1015",
       },
     },
   },

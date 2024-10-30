@@ -47,7 +47,9 @@
 }
 
 .site-header--absolute {
-  position: absolute;
+  /* position: absolute; */
+  background-color:  #0c1015;
+ 
   top: 0;
   left: 0;
   width: 100%;
@@ -383,8 +385,8 @@
 
 .site-menu-main .nav-link-item {
   color: var(--heading-color);
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 300;
   font-style: normal;
   letter-spacing: normal;
   position: relative;
