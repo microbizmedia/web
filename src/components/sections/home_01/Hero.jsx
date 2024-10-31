@@ -1,13 +1,18 @@
 import { Link } from 'react-router-dom';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import webDevelopmentIcon from './icon_images/web_development_icon.png'
+import brandingAndDesignIcon from './icon_images/branding_and_design_Icon.png'
+import SEOIcon from './icon_images/seo_icon.png'
+import strategyIcon from './icon_images/strategy_icon.png'
+import marketingIcon from './icon_images/marketing_icon.png'
+import hostingIcon from './icon_images/hosting_icon.png'
 const Hero = () => {
   return (
     <>
       {/*...::: Hero Section Start :::... */}
       <section id='section-hero'>
-        <div  className='relative z-[1]  overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-[url("../assets\img\Hero_01.jpg")] bg-cover bg-top bg-contain bg-no-repeat pb-20 pt-10 lg:rounded-bl-[50px] lg:rounded-br-[50px] xl:pt-28 xxl:pb-[133px] xxl:pt-[75px]'>
+        <div className='relative z-[1]  overflow-hidden bg-[url("../assets\img\Hero_01.jpg")] bg-cover bg-top bg-contain bg-no-repeat pb-20 pt-10  xl:pt-28 xxl:pb-[133px] xxl:pt-[75px]'>
           <div className='global-container'>
             <div className='mb-8 flex flex-col items-center text-center lg:mb-10'>
               <h1 className='jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px]'>
@@ -15,7 +20,7 @@ const Hero = () => {
               </h1>
               <p className='jos slide-from-bottom mb-11 max-w-[700px] text-lg font-extralight sm:text-xl xl:max-w-[620px]'>
                 Take full control of your potential through our expert levels of design,
-                 development and marketing for your brand and business.
+                development and marketing for your brand and business.
               </p>
               <div
                 className='jos flex flex-wrap justify-center gap-6'
@@ -31,7 +36,7 @@ const Hero = () => {
                   to='/about'
                   className='button border-0 bg-transparent py-4'
                 >
-                   Or read more about us
+                  Or read more about us
                 </Link>
               </div>
             </div>
@@ -57,7 +62,7 @@ const Hero = () => {
             <div className='jos brand-slider' data-jos_animation='fade'>
               <Swiper
                 slidesPerView={2}
-                spaceBetween={105}
+                spaceBetween={200}
                 autoplay={{
                   delay: 4000,
                   disableOnInteraction: false,
@@ -76,95 +81,42 @@ const Hero = () => {
                 }}
               >
                 <SwiperSlide>
-                  <img
-                    // src='../assets\img\branding_and_design_Icon.png'
-                    alt='brand-1'
-                    width='180'
-                    height='38'
-                    className='max-w-full'
-                  />
+                  <div class="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                    <img src={webDevelopmentIcon} alt="web_development_icon" class="w-20 h-auto rounded-lg mb-2 mt-2" />
+                    <p class="text-colorWhite text-center mt-2 text-2xl pt-2">Web Development</p>
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    src='assets/img/th-1/brand-2.png'
-                    alt='brand-2'
-                    width='183'
-                    height='35'
-                    className='max-w-full'
-                  />
+                <div class="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                    <img src={brandingAndDesignIcon} alt="web_development_icon" class="w-20 h-auto rounded-lg mb-2 mt-2" />
+                    <p class="text-colorWhite text-center mt-2 text-2xl pt-2">Branding & Design</p>
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    src='assets/img/th-1/brand-3.png'
-                    alt='brand-3'
-                    width='172'
-                    height='35'
-                    className='max-w-full'
-                  />
+                <div class="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                    <img src={SEOIcon} alt="web_development_icon" class="w-20 h-auto rounded-lg mb-2 mt-2" />
+                    <p class="text-colorWhite text-center mt-2 text-2xl pt-2">SEO</p>
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    src='assets/img/th-1/brand-4.png'
-                    alt='brand-4'
-                    width='175'
-                    height='30'
-                    className='max-w-full'
-                  />
+                <div class="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                    <img src={strategyIcon} alt="web_development_icon" class="w-14 h-auto rounded-lg mb-2 mt-2" />
+                    <p class="text-colorWhite text-center mt-2 text-2xl pt-2">Strategy</p>
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    src='assets/img/th-1/brand-5.png'
-                    alt='brand-5'
-                    width='168'
-                    height='36'
-                    className='max-w-full'
-                  />
+                <div class="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                    <img src={marketingIcon} alt="web_development_icon" class="w-20 h-auto rounded-lg mb-2 mt-2" />
+                    <p class="text-colorWhite text-center mt-2 text-2xl pt-2">Marketing</p>
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img
-                    src='assets/img/th-1/brand-1.png'
-                    alt='brand-1'
-                    width='180'
-                    height='38'
-                    className='max-w-full'
-                  />
+                <div class="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                    <img src={hostingIcon} alt="web_development_icon" class="w-20 h-auto rounded-lg mb-2 mt-2" />
+                    <p class="text-colorWhite text-center mt-2 text-2xl pt-2">Hosting</p>
+                  </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src='assets/img/th-1/brand-2.png'
-                    alt='brand-2'
-                    width='183'
-                    height='35'
-                    className='max-w-full'
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src='assets/img/th-1/brand-3.png'
-                    alt='brand-3'
-                    width='172'
-                    height='35'
-                    className='max-w-full'
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src='assets/img/th-1/brand-4.png'
-                    alt='brand-4'
-                    width='175'
-                    height='30'
-                    className='max-w-full'
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src='assets/img/th-1/brand-5.png'
-                    alt='brand-5'
-                    width='168'
-                    height='36'
-                    className='max-w-full'
-                  />
-                </SwiperSlide>
+                
               </Swiper>
             </div>
           </div>

@@ -15,7 +15,7 @@ const Header = ({ loginCSS, priceButton, navColor, light }) => {
       <div className='global-container'>
         <div className='flex items-center justify-between gap-x-8'>
           {/* Header Logo */}
-          <Logo  light={light}/>
+          <Logo  light={light} mobileMenu={mobileMenu}/>
           {/* Header Logo */}
           {/* Header Navigation */}
           <Navbar

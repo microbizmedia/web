@@ -7,7 +7,7 @@ const Service = () => {
       {/*...::: Service Section Start :::... */}
       <section id='section-service'>
         {/* Section Spacer */}
-        <div className='pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]'>
+        <div className='pb-20 pt-20 xl:pb-[150px] xl:pt-[130px] bg-colorBackground'>
           {/* Section Container */}
           <div className='global-container'>
             {/* Section Content Block */}
