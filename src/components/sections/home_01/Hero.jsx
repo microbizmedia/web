@@ -7,9 +7,9 @@ const Hero = () => {
     <>
       {/*...::: Hero Section Start :::... */}
       <section id='section-hero'>
-        <div  className='relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-[url("../assets\img\Hero_01.jpg")] bg-top bg-contain bg-no-repeat pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]'>
+        <div  className='relative z-[1]  overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-[url("../assets\img\Hero_01.jpg")] bg-cover bg-top bg-contain bg-no-repeat pb-20 pt-10 lg:rounded-bl-[50px] lg:rounded-br-[50px] xl:pt-28 xxl:pb-[133px] xxl:pt-[75px]'>
           <div className='global-container'>
-            <div className='mb-14 flex flex-col items-center text-center lg:mb-20'>
+            <div className='mb-8 flex flex-col items-center text-center lg:mb-10'>
               <h1 className='jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px]'>
                 Your Digital Agency
               </h1>
@@ -36,7 +36,7 @@ const Hero = () => {
               </div>
             </div>
             <div
-              className='jos hero-img overflow-hidden rounded-2xl bg-black'
+              className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15'
               data-jos_animation='zoom'
             >
               <img
@@ -44,15 +44,14 @@ const Hero = () => {
                 alt='hero-dashboard'
                 width='1296'
                 height='640'
-                className='h-auto w-full'
+                className='h-auto w-full rounded-2xl'
               />
             </div>
 
             <div className='my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20'></div>
             <div className='jos mx-auto mb-12 max-w-[715px] text-center lg:mb-16'>
-              <p className='text-lg'>
-                Companies of all sizes trust us to find AI SaaS critical to
-                their growth and innovation
+              <p className='text-3xl'>
+                What we do?
               </p>
             </div>
             <div className='jos brand-slider' data-jos_animation='fade'>
@@ -78,7 +77,7 @@ const Hero = () => {
               >
                 <SwiperSlide>
                   <img
-                    src='assets/img/th-1/brand-1.png'
+                    // src='../assets\img\branding_and_design_Icon.png'
                     alt='brand-1'
                     width='180'
                     height='38'

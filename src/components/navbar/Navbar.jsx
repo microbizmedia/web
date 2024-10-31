@@ -74,13 +74,13 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             ×
           </div>
         </div>
-        <ul className={`site-menu-main ${color}`}>
+        <ul className={`site-menu-main  ${color}`}>
           {/* Global navbar */}
           <li
             onClick={(e) => handleSubMenu(e, 1)}
             className='nav-item nav-item-has-children'
           >
-            <Link to='#' className='nav-link-item drop-trigger'>
+            <Link to='#' className='nav-link-item drop-trigger nav-link-item'>
               Work
               <img
                 className='dropdown-icon'
@@ -109,7 +109,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             </ul>
           </li>
           <li className='nav-item'>
-            <Link to='/about' className='nav-link-item'>
+            <Link to='/about' className='nav-link-item -l '>
               Services
             </Link>
           </li>
@@ -143,7 +143,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             onClick={(e) => handleSubMenu(e, 3)}
             className='nav-item nav-item-has-children'
           >
-            <Link to='#' className='nav-link-item drop-trigger'>
+            <Link to='#' className='nav-link-item drop-trigger nav-link-item '>
               Carrers
               <img
                 className='dropdown-icon'
@@ -311,7 +311,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             </ul>
           </li>
           <li className='nav-item'>
-            <Link to='/contact' className='nav-link-item'>
+            <Link to='/contact' className='nav-link-item nav-link-item '>
               About
             </Link>
           </li>

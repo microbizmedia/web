@@ -4,21 +4,22 @@ import Navbar from '../navbar/Navbar';
 import Logo from '../logo/Logo';
 
 // eslint-disable-next-line react/prop-types
-const Header = ({ loginCSS, signupCSS, navColor, light }) => {
+const Header = ({ loginCSS, priceButton, navColor, light }) => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
     <header
-      className='site-header site-header--absolute is--white py-3'
+      className='site-header site-header--absolute is--white '
       id='sticky-menu'
     >
       <div className='global-container'>
-        <div className='flex items-center justify-between gap-x-8 '>
+        <div className='flex items-center justify-between gap-x-8'>
           {/* Header Logo */}
-          <Logo light={light} />
+          <Logo  light={light}/>
           {/* Header Logo */}
           {/* Header Navigation */}
           <Navbar
+          
             mobileMenu={mobileMenu}
             setMobileMenu={setMobileMenu}
             color={navColor}
@@ -29,11 +30,12 @@ const Header = ({ loginCSS, signupCSS, navColor, light }) => {
             {/* <Link to='/login' className={loginCSS}>
               Login
             </Link> */}
-            <Link to='/signup' className={signupCSS}>
+            <Link to='/signup' className={priceButton}>
               Pricing
             </Link>
             {/* Responsive Off-canvas Menu Button */}
             <div className='block lg:hidden'>
+              
               <button
                 onClick={() => setMobileMenu(true)}
                 className={`mobile-menu-trigger ${

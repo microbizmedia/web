@@ -40,6 +40,7 @@ export default {
         colorGreen: "#39FF14",
         colorPurple:"#746eb8",
         colorBackground:" #0c1015",
+        colorWhite:"#ffffff"
       },
     },
   },
