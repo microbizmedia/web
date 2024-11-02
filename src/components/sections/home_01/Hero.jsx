@@ -61,23 +61,24 @@ const Hero = () => {
             </div>
             <div className='jos brand-slider' data-jos_animation='fade'>
               <Swiper
-                slidesPerView={2}
-                spaceBetween={200}
+                slidesPerView={1}
+                spaceBetween={150}
                 autoplay={{
-                  delay: 4000,
+                  delay: 3000,
                   disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}
                 breakpoints={{
-                  768: {
+                  360: {
+                    slidesPerView: 2,
+                  },
+                  850: {
                     slidesPerView: 3,
                   },
                   992: {
                     slidesPerView: 4,
                   },
-                  1200: {
-                    slidesPerView: 5,
-                  },
+                  
                 }}
               >
                 <SwiperSlide>
