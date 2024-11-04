@@ -2,7 +2,7 @@
   "name": "azzle-ai",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://martinstojmenovski.github.io/MicroBizMedia/",
+  "homepage": "https://martinstojmenovski.github.io/MicroBizMedia",
   "type": "module",
   "scripts": {
     "dev": "vite",
