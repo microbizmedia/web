@@ -4,15 +4,13 @@
   "version": "0.0.0",
   "homepage": "https://martinstojmenovski.github.io/MicroBizMedia",
   "type": "module",
-
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "fslightbox-react": "^1.7.6",
