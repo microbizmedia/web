@@ -82,39 +82,39 @@ const Hero = () => {
                 }}
               >
                 <SwiperSlide>
-                  <div class="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
-                    <img src={webDevelopmentIcon} alt="web_development_icon" class="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p class="text-colorWhite text-center mt-2 text-2xl pt-2">Web Development</p>
+                  <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                    <img src={webDevelopmentIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
+                    <p className="text-colorWhite text-center mt-2 text-2xl pt-2">Web Development</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div class="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
-                    <img src={brandingAndDesignIcon} alt="web_development_icon" class="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p class="text-colorWhite text-center mt-2 text-2xl pt-2">Branding & Design</p>
+                <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                    <img src={brandingAndDesignIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
+                    <p className="text-colorWhite text-center mt-2 text-2xl pt-2">Branding & Design</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div class="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
-                    <img src={SEOIcon} alt="web_development_icon" class="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p class="text-colorWhite text-center mt-2 text-2xl pt-2">SEO</p>
+                <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                    <img src={SEOIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
+                    <p className="text-colorWhite text-center mt-2 text-2xl pt-2">SEO</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div class="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
-                    <img src={strategyIcon} alt="web_development_icon" class="w-14 h-auto rounded-lg mb-2 mt-2" />
-                    <p class="text-colorWhite text-center mt-2 text-2xl pt-2">Strategy</p>
+                <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                    <img src={strategyIcon} alt="web_development_icon" className="w-14 h-auto rounded-lg mb-2 mt-2" />
+                    <p className="text-colorWhite text-center mt-2 text-2xl pt-2">Strategy</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div class="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
-                    <img src={marketingIcon} alt="web_development_icon" class="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p class="text-colorWhite text-center mt-2 text-2xl pt-2">Marketing</p>
+                <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                    <img src={marketingIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
+                    <p className="text-colorWhite text-center mt-2 text-2xl pt-2">Marketing</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div class="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
-                    <img src={hostingIcon} alt="web_development_icon" class="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p class="text-colorWhite text-center mt-2 text-2xl pt-2">Hosting</p>
+                <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                    <img src={hostingIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
+                    <p className="text-colorWhite text-center mt-2 text-2xl pt-2">Hosting</p>
                   </div>
                 </SwiperSlide>
                 

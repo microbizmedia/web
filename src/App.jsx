@@ -1,9 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Home_01 from './pages/home/Home_01';
 import About from './pages/common/About';
-import Home_02 from './pages/home/Home_02';
-import Home_03 from './pages/home/Home_03';
-import Home_04 from './pages/home/Home_04';
 import Blog_details from './pages/common/Blog_details';
 import Blog from './pages/common/Blog';
 import Contact from './pages/common/Contact';
@@ -51,9 +48,6 @@ function App() {
           <Route path='error-404' element={<Error_404 />} />
           <Route path='*' element={<Error_404 />} />
         </Route>
-        <Route path='home-2' element={<Home_02 />} />
-        <Route path='home-3' element={<Home_03 />} />
-        <Route path='home-4' element={<Home_04 />} />
       </Routes>
     </>
   );
