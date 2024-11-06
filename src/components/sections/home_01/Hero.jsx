@@ -18,7 +18,7 @@ const Hero = () => {
               <h1 className='jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px]'>
                 Your Digital Agency
               </h1>
-              <p className='jos slide-from-bottom mb-11 max-w-[700px] text-lg font-extralight sm:text-xl xl:max-w-[620px]'>
+              <p className='jos tracking-wider slide-from-bottom mb-11 max-w-[700px] text-lg font-extralight sm:text-xl xl:max-w-[620px]'>
                 Take full control of your potential through our expert levels of design,
                 development and marketing for your brand and business.
               </p>
@@ -41,15 +41,20 @@ const Hero = () => {
               </div>
             </div>
             <div
-              className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15'
+              className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 flex flex-row '
               data-jos_animation='zoom'
             >
-              <img
-                src='assets/img/th-1/hero-dashboard.jpg'
+              <div className='flex flex-col justify-center flex-1 pl-20 bg-colorBackground'>
+                <h2>Browse Our Catalog</h2>
+                <p className='mt-10 mb-20 text-base'>View some of the amazing work we already made for our existing partners</p>
+                <Link className='button self-start bg-colorWhite text-colorBackground rounded-md'>See More   </Link>
+              </div>
+              <img 
+                src={hostingIcon}
                 alt='hero-dashboard'
-                width='1296'
-                height='640'
-                className='h-auto w-full rounded-2xl'
+                width='0'
+                // height='10'
+                className='flex-1  pr-20 bg-colorBackground'
               />
             </div>
 

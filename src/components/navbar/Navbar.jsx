@@ -80,15 +80,15 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             onClick={(e) => handleSubMenu(e, 1)}
             className='nav-item nav-item-has-children'
           >
-            <Link to='#' className='nav-link-item drop-trigger nav-link-item'>
+            <Link to='/' className='nav-link-item drop-trigger nav-link-item'>
               Work
-              <img
+              {/* <img
                 className='dropdown-icon'
                 src='assets/img/icon-black-cheveron-right.svg'
                 alt='cheveron-right'
                 width={16}
                 height={16}
-              />
+              /> */}
             </Link>
             <ul
               className={`sub-menu ${mobileSubMenu === 1 && 'active'}`}
@@ -119,13 +119,6 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
           >
             <Link to='#' className='nav-link-item drop-trigger'>
               Process
-              <img
-                className='dropdown-icon'
-                src='assets/img/icon-black-cheveron-right.svg'
-                alt='cheveron-right'
-                width={16}
-                height={16}
-              />
             </Link>
             <ul
               className={`sub-menu ${mobileSubMenu === 2 && 'active'}`}
@@ -145,13 +138,6 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
           >
             <Link to='#' className='nav-link-item drop-trigger nav-link-item '>
               Carrers
-              <img
-                className='dropdown-icon'
-                src='assets/img/icon-black-cheveron-right.svg'
-                alt='cheveron-right'
-                width={16}
-                height={16}
-              />
             </Link>
             <ul
               className={`sub-menu ${mobileSubMenu === 3 && 'active'}`}

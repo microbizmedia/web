@@ -36,7 +36,7 @@ h2 {
   line-height: 2.5rem;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   h2 {
     font-size: 3.75rem;
     line-height: 1;
@@ -48,13 +48,13 @@ h2 {
     font-size: 4.5rem;
     line-height: 1;
   }
-}
+} */
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   h2 {
     font-size: 80px;
   }
-}
+} */
 
 h4 {
   font-size: 1.875rem;
