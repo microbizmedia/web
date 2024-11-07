@@ -396,7 +396,7 @@
 }
 
 .site-menu-main>.nav-item-has-children>.drop-trigger {
-  line-height: 70px;
+  line-height: 60px;
 }
 
 @media (width < 991px) {

@@ -75,7 +75,12 @@ const Hero = () => {
               <Swiper
                 spaceEvenly={20}
                 slidesPerView={1}
-                 centeredSlides={true}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                modules={[Autoplay]}
                 breakpoints={{
                   // Change slides per view and space between on different screen sizes
                   480: {
@@ -94,7 +99,6 @@ const Hero = () => {
                     centeredSlides:false,
                   },
                 }}
-                // centeredSlides={true}
               >
               
                   <SwiperSlide className='flex justify-center'>
