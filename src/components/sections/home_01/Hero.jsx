@@ -36,25 +36,31 @@ const Hero = () => {
                   to='/about'
                   className='button border-0 bg-transparent py-4'
                 >
-                  Or read more about us
+                  Or read more about us &#x27a4;
                 </Link>
               </div>
             </div>
             <div
-              className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 flex flex-row '
+              className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 
+              flex flex-col-reverse max-w-xl m-auto
+               sm: "576px"
+                md: "768px"
+              lg:flex-row lg:max-w-full'
               data-jos_animation='zoom'
             >
-              <div className='flex flex-col justify-center flex-1 pl-20 bg-colorBackground'>
+              <div className='flex flex-col justify-center flex-1 bg-colorBackground p-10
+              md:p-16
+              lg:pr-4'>
                 <h2>Browse Our Catalog</h2>
-                <p className='mt-10 mb-20 text-base'>View some of the amazing work we already made for our existing partners</p>
-                <Link className='button self-start bg-colorWhite text-colorBackground rounded-md'>See More   </Link>
+                <p className='lg:mt-10 lg:mb-20 mt-4 mb-14 text-base'>View some of the amazing work we already made for our existing partners</p>
+                <Link className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>See More &#x27a4;  </Link>
               </div>
-              <img 
+              <img
                 src={hostingIcon}
                 alt='hero-dashboard'
-                width='0'
+                width='576'
                 // height='10'
-                className='flex-1  pr-20 bg-colorBackground'
+                className='flex-1 pt-4 lg:pr-20 bg-colorBackground'
               />
             </div>
 
@@ -64,65 +70,69 @@ const Hero = () => {
                 What we do?
               </p>
             </div>
-            <div className='jos brand-slider' data-jos_animation='fade'>
+            <div className='jos brand-slider ' data-jos_animation='fade'>
               <Swiper
+                spaceEvenly={20}
                 slidesPerView={1}
-                spaceBetween={150}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-                modules={[Autoplay]}
+                 centeredSlides={true}
                 breakpoints={{
-                  360: {
+                  // Change slides per view and space between on different screen sizes
+                  480: {
                     slidesPerView: 2,
+                    spaceBetween: 20,
+                    centeredSlides:false,
                   },
-                  850: {
+                  768: {
                     slidesPerView: 3,
+                    spaceBetween: 30,
+                    centeredSlides:false,
                   },
-                  992: {
-                    slidesPerView: 4,
+                  1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                    centeredSlides:false,
                   },
-                  
                 }}
+                // centeredSlides={true}
               >
-                <SwiperSlide>
+              
+                  <SwiperSlide className='flex justify-center'>
                   <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
                     <img src={webDevelopmentIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p className="text-colorWhite text-center mt-2 text-2xl pt-2">Web Development</p>
+                    <p className="text-colorWhite mt-2  pt-2">Web Development</p>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                <SwiperSlide className='flex justify-center'>
+                  <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
                     <img src={brandingAndDesignIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p className="text-colorWhite text-center mt-2 text-2xl pt-2">Branding & Design</p>
+                    <p className="text-colorWhite  mt-2  pt-2">Branding & Design</p>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                <SwiperSlide className='flex justify-center'>
+                  <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
                     <img src={SEOIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p className="text-colorWhite text-center mt-2 text-2xl pt-2">SEO</p>
+                    <p className="text-colorWhite  mt-2  pt-2">SEO</p>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                <SwiperSlide className='flex justify-center'>
+                  <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
                     <img src={strategyIcon} alt="web_development_icon" className="w-14 h-auto rounded-lg mb-2 mt-2" />
-                    <p className="text-colorWhite text-center mt-2 text-2xl pt-2">Strategy</p>
+                    <p className="text-colorWhite  mt-2  pt-2">Strategy</p>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                <SwiperSlide className='flex justify-center'>
+                  <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
                     <img src={marketingIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p className="text-colorWhite text-center mt-2 text-2xl pt-2">Marketing</p>
+                    <p className="text-colorWhite  mt-2  pt-2">Marketing</p>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
+                <SwiperSlide className='flex justify-center'>
+                  <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
                     <img src={hostingIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p className="text-colorWhite text-center mt-2 text-2xl pt-2">Hosting</p>
+                    <p className="text-colorWhite  mt-2  pt-2">Hosting</p>
                   </div>
                 </SwiperSlide>
-                
+
               </Swiper>
             </div>
           </div>
