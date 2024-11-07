@@ -15,39 +15,38 @@ const Footer_01 = () => {
       <div className='global-container'>
         <div className='h-[1px] w-full bg-[#DBD6CF]' />
         {/* Footer Center */}
-        <div className='lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]'>
+        {/* <div className='lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]'> */}
+        <div className='flex flex-wrap'>
           {/* Footer Widget */}
-          <div className='flex flex-col gap-y-6'>
+          <div className='flex flex-col mt-2 gap-y-6 p-3 md:max-w-60'>
             <Link to='/' className='inline-block'>
               <img
                 src={logoStandard}
                 alt='logo'
-                width={96}
+                width={150}
                 height={24}
               />
             </Link>
-            <p className='text-base'> 
+            <p className='text-base '> 
             Our mission is to empower businesses by providing
              innovative online solutions that enhance their digital presence.
             </p>
-            <p>
-              Website: <Link to='/'>www.microbizmedia.com</Link>
-            </p>
+            
           </div>
           {/* Footer Widget */}
           {/* Footer Widget */}
-          <div className='flex flex-col gap-y-6'>
+          <div className='flex flex-col gap-y-6 p-3'>
             {/* Footer Title */}
-            <h4 className='text-[21px] text-bold capitalize'>
-              Primary Pages
+            <h4 className='text-[26px] text-bold capitalize'>
+              Menu
             </h4>
             {/* Footer Title */}
             {/* Footer Navbar */}
-            <ul className='flex flex-col gap-y-[10px] capitalize'>
+            <ul className='flex flex-col  capitalize'>
               <li>
                 <Link
                   to='/'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
                   Home
                 </Link>
@@ -55,7 +54,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/about'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
                   About Us
                 </Link>
@@ -63,7 +62,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/services'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
                   Services
                 </Link>
@@ -71,7 +70,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/pricing'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
                   pricing
                 </Link>
@@ -79,7 +78,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/contact'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
                   Contact
                 </Link>
@@ -88,18 +87,18 @@ const Footer_01 = () => {
           </div>
           {/* Footer Widget */}
           {/* Footer Widget */}
-          <div className='flex flex-col gap-y-6'>
+          <div className='flex flex-col gap-y-6 p-3'>
             {/* Footer Title */}
-            <h4 className='text-[21px]  capitalize '>
+            <h4 className='text-[26px] text-bold capitalize '>
               Legal
             </h4>
             {/* Footer Title */}
             {/* Footer Navbar */}
-            <ul className='flex flex-col gap-y-[10px] capitalize'>
+            <ul className='flex flex-col  capitalize'>
               <li>
                 <Link
                   to='/signup'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
                   Signup
                 </Link>
@@ -107,7 +106,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/login'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
                   Login
                 </Link>
@@ -115,7 +114,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/error-404'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
                   404 Not found
                 </Link>
@@ -123,7 +122,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/reset-password'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
+                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
                   Password Reset
                 </Link>
@@ -134,7 +133,7 @@ const Footer_01 = () => {
           {/* Footer Widget */}
           <div className='flex flex-col gap-y-6'>
             {/* Footer Title */}
-            <h4 className='text-[21px] font-semibold capitalize text-black'>
+            <h4 className='text-[26px] text-bold capitalize p-3'>
               Subscribe to our newsletter
             </h4>
             {/* Footer Title */}

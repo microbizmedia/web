@@ -42,26 +42,27 @@ const Hero = () => {
             </div>
             <div
               className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 
-              flex flex-col-reverse max-w-xl m-auto
-               sm: "576px"
-                md: "768px"
+              flex flex-col-reverse
+              mx-auto max-w-[1024px]
+             
               lg:flex-row lg:max-w-full'
               data-jos_animation='zoom'
             >
-              <div className='flex flex-col justify-center flex-1 bg-colorBackground p-10
-              md:p-16
-              lg:pr-4'>
+              <div className='flex flex-col justify-center flex-1 bg-colorBackground px-4 py-10
+              
+              
+              lg:pl-16'>
                 <h2>Browse Our Catalog</h2>
                 <p className='lg:mt-10 lg:mb-20 mt-4 mb-14 text-base'>View some of the amazing work we already made for our existing partners</p>
                 <Link className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>See More &#x27a4;  </Link>
               </div>
-              <img
-                src={hostingIcon}
+               <img
+                src='assets/img/th-1/funfact-image.jpg'
                 alt='hero-dashboard'
-                width='576'
-                // height='10'
-                className='flex-1 pt-4 lg:pr-20 bg-colorBackground'
+                className='flex-1 pt-4 lg:pr-20 bg-colorBackground  object-cover object-center  max-h-[340px] lg:pt-0 w-full'
               />
+              <div className='relative overflow-hidden '>
+              </div>
             </div>
 
             <div className='my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20'></div>
