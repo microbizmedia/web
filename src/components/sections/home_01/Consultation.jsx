@@ -6,23 +6,23 @@ const FunFact = () => {
     <>
       {/*...::: FunFact Section Start :::... */}
       <section id='funfact-section' className=' bg-colorBackground'>
-        <div className='mx-auto max-w-[1024px] px-5'>
+        <div className='mx-auto  px-5 bg-[url("../assets\img\Segment_5_bg_01.png")] bg-cover bg-top bg-contain bg-no-repeat'>
         <div
-              className='jos hero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple 
-              flex flex-col-reverse mx-auto max-w-[1024px] lg:flex-row lg:max-w-full mb-20'
+              className='jos hero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px]
+              flex flex-col-reverse mx-auto max-w-[1024px] lg:flex-row mb-20 '
             >
 
             {/* FunFact Left Block */}
-            <div className='flex flex-col justify-center   px-8 py-20 lg:pl-24 max-w-[60%]'>
+            <div className='flex flex-col justify-center   px-8 py-20 lg:pl-24 lg:max-w-[50%]'>
                 <h2>Our consultations are always free</h2>
-                <p className='lg:mt-6 lg:mb-10 mt-4 mb-14 text-base'>Give us an email and one of our agents will contact you as soon as we can</p>
+                <p className='lg:mt-6 lg:mb-10 mt-4 mb-14 text-base '>Give us an email and one of our agents will contact you as soon as we can</p>
                 <Link className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
               </div>
             
             {/* Funfacct Left Block */}
 
             {/* Funfact Right Block */}
-            <div className='  pt-4  lg:pt-0 flex justify-center items-center'>
+            <div className='  pt-20  lg:pt-0 flex justify-center items-center'>
             <img 
                 src={emailUsIcon}
                 alt='hero-dashboard'
@@ -34,13 +34,13 @@ const FunFact = () => {
             </div>
             <div
               className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 
-              flex flex-col-reverse mx-auto max-w-[1024px] lg:flex-row lg:max-w-full'
+              flex flex-col-reverse mx-auto max-w-[1024px] lg:flex-row '
             >
 
             {/* FunFact Left Block */}
             <div className='flex flex-col justify-center flex-1 bg-colorBackground px-4 py-10 lg:pl-16'>
                 <h2>Our Story</h2>
-                <p className='lg:mt-10 lg:mb-20 mt-4 mb-14 text-base'>Read more about us and what inspired us to do what we do for you</p>
+                <p className='lg:mt-6 lg:mb-10 mt-4 mb-14 text-base lg:max-w-[70%]'>Read more about us and what inspired us to do what we do for you</p>
                 <Link className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Learn More &#x27a4;  </Link>
               </div>
             
@@ -54,6 +54,16 @@ const FunFact = () => {
               />
             {/* Funfact Right Block */}
             </div>
+            <div className='jos text-center py-40'>
+            <h2 className=' pb-10'>Let's Start Your Story</h2>
+            <Link
+                  to='/contact'
+                  className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
+                 
+                >
+                  Start A Free Consultation
+                </Link>
+                </div>
         </div>
       </section>
       {/*...::: Funfact Section End :::... */}

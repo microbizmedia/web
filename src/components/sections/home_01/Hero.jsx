@@ -12,7 +12,7 @@ const Hero = () => {
     <>
       {/*...::: Hero Section Start :::... */}
       <section id='section-hero'>
-        <div className='relative z-[1]  overflow-hidden bg-[url("../assets\img\Hero_01.jpg")] bg-cover bg-top bg-contain bg-no-repeat pb-20 pt-10  xl:pt-28 xxl:pb-[133px] xxl:pt-[75px]'>
+        <div className='relative z-[1]  overflow-hidden bg-[url("../assets\img\Hero_01.jpg")] bg-cover bg-top bg-contain bg-no-repeat  pt-10  xl:pt-28 xxl:pb-60 xxl:pt-[75px]'>
           <div className='global-container'>
             <div className='mb-8 flex flex-col items-center text-center lg:mb-10'>
               <h1 className='jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px]'>
@@ -53,7 +53,7 @@ const Hero = () => {
               
               lg:pl-16'>
                 <h2>Browse Our Catalog</h2>
-                <p className='lg:mt-10 lg:mb-20 mt-4 mb-14 text-base'>View some of the amazing work we already made for our existing partners</p>
+                <p className='lg:mt-6 lg:mb-10 mt-4 mb-14 text-base lg:max-w-[70%]'>View some of the amazing work we already made for our existing partners</p>
                 <Link className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>See More &#x27a4;  </Link>
               </div>
                <img
@@ -65,11 +65,11 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className='my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20'></div>
-            <div className='jos mx-auto mb-12 max-w-[715px] text-center lg:mb-16'>
-              <p className='text-3xl'>
+            {/* <div className='my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20'></div> */}
+            <div className='jos mx-auto mt-20 mb-10 max-w-[715px] text-center lg:mb-16'>
+              <h2>
                 What we do?
-              </p>
+              </h2>
             </div>
             <div className='jos brand-slider ' data-jos_animation='fade'>
               <Swiper
@@ -140,6 +140,7 @@ const Hero = () => {
 
               </Swiper>
             </div>
+            
           </div>
           {/* <div className='orange-gradient-1 absolute -right-[150px] top-[370px] -z-[1] h-[500px] w-[500px] animate-spin rounded-[500px]'></div> */}
 

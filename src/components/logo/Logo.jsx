@@ -9,7 +9,7 @@ import logoMobile from '../../assets/img/logo_mobile.png';
 const LogoDark = ({ light, }) => {
   console.log("hello")
   return (
-    <Link to='/'>
+    <Link to='/micro-biz-media'>
       <img
         // src={light ? logoLight : logoDark}
         className='hidden lg:block'

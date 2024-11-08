@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 import logoStandard from '../../assets/img/logo_standard.png'
+import threadsIcon from '../footer/social_media_icons/threads_icon.png'
+import xIcon from '../footer/social_media_icons/x_icon_b.png'
+import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png'
 
 const Footer_01 = () => {
   const handleSubmit = (e) => {
@@ -12,11 +15,11 @@ const Footer_01 = () => {
      
       {/* Footer Text Slider */}
       {/* Footer Top */}
-      <div className='global-container'>
-        <div className='h-[1px] w-full bg-[#DBD6CF]' />
+      <div className='global-container pt-10'>
+        {/* <div className='h-[1px] w-full bg-[#DBD6CF]' /> */}
         {/* Footer Center */}
         {/* <div className='lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]'> */}
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap justify-between'>
           {/* Footer Widget */}
           <div className='flex flex-col mt-2 gap-y-6 p-3 md:max-w-60'>
             <Link to='/' className='inline-block'>
@@ -131,34 +134,30 @@ const Footer_01 = () => {
           </div>
           {/* Footer Widget */}
           {/* Footer Widget */}
-          <div className='flex flex-col gap-y-6'>
+          <div className='flex flex-col gap-y-6 p-3'>
             {/* Footer Title */}
-            <h4 className='text-[26px] text-bold capitalize p-3'>
-              Subscribe to our newsletter
+            <h4 className='text-[26px] text-bold capitalize mr-10'>
+              Social Links
             </h4>
             {/* Footer Title */}
             {/* Footer Subscriber Form */}
-            <form onSubmit={handleSubmit}>
-              <div className='relative h-[50px] max-w-[300px]'>
-                <input
-                  type='email'
-                  name='newsletter-email'
-                  id='newsletter-email'
-                  placeholder='Enter your email'
-                  className='p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none'
-                  required=''
-                />
-                <button
-                  type='submit'
-                  className='absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500'
-                >
-                  <img
-                    src='assets/img/th-1/arrow-right-large.svg'
-                    alt='newsletter'
-                  />
-                </button>
-              </div>
-            </form>
+            <div className='flex justify-between'>
+            <img 
+                src={threadsIcon}
+                alt='hero-dashboard'
+                className='  size-12'
+              />
+              <img 
+                src={xIcon}
+                alt='hero-dashboard'
+                className='  size-12'
+              />
+              <img 
+                src={instagramIcon}
+                alt='hero-dashboard'
+                className='  size-12'
+              />
+            </div>
             {/* Footer Subscriber Form */}
           </div>
           {/* Footer Widget */}
