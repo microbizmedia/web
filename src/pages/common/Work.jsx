@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import TextAndPictureWindow from '../../components/reusable/text-picture-window'
 const Work = () => {
     return (
         <>
@@ -32,30 +33,12 @@ const Work = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div
-                            className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 
-              flex flex-col-reverse
-              mx-auto max-w-[1024px]
-             
-              lg:flex-row lg:max-w-full'
-                            data-jos_animation='zoom'
-                        >
-                            <div className='flex flex-col justify-center flex-1 bg-colorBackground px-4 py-10
-              
-              
-              lg:pl-16'>
-                                <h2>Browse Our Catalog</h2>
-                                <p className='lg:mt-6 lg:mb-10 mt-4 mb-14 text-base lg:max-w-[70%]'>View some of the amazing work we already made for our existing partners</p>
-                                <Link className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>See More &#x27a4;  </Link>
-                            </div>
-                            <img
-                                src='assets/img/th-1/funfact-image.jpg'
-                                alt='hero-dashboard'
-                                className='flex-1 pt-4 lg:pr-20 bg-colorBackground  object-cover object-center  max-h-[340px] lg:pt-0 w-full'
-                            />
-                            <div className='relative overflow-hidden '>
-                            </div>
-                        </div>
+                        <TextAndPictureWindow header="Devado Vehicle Solutions" 
+                                        paragraph=' The ultimate car enthusiast platform developed
+                                       for both individuals and businesses boasting market
+                                    leading features and a user-friendly interface' 
+                                    image="assets/img/th-1/funfact-image.jpg" />
+
                     </div>
                 </div>
             </section>
