@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import Home_01 from './pages/home/Home_01';
+import Hero from './components/sections/home/Hero';
+import Work from './pages/common/Work.jsx';
 import About from './pages/common/About';
 import Blog_details from './pages/common/Blog_details';
 import Blog from './pages/common/Blog';
@@ -23,12 +24,12 @@ import Faq_01 from './pages/common/faq/faq_01/Faq_01';
 function App() {
   // Init JOS Animation
   useJOSAnimation();
-
   return (
     <>
       <Routes>
         <Route element={<Layout />}>
-          <Route path='micro-biz-media' element={<Home_01 />} />
+          <Route path='micro-biz-media' element={<Hero />} />
+          <Route path='work' element={<Work />} />
           <Route path='login' element={<Login />} />
           <Route path='signup' element={<Signup />} />
           <Route path='about' element={<About />} />

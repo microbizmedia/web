@@ -86,32 +86,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
           >
             <Link to='/' className='nav-link-item drop-trigger nav-link-item pt-4 lg:pt-0'>
               Work
-              {/* <img
-                className='dropdown-icon'
-                src='assets/img/icon-black-cheveron-right.svg'
-                alt='cheveron-right'
-                width={16}
-                height={16}
-              /> */}
-              <p className='dropdown-icon'>&#11166;</p>
             </Link>
-            <ul
-              className={`sub-menu ${mobileSubMenu === 1 && 'active'}`}
-              id='submenu-1'
-            >
-              <li className='sub-menu--item'>
-                <Link to='/'>home 01</Link>
-              </li>
-              <li className='sub-menu--item'>
-                <Link to='/home-2'>home 02</Link>
-              </li>
-              <li className='sub-menu--item'>
-                <Link to='/home-3'>home 03</Link>
-              </li>
-              <li className='sub-menu--item'>
-                <Link to='/home-4'> home 04</Link>
-              </li>
-            </ul>
           </li>
           <li className='nav-item text-center'>
             <Link to='/about' className='nav-link-item -l'>
