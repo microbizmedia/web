@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import threadsIcon from '../footer/social_media_icons/threads_icon.png'
+import xIcon from '../footer/social_media_icons/x_icon_b.png'
+import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png' 
 
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
@@ -81,7 +84,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             onClick={(e) => handleSubMenu(e, 1)}
             className='nav-item nav-item-has-children'
           >
-            <Link to='/' className='nav-link-item drop-trigger nav-link-item'>
+            <Link to='/' className='nav-link-item drop-trigger nav-link-item pt-4 lg:pt-0'>
               Work
               {/* <img
                 className='dropdown-icon'
@@ -110,8 +113,8 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               </li>
             </ul>
           </li>
-          <li className='nav-item'>
-            <Link to='/about' className='nav-link-item -l '>
+          <li className='nav-item text-center'>
+            <Link to='/about' className='nav-link-item -l'>
               Services
             </Link>
           </li>
@@ -298,10 +301,27 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               </li>
             </ul>
           </li>
-          <li className='nav-item'>
+          <li className='nav-item text-center pb-4 lg:pb-0'>
             <Link to='/contact' className='nav-link-item nav-link-item '>
               About
             </Link>
+          </li>
+          <li className='dropdown-menu-social-media-icons'>
+          <img 
+                src={threadsIcon}
+                alt='hero-dashboard'
+                className='  size-10'
+              />
+              <img 
+                src={xIcon}
+                alt='hero-dashboard'
+                className='  size-10'
+              />
+              <img 
+                src={instagramIcon}
+                alt='hero-dashboard'
+                className='  size-10'
+              />
           </li>
         </ul>
       </nav>

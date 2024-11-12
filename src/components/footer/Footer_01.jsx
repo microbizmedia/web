@@ -19,7 +19,7 @@ const Footer_01 = () => {
         {/* <div className='h-[1px] w-full bg-[#DBD6CF]' /> */}
         {/* Footer Center */}
         {/* <div className='lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]'> */}
-        <div className='flex flex-wrap justify-between'>
+        <div className='flex flex-wrap mb-4 md:justify-between'>
           {/* Footer Widget */}
           <div className='flex flex-col mt-2 gap-y-6 p-3 md:max-w-60'>
             <Link to='/' className='inline-block'>
@@ -145,17 +145,17 @@ const Footer_01 = () => {
             <img 
                 src={threadsIcon}
                 alt='hero-dashboard'
-                className='  size-12'
+                className='  size-10'
               />
               <img 
                 src={xIcon}
                 alt='hero-dashboard'
-                className='  size-12'
+                className='  size-10'
               />
               <img 
                 src={instagramIcon}
                 alt='hero-dashboard'
-                className='  size-12'
+                className='  size-10'
               />
             </div>
             {/* Footer Subscriber Form */}
