@@ -284,24 +284,24 @@
 @-webkit-keyframes slideLeft {
   0% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateY(100%);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 }
 
 @keyframes slideLeft {
   0% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateY(100%);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 }
 
@@ -719,19 +719,23 @@
 
   .site-header .menu-block {
     position: fixed;
-    width: 320px;
-    background-color: #ffffff;
+    display: flex;
+    flex-direction: column-reverse;
+    
+    width: 100%;
+    border-radius:0 0 15px 15px ;
+    background-color: #0c1015;
     left: 0;
     top: 0;
-    height: 100%;
+    height: auto;
     overflow: hidden;
-    transform: translate(-100%);
+    transform: translateY(-100%);
     transition: all 0.5s ease;
     z-index: 1099;
   }
 
   .site-header .menu-block.active {
-    transform: translate(0%);
+    transform: translateY(0%);
   }
 
   .site-menu-main>li {
@@ -745,7 +749,7 @@
     height: 50px;
     padding: 0 50px 0 15px;
     display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(231, 220, 220, 0.1);
   }
 
   .site-menu-main>li>a i {
@@ -763,13 +767,12 @@
     display: flex;
     height: 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
     z-index: 501;
     position: -webkit-sticky;
     position: sticky;
-    background-color: #ffffff;
     top: 0;
   }
 
@@ -814,7 +817,7 @@
     cursor: pointer;
     line-height: 50px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     font-size: 25px;
   }
 
@@ -945,7 +948,8 @@
 }
 
 .menu-block.active .nav-link-item {
-  color: #000 !important;
+  /* color: #000 !important; */
+  color: #ffffff;
 }
 
 @media (min-width: 480px) {
@@ -956,8 +960,9 @@
 
 .nav-link-item.drop-trigger {
   display: flex;
-  column-gap: 5px;
+  column-gap: 15px;
   align-items: center;
+  justify-content: center;
 }
 
 ul.site-menu-main .nav-item .dropdown-icon {

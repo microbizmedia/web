@@ -8,11 +8,13 @@ import strategyIcon from './icon_images/strategy_icon.png'
 import marketingIcon from './icon_images/marketing_icon.png'
 import hostingIcon from './icon_images/hosting_icon.png'
 const Hero = () => {
+        
+
   return (
     <>
       {/*...::: Hero Section Start :::... */}
       <section id='section-hero'>
-        <div className='relative z-[1]  overflow-hidden bg-[url("../assets\img\Hero_01.jpg")] bg-cover bg-top bg-contain bg-no-repeat  pt-10  xl:pt-28 xxl:pb-60 xxl:pt-[75px]'>
+        <div className='relative z-[1]  overflow-hidden bg-[url("../assets\img\Hero_01.jpg")] bg-cover bg-top bg-contain bg-no-repeat pt-10 pb-20 xl:pt-28 xxl:pb-40 xxl:pt-[75px]'>
           <div className='global-container'>
             <div className='mb-8 flex flex-col items-center text-center lg:mb-10'>
               <h1 className='jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px]'>

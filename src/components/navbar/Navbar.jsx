@@ -62,16 +62,17 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
         <div className={`mobile-menu-head ${mobileSubMenu && 'active'}`}>
           <div onClick={handleGoBack} className='go-back'>
             <img
-              className='dropdown-icon'
+              className='dropdown-icon text-white'
               src='assets/img/icon-black-long-arrow-right.svg'
               alt='cheveron-right'
               width={16}
               height={16}
             />
+            
           </div>
           <div className='current-menu-title'>{menuTitle}</div>
           <div onClick={handleMenu} className='mobile-menu-close'>
-            ×
+          &#11165;
           </div>
         </div>
         <ul className={`site-menu-main  ${color}`}>
@@ -89,6 +90,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                 width={16}
                 height={16}
               /> */}
+              <p className='dropdown-icon'>&#11166;</p>
             </Link>
             <ul
               className={`sub-menu ${mobileSubMenu === 1 && 'active'}`}
