@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Hero from './components/sections/home/Hero';
-import Work from './pages/common/Work.jsx';
+import Work from './pages/common/Work';
 import About from './pages/common/About';
 import Blog_details from './pages/common/Blog_details';
 import Blog from './pages/common/Blog';

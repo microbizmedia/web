@@ -54,16 +54,7 @@ const FunFact = () => {
               />
             {/* Funfact Right Block */}
             </div>
-            <div className='jos text-center py-40'>
-            <h2 className=' pb-10'>Let's Start Your Story</h2>
-            <Link
-                  to='/contact'
-                  className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
-                 
-                >
-                  Start A Free Consultation
-                </Link>
-                </div>
+            
         </div>
       </section>
       {/*...::: Funfact Section End :::... */}

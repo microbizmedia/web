@@ -12,8 +12,20 @@ const Footer_01 = () => {
   return (
     <footer className='relative z-[1]  overflow-hidden  bg-colorBackground'>
       {/* Footer Top */}
-     
+
       {/* Footer Text Slider */}
+    <div className='min-h-screen bg-[url("../assets\img\Segment_footer_bg_01.png")] bg-cover bg-top bg-contain bg-no-repeat'>
+      <div className='jos text-center  py-40 '>
+        <h2 className=' pb-10'>Let's Start Your Story</h2>
+        <Link
+          to='/contact'
+          className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
+
+        >
+          Start A Free Consultation
+        </Link>
+      </div>
+      </div>
       {/* Footer Top */}
       <div className='global-container pt-10'>
         {/* <div className='h-[1px] w-full bg-[#DBD6CF]' /> */}
@@ -30,11 +42,11 @@ const Footer_01 = () => {
                 height={24}
               />
             </Link>
-            <p className='text-base '> 
-            Our mission is to empower businesses by providing
-             innovative online solutions that enhance their digital presence.
+            <p className='text-base '>
+              Our mission is to empower businesses by providing
+              innovative online solutions that enhance their digital presence.
             </p>
-            
+
           </div>
           {/* Footer Widget */}
           {/* Footer Widget */}
@@ -142,17 +154,17 @@ const Footer_01 = () => {
             {/* Footer Title */}
             {/* Footer Subscriber Form */}
             <div className='flex justify-between'>
-            <img 
+              <img
                 src={threadsIcon}
                 alt='hero-dashboard'
                 className='  size-10'
               />
-              <img 
+              <img
                 src={xIcon}
                 alt='hero-dashboard'
                 className='  size-10'
               />
-              <img 
+              <img
                 src={instagramIcon}
                 alt='hero-dashboard'
                 className='  size-10'
