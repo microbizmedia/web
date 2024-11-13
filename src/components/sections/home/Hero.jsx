@@ -4,9 +4,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import webDevelopmentIcon from './icon_images/web_development_icon.png'
 import brandingAndDesignIcon from './icon_images/branding_and_design_Icon.png'
 import SEOIcon from './icon_images/seo_icon.png'
-import strategyIcon from './icon_images/strategy_icon.png'
 import marketingIcon from './icon_images/marketing_icon.png'
 import hostingIcon from './icon_images/hosting_icon.png'
+import strategyIcon from './icon_images/icon_strategy.svg'
+import SwiperIcon from '../../reusable/swiper-icons.jsx'
 const Hero = () => {
         
 
@@ -102,51 +103,46 @@ const Hero = () => {
                   },
                 }}
               >
-              
-                  <SwiperSlide className='flex justify-center'>
-                  <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
-                    <img src={webDevelopmentIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p className="text-colorWhite mt-2  pt-2">Web Development</p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className='flex justify-center'>
-                  <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
-                    <img src={brandingAndDesignIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p className="text-colorWhite  mt-2  pt-2">Branding & Design</p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className='flex justify-center'>
-                  <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
-                    <img src={SEOIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p className="text-colorWhite  mt-2  pt-2">SEO</p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className='flex justify-center'>
-                  <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
-                    <img src={strategyIcon} alt="web_development_icon" className="w-14 h-auto rounded-lg mb-2 mt-2" />
-                    <p className="text-colorWhite  mt-2  pt-2">Strategy</p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className='flex justify-center'>
-                  <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
-                    <img src={marketingIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p className="text-colorWhite  mt-2  pt-2">Marketing</p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className='flex justify-center'>
-                  <div className="h-[180px] w-[270px] bg-colorBackground border border-colorWhite border-opacity-20 rounded-lg p-6 flex flex-col items-start">
-                    <img src={hostingIcon} alt="web_development_icon" className="w-20 h-auto rounded-lg mb-2 mt-2" />
-                    <p className="text-colorWhite  mt-2  pt-2">Hosting</p>
-                  </div>
-                </SwiperSlide>
-
+                 <SwiperSlide >
+                  <SwiperIcon
+                    image={webDevelopmentIcon}
+                    text='Web Development'
+                  />
+                  </SwiperSlide>
+                  <SwiperSlide >
+                  <SwiperIcon
+                    image={brandingAndDesignIcon}
+                    text='Branding & Design'
+                  />
+                  </SwiperSlide>
+                  <SwiperSlide >
+                  <SwiperIcon
+                    image={SEOIcon}
+                    text='SEO'
+                  />
+                  </SwiperSlide>
+                  <SwiperSlide >
+                  <SwiperIcon
+                    image={strategyIcon}
+                    text='Strategy'
+                  />
+                  </SwiperSlide>
+                  <SwiperSlide >
+                  <SwiperIcon
+                    image={marketingIcon}
+                    text='Marketing'
+                  />
+                  </SwiperSlide>
+                  <SwiperSlide >
+                  <SwiperIcon
+                    image={hostingIcon}
+                    text='Hosting'
+                  />
+                  </SwiperSlide>
               </Swiper>
             </div>
             
           </div>
-          {/* <div className='orange-gradient-1 absolute -right-[150px] top-[370px] -z-[1] h-[500px] w-[500px] animate-spin rounded-[500px]'></div> */}
-
-          {/* <div className='orange-gradient-2 absolute right-[57px] top-[620px] -z-[1] h-[450px] w-[450px] animate-spin rounded-[450px]'></div> */}
         </div>
       </section>
       {/*...::: Hero Section End :::... */}

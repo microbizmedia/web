@@ -2,11 +2,15 @@ import Hero from '../../components/sections/home_01/Hero';
 import Service from '../../components/sections/home_01/service/Service';
 import Content_01 from '../../components/sections/home_01/Content_01';
 import Content_02 from '../../components/sections/home_01/Content_02';
-import Consultation from '../../components/sections/home_01/Consultation';
+// import Consultation from '../../components/sections/home_01/Consultation.jsx';
+import Consultation from '../../components/sections/home/Consultation'
+import ConsultationSection from '../../components/sections/home/Consultation_section'
+
 import Pricing from '../../components/sections/home_01/Pricing';
 import Testimonial_Section from '../../components/sections/home_01/Testimonial_Section';
-
+console.log(Hero)
 const Home_01 = () => {
+ 
   return (
     <main className='main-wrapper relative overflow-hidden'>
       <Hero />

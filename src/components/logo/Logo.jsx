@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-import logoDark from '../../assets/img/logo-dark.png';
-import logoLight from '../../assets/img/logo-light.png';
+
 import logoStandard from '../../assets/img/logo_standard.png';
 import logoMobile from '../../assets/img/logo_mobile.png';
 
