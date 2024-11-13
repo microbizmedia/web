@@ -37,7 +37,8 @@ const Work = () => {
                                         paragraph=' The ultimate car enthusiast platform developed
                                        for both individuals and businesses boasting market
                                     leading features and a user-friendly interface' 
-                                    image="assets/img/th-1/funfact-image.jpg" />
+                                    image="assets/img/th-1/funfact-image.jpg"
+                                    button='Open Study' />
 
                     </div>
                 </div>

@@ -8,7 +8,6 @@ import ConsultationSection from '../../components/sections/home/Consultation_sec
 
 import Pricing from '../../components/sections/home_01/Pricing';
 import Testimonial_Section from '../../components/sections/home_01/Testimonial_Section';
-console.log(Hero)
 const Home_01 = () => {
  
   return (

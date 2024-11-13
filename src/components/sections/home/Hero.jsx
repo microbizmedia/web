@@ -8,8 +8,10 @@ import marketingIcon from './icon_images/marketing_icon.png'
 import hostingIcon from './icon_images/hosting_icon.png'
 import strategyIcon from './icon_images/icon_strategy.svg'
 import SwiperIcon from '../../reusable/swiper-icons.jsx'
+import emailUsIcon from './/icon_images/email_us_icon.png'
+import TextAndPictureWindow from '../../reusable/text-picture-window.jsx'
 const Hero = () => {
-        
+
 
   return (
     <>
@@ -43,30 +45,12 @@ const Hero = () => {
                 </Link>
               </div>
             </div>
-            <div
-              className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 
-              flex flex-col-reverse
-              mx-auto max-w-[1024px]
-             
-              lg:flex-row lg:max-w-full'
-              data-jos_animation='zoom'
-            >
-              <div className='flex flex-col justify-center flex-1 bg-colorBackground px-4 py-10
-              
-              
-              lg:pl-16'>
-                <h2>Browse Our Catalog</h2>
-                <p className='lg:mt-6 lg:mb-10 mt-4 mb-14 text-base lg:max-w-[70%]'>View some of the amazing work we already made for our existing partners</p>
-                <Link className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>See More &#x27a4;  </Link>
-              </div>
-               <img
-                src='assets/img/th-1/funfact-image.jpg'
-                alt='hero-dashboard'
-                className='flex-1 pt-4 lg:pr-20 bg-colorBackground  object-cover object-center  max-h-[340px] lg:pt-0 w-full'
-              />
-              <div className='relative overflow-hidden '>
-              </div>
-            </div>
+            <TextAndPictureWindow
+              header="Browse Our Catalog"
+              paragraph='View some of the amazing work we already made for our existing partners'
+              image="assets/img/th-1/funfact-image.jpg"
+              button="See More"
+            />
 
             {/* <div className='my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20'></div> */}
             <div className='jos mx-auto mt-20 mb-10 max-w-[715px] text-center lg:mb-16'>
@@ -89,63 +73,93 @@ const Hero = () => {
                   480: {
                     slidesPerView: 2,
                     spaceBetween: 20,
-                    centeredSlides:false,
+                    centeredSlides: false,
                   },
                   768: {
                     slidesPerView: 3,
                     spaceBetween: 30,
-                    centeredSlides:false,
+                    centeredSlides: false,
                   },
                   1024: {
                     slidesPerView: 3,
                     spaceBetween: 40,
-                    centeredSlides:false,
+                    centeredSlides: false,
                   },
                 }}
               >
-                 <SwiperSlide >
+                <SwiperSlide >
                   <SwiperIcon
                     image={webDevelopmentIcon}
                     text='Web Development'
                   />
-                  </SwiperSlide>
-                  <SwiperSlide >
+                </SwiperSlide>
+                <SwiperSlide >
                   <SwiperIcon
                     image={brandingAndDesignIcon}
                     text='Branding & Design'
                   />
-                  </SwiperSlide>
-                  <SwiperSlide >
+                </SwiperSlide>
+                <SwiperSlide >
                   <SwiperIcon
                     image={SEOIcon}
                     text='SEO'
                   />
-                  </SwiperSlide>
-                  <SwiperSlide >
+                </SwiperSlide>
+                <SwiperSlide >
                   <SwiperIcon
                     image={strategyIcon}
                     text='Strategy'
                   />
-                  </SwiperSlide>
-                  <SwiperSlide >
+                </SwiperSlide>
+                <SwiperSlide >
                   <SwiperIcon
                     image={marketingIcon}
                     text='Marketing'
                   />
-                  </SwiperSlide>
-                  <SwiperSlide >
+                </SwiperSlide>
+                <SwiperSlide >
                   <SwiperIcon
                     image={hostingIcon}
                     text='Hosting'
                   />
-                  </SwiperSlide>
+                </SwiperSlide>
               </Swiper>
             </div>
-            
+
           </div>
         </div>
       </section>
       {/*...::: Hero Section End :::... */}
+      <section id='funfact-section' className=' bg-colorBackground'>
+        <div className='mx-auto  px-5 '>
+          <div
+            className='jos hero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px]
+              flex flex-col-reverse mx-auto lg:flex-row mb-20 '
+          >
+            <div className='flex flex-col justify-center   px-8 py-20 lg:pl-24 lg:max-w-[50%]'>
+              <h2>Our consultations are always free</h2>
+              <p className='lg:mt-6 lg:mb-10 mt-4 mb-14 text-base '>Give us an email and one of our agents will contact you as soon as we can</p>
+              <Link className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
+            </div>
+
+            <div className='  pt-20  lg:pt-0 flex justify-center items-center'>
+              <img
+                src={emailUsIcon}
+                alt='hero-dashboard'
+                className='  size-1/3'
+              />
+            </div>
+          </div>
+
+
+          <TextAndPictureWindow
+              header="Our Story"
+              paragraph='Read more about us and what inspired us to do what we do for you'
+              image="assets/img/th-1/funfact-image.jpg"
+              button='Learn More'
+            />
+        </div>
+      </section>
     </>
   );
 };
