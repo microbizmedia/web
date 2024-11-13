@@ -10,41 +10,24 @@ import strategyIcon from './icon_images/icon_strategy.svg'
 import SwiperIcon from '../../reusable/swiper-icons.jsx'
 import emailUsIcon from './/icon_images/email_us_icon.png'
 import TextAndPictureWindow from '../../reusable/text-picture-window.jsx'
+import TitleMessage from '../../reusable/title-message.jsx';
 const Hero = () => {
 
 
   return (
     <>
       {/*...::: Hero Section Start :::... */}
-      <section id='section-hero'>
-        <div className='relative z-[1]  overflow-hidden bg-[url("../assets\img\Hero_01.jpg")] bg-cover bg-top bg-contain bg-no-repeat pt-10 pb-20 xl:pt-28 xxl:pb-40 xxl:pt-[75px]'>
-          <div className='global-container'>
-            <div className='mb-8 flex flex-col items-center text-center lg:mb-10'>
-              <h1 className='jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px]'>
-                Your Digital Agency
-              </h1>
-              <p className='jos tracking-wider slide-from-bottom mb-11 max-w-[700px] text-lg font-extralight sm:text-xl xl:max-w-[620px]'>
-                Take full control of your potential through our expert levels of design,
-                development and marketing for your brand and business.
-              </p>
-              <div
-                className='jos flex flex-wrap justify-center gap-6'
-                data-jos_animation='fade'
-              >
-                <Link
-                  to='/contact'
-                  className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
-                >
-                  Start A Free Consultation
-                </Link>
-                <Link
-                  to='/about'
-                  className='button border-0 bg-transparent py-4'
-                >
-                  Or read more about us &#x27a4;
-                </Link>
-              </div>
-            </div>
+      <div className='relative z-[1]  overflow-hidden bg-[url("../assets\img\test_Hero_01.1-1.png")] bg-contain bg-top bg-no-repeat 
+        '>
+          <div className='global-container '>
+      <section id='section-hero' className='py-10 lg:py-20'>
+        
+          
+            
+            <TitleMessage />
+
+
+
             <TextAndPictureWindow
               header="Browse Our Catalog"
               paragraph='View some of the amazing work we already made for our existing partners'
@@ -126,12 +109,16 @@ const Hero = () => {
               </Swiper>
             </div>
 
-          </div>
-        </div>
+          
+        
       </section>
       {/*...::: Hero Section End :::... */}
-      <section id='funfact-section' className=' bg-colorBackground'>
-        <div className='mx-auto  px-5 '>
+
+
+
+      {/*...::: Consultation window Section start :::... */}
+      <section id='funfact-section'>
+        
           <div
             className='jos hero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px]
               flex flex-col-reverse mx-auto lg:flex-row mb-20 '
@@ -158,8 +145,13 @@ const Hero = () => {
               image="assets/img/th-1/funfact-image.jpg"
               button='Learn More'
             />
-        </div>
+      
       </section>
+      {/*...::: Consultation window Section end :::... */}
+      </div>
+      </div>
+
+
     </>
   );
 };

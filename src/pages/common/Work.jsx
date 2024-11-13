@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom';
 import TextAndPictureWindow from '../../components/reusable/text-picture-window'
+import TitleMessage from '../../components/reusable/title-message';
 const Work = () => {
     return (
         <>
             <section id='section-work'>
-                <div className='relative z-[1]  overflow-hidden bg-colorBackground pt-10 pb-20 xl:pt-16 xxl:pb-40'>
+                <div className='relative z-[1]  overflow-hidden bg-colorBackground
+                  py-10 lg:py-20'>
                     <div className='global-container'>
-                        <div className='mb-8 flex flex-col items-center text-center lg:mb-10'>
+                    <TitleMessage />
+                        {/* <div className='mb-8 flex flex-col items-center text-center lg:mb-10'>
                             <h1 className='jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px]'>
                                 100+B2B Partners
                             </h1>
@@ -32,7 +35,7 @@ const Work = () => {
                                     Or read more about us &#x27a4;
                                 </Link>
                             </div>
-                        </div>
+                        </div> */}
                         <TextAndPictureWindow header="Devado Vehicle Solutions" 
                                         paragraph=' The ultimate car enthusiast platform developed
                                        for both individuals and businesses boasting market

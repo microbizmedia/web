@@ -11,7 +11,7 @@ import Testimonial_Section from '../../components/sections/home_01/Testimonial_S
 const Home_01 = () => {
  
   return (
-    <main className='main-wrapper relative overflow-hidden'>
+    <main className='main-wrapper relative overflow-hidden '>
       <Hero />
       {/* <Service /> */}
       {/* <Content_01 /> */}

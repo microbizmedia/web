@@ -4,30 +4,46 @@
 @tailwind utilities;
 
 /* Post Custom Styles */
+@font-face {
+  font-family: 'MyCustomFont-Helvetica-NeueThin';
+  src:  url('../assets/img/fonts/helvetica-neue-5/HelveticaNeueThin.otf') format('woff');    
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyCustomFont-Helvetica-NeueLight';
+  src: url('../assets/img/fonts/helvetica-neue-5/HelveticaNeueLight.otf') format('woff');    
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyCustomFont-Helvetica-NeueMedium';
+  src: url('../assets/img/fonts/helvetica-neue-5/HelveticaNeueMedium.otf') format('woff');    
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   min-height: 100vh;
-  font-family: 'Helvetica Neue', sans-serif;
-  /* font-size: 1.125rem; */
-  line-height: 1.75rem;
-  line-height: 1.66;
+  font-family: 'MyCustomFont-Helvetica-NeueLight', sans-serif;
   --tw-text-opacity: 1;
   /* color: rgb(25 25 25 / var(--tw-text-opacity)); */
   color:#ffffff;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  letter-spacing: -2px;
+body .sub-title{
+  font-family: 'MyCustomFont-Helvetica-NeueThin', sans-serif;
 }
+.button, .button-micro{
+  font-family: 'MyCustomFont-Helvetica-NeueMedium', sans-serif;
+}
+
 
 h1 {
   font-size: 3.5rem;
   line-height: 1;
+  font-family: 'MyCustomFont-Helvetica-NeueMedium';
+ 
 }
 
 
