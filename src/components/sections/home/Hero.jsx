@@ -17,9 +17,11 @@ const Hero = () => {
   return (
     <>
       {/*...::: Hero Section Start :::... */}
-      <div className='relative z-[1]  overflow-hidden bg-[url("../assets\img\test_Hero_01.1-1.png")] bg-contain bg-top bg-no-repeat 
+      <div className='relative z-10  overflow-hidden bg-[url("../assets\img\test_Hero_01.1-1.png")] bg-contain bg-top bg-no-repeat 
+        
+        
         '>
-          <div className='global-container '>
+          <div className='global-container pb-[500px]'>
       <section id='section-hero' className='py-10 lg:py-20'>
         
           
@@ -145,6 +147,7 @@ const Hero = () => {
               image="assets/img/th-1/funfact-image.jpg"
               button='Learn More'
             />
+           
       
       </section>
       {/*...::: Consultation window Section end :::... */}

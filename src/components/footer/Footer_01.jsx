@@ -3,6 +3,7 @@ import logoStandard from '../../assets/img/logo_standard.png'
 import threadsIcon from '../footer/social_media_icons/threads_icon.png'
 import xIcon from '../footer/social_media_icons/x_icon_b.png'
 import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png'
+import backgroundPicture from '../../assets/img/Segment_footer_bg_01.png'
 
 const Footer_01 = () => {
   const handleSubmit = (e) => {
@@ -10,16 +11,21 @@ const Footer_01 = () => {
   };
 
   return (
-    <footer className='relative z-[1]  overflow-hidden  bg-colorBackground'>
+    <footer className='relative   bg-colorBackground'>
       {/* Footer Top */}
 
       {/* Footer Text Slider */}
-    <div className='min-h-screen bg-[url("../assets\img\Segment_footer_bg_01.png")] bg-cover bg-top bg-contain bg-no-repeat'>
-      <div className='jos text-center  py-40 '>
+    <div className=' '>
+      <img 
+      src={backgroundPicture}
+       alt="background-picture"
+       className='absolute  -translate-y-full z-0 bg-bottom bg-contain bg-no-repeat' />
+      
+      <div className='jos text-center absolute -translate-y-full py-20 '>
         <h2 className=' pb-10'>Let's Start Your Story</h2>
         <Link
           to='/contact'
-          className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
+          className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
 
         >
           Start A Free Consultation
@@ -27,7 +33,7 @@ const Footer_01 = () => {
       </div>
       </div>
       {/* Footer Top */}
-      <div className='global-container pt-10'>
+      <div className='global-container pt-10 '>
         {/* <div className='h-[1px] w-full bg-[#DBD6CF]' /> */}
         {/* Footer Center */}
         {/* <div className='lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]'> */}
