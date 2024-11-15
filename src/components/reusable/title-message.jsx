@@ -5,14 +5,13 @@ const TitleMessage = ({ header, paragraph, image, button }) => {
         <>
                 <h1 className='jos slide-from-bottom text-center
                  '>
-                    Your Digital Agency
+                    {header}
                 </h1>
                 <p className='sub-title jos tracking-wider slide-from-bottom text-center max-w-[700px] m-auto py-8'>
-                    Take full control of your potential through our expert levels of design,
-                    development and marketing for your brand and business.
+                    {paragraph}
                 </p>
                 <div
-                    className='jos flex flex-wrap justify-center gap-2 pb-8 lg:pb-14'
+                    className='jos flex flex-wrap justify-center gap-2 pb-8 lg:pb-10'
                     data-jos_animation='fade'
                 >
                     <Link

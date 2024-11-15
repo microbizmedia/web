@@ -16,17 +16,21 @@ const Hero = () => {
 
   return (
     <>
-      {/*...::: Hero Section Start :::... */}
-      <div className='relative z-10  overflow-hidden bg-[url("../assets\img\test_Hero_01.1-1.png")] bg-contain bg-top bg-no-repeat 
-        
-        
+      {/*...::: Hero Section Start  :::... */}
+      <div className='relative 
+         mb-[70vh]
+       bg-contain bg-top bg-no-repeat z-20 xl:bg-[url("../assets\img\Hero_03.png")] bg-[url("../assets\img\Hero_01-1.png")]
+        lg:bg-contain
         '>
-          <div className='global-container pb-[500px]'>
+          <div className='global-container '>
       <section id='section-hero' className='py-10 lg:py-20'>
         
           
             
-            <TitleMessage />
+            <TitleMessage 
+            header='Your Digital Agency'
+            paragraph='Take full control of your potential through our expert levels of design,
+                    development and marketing for your brand and business.'/>
 
 
 
@@ -38,7 +42,7 @@ const Hero = () => {
             />
 
             {/* <div className='my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20'></div> */}
-            <div className='jos mx-auto mt-20 mb-10 max-w-[715px] text-center lg:mb-16'>
+            <div className='jos mx-auto  mb-10 max-w-[715px] text-center '>
               <h2>
                 What we do?
               </h2>
@@ -122,8 +126,8 @@ const Hero = () => {
       <section id='funfact-section'>
         
           <div
-            className='jos hero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px]
-              flex flex-col-reverse mx-auto lg:flex-row mb-20 '
+            className='jos hero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px] 
+              flex flex-col-reverse mx-auto lg:flex-row mb-32 '
           >
             <div className='flex flex-col justify-center   px-8 py-20 lg:pl-24 lg:max-w-[50%]'>
               <h2>Our consultations are always free</h2>

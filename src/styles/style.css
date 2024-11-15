@@ -29,6 +29,7 @@ body {
   font-family: 'MyCustomFont-Helvetica-NeueLight', sans-serif;
   --tw-text-opacity: 1;
   /* color: rgb(25 25 25 / var(--tw-text-opacity)); */
+  background-color: #0c1015;
   color:#ffffff;
 }
 body .sub-title{
@@ -50,6 +51,7 @@ h1 {
 h2 {
   font-size: 2.25rem;
   line-height: 2.5rem;
+  font-weight: bold;
 }
 
 /* @media (min-width: 992px) {

@@ -6,7 +6,7 @@ const textAndPictureWindow = ( {header, paragraph, image, button }) => {
                 className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 
               flex flex-col-reverse
               mx-auto max-w-[1024px]
-              lg:flex-row '
+              lg:flex-row mb-14 '
                 data-jos_animation='zoom'
             >
                 <div className='flex flex-col justify-center flex-1 bg-colorBackground px-4 py-10 lg:pl-16'>

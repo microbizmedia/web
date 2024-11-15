@@ -11,29 +11,41 @@ const Footer_01 = () => {
   };
 
   return (
-    <footer className='relative   bg-colorBackground'>
+    <>
+    <div className='relative jos text-center z-40 bottom-[400px]
+      
+    '>
+     <h2 className=' pb-10'>Let's Start Your Story</h2>
+     <Link
+       to='/contact'
+       className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
+
+     >
+       Start A Free Consultation
+     </Link>
+  
+   </div>
+    <footer className=' relative '>
       {/* Footer Top */}
 
       {/* Footer Text Slider */}
-    <div className=' '>
-      <img 
-      src={backgroundPicture}
-       alt="background-picture"
-       className='absolute  -translate-y-full z-0 bg-bottom bg-contain bg-no-repeat' />
+   
+       <div 
+       className='absolute bg-[url("../assets\img\Segment_footer_bg_01.png")] xl:bg-[url("../assets\img\segment_5_bg_02.png")]
+        min-h-[200vh] bg-contain bg-no-repeat bg-bottom
+      w-[100%] bottom-[100%] 
+   
+      ' 
+      >
+       
+       </div>
+       {/* <div className='absolute w-[100%] bottom-[120vh] xm:bottom-[105vh]  md:bottom-[80vh]  jos text-center 
       
-      <div className='jos text-center absolute -translate-y-full py-20 '>
-        <h2 className=' pb-10'>Let's Start Your Story</h2>
-        <Link
-          to='/contact'
-          className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white'
-
-        >
-          Start A Free Consultation
-        </Link>
-      </div>
-      </div>
+      '> */}
+        
+      
       {/* Footer Top */}
-      <div className='global-container pt-10 '>
+      <div className='global-container pt-8 '>
         {/* <div className='h-[1px] w-full bg-[#DBD6CF]' /> */}
         {/* Footer Center */}
         {/* <div className='lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]'> */}
@@ -183,7 +195,7 @@ const Footer_01 = () => {
         {/* Footer Center */}
         <div className='h-[1px] w-full bg-[#DBD6CF]' />
         {/* Footer Bottom */}
-        <div className='py-9 text-center'>
+        <div className='py-6 text-center'>
           <p>
             © {new Date().getFullYear()} MicroBiz Media. All Rights Reserved.
           </p>
@@ -195,6 +207,7 @@ const Footer_01 = () => {
       {/* Footer Background Shape 2  */}
       {/* <div className='orange-gradient-1 absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]'></div> */}
     </footer>
+    </>
   );
 };
 

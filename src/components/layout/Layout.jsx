@@ -4,7 +4,7 @@ import Header from '../header/Header';
 
 const Layout = () => {
   return (
-    <div className='page-wrapper relative z-[1] bg-white'>
+    <div className='page-wrapper relative z-[1] bg-colorBackground'>
       {/*...::: Header Start :::... */}
       <Header
         loginCSS='button hidden rounded-[50px] border-[#7F8995] bg-transparent text-black after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block'
