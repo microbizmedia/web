@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const TitleMessage = ({ header, paragraph, image, button }) => {
     return (
         <>
-                <h1 className='jos slide-from-bottom text-center
+                <h1 className='jos slide-from-bottom text-center pt-28 lg:pt-34
                  '>
                     {header}
                 </h1>

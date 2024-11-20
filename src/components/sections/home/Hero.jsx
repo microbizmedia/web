@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import webDevelopmentIcon from './icon_images/web_development_icon.png'
-import brandingAndDesignIcon from './icon_images/branding_and_design_Icon.png'
-import SEOIcon from './icon_images/seo_icon.png'
-import marketingIcon from './icon_images/marketing_icon.png'
-import hostingIcon from './icon_images/hosting_icon.png'
-import strategyIcon from './icon_images/icon_strategy.svg'
-import SwiperIcon from '../../reusable/swiper-icons.jsx'
-import emailUsIcon from './/icon_images/email_us_icon.png'
+import webDevelopmentIcon from '../../../assets/icon_images/web_development_icon.png'
+import brandingAndDesignIcon from '../../../assets/icon_images/branding_and_design_Icon.png'
+import SEOIcon from '../../../assets/icon_images/seo_icon.png'
+import marketingIcon from '../../../assets/icon_images/marketing_icon.png'
+import hostingIcon from '../../../assets/icon_images/hosting_icon.png'
+import strategyIcon from '../../../assets/icon_images/icon_strategy.svg'
+import SwiperIcon from '../../reusable/services-icon.jsx'
+import emailUsIcon from '../../../assets/icon_images/email_us_icon.png'
 import TextAndPictureWindow from '../../reusable/text-picture-window.jsx'
 import TitleMessage from '../../reusable/title-message.jsx';
 const Hero = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
         lg:bg-contain
         '>
           <div className='global-container '>
-      <section id='section-hero' className='py-10 lg:py-20'>
+      <section id='section-hero' >
         
           
             
@@ -40,11 +40,11 @@ const Hero = () => {
             />
 
             {/* <div className='my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20'></div> */}
-            <div className='jos mx-auto  mb-10 max-w-[715px] text-center '>
-              <h2>
-                What we do?
+            
+              <h2 className='jos mx-auto  mb-10 max-w-[715px] text-center '>
+                What we Offer
               </h2>
-            </div>
+           
             <div className='jos brand-slider ' data-jos_animation='fade'>
               <Swiper
                 spaceEvenly={20}
