@@ -1,25 +1,21 @@
-import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
-import Faq_Section from '../../components/sections/inner-pages/service/Faq_Section';
-import Service_Section from '../../components/sections/inner-pages/service/service_section/Service_Section';
-import Testimonial_Section from '../../components/sections/inner-pages/service/testimonial/Testimonial_Section';
-
+import TitleMessage from '../../components/reusable/title-message';
 const Services = () => {
   return (
     <>
-      <main className='main-wrapper relative overflow-hidden'>
-        {/*...::: Breadcrumb Section Start :::... */}
-        <Breadcrumb title='Our Services' link='Services' />
-        {/*...::: Breadcrumb Section End :::... */}
-        {/*...::: Service Section Start :::... */}
-        <Service_Section />
-        {/*...::: Service Section End :::... */}
-        {/*...::: FAQ Section Start :::... */}
-        <Faq_Section />
-        {/*...::: FAQ Section End :::... */}
-        {/*...::: Testimonial Section Start :::... */}
-        <Testimonial_Section />
-        {/*...::: Testimonial Section Start :::... */}
-      </main>
+      <section id='section-services'>
+                <div className='relative   overflow-hidden   mb-[50vh] z-40
+                  py-10 lg:py-20'>
+                    <div className='global-container'>
+                    <TitleMessage 
+                     header='100+ B2B Partners'
+                     paragraph='At MicroBiz, we have a team of experienced professionals who specialize in creating digital products
+                     that transform businesses. Every project we work on gets designed to help our clients become more eficient and competitive.'/>
+                     
+                        
+
+                    </div>
+                </div>
+            </section>
     </>
   );
 };

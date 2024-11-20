@@ -17,9 +17,7 @@ const Hero = () => {
   return (
     <>
       {/*...::: Hero Section Start  :::... */}
-      <div className='relative 
-         mb-[70vh]
-       bg-contain bg-top bg-no-repeat z-20 xl:bg-[url("../assets\img\Hero_03.png")] bg-[url("../assets\img\Hero_01-1.png")]
+      <div className='relative  mb-[70vh] bg-[url("../assets\img\Hero_03.png")] bg-contain bg-top bg-no-repeat z-20  
         lg:bg-contain
         '>
           <div className='global-container '>

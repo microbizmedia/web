@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Hero from './components/sections/home/Hero';
 import Work from './pages/common/Work';
-import About from './pages/common/About';
 import Blog_details from './pages/common/Blog_details';
 import Blog from './pages/common/Blog';
 import Contact from './pages/common/Contact';
@@ -32,7 +31,6 @@ function App() {
           <Route path='work' element={<Work />} />
           <Route path='login' element={<Login />} />
           <Route path='signup' element={<Signup />} />
-          <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
           <Route path='blog' element={<Blog />} />
           <Route path='blog-details' element={<Blog_details />} />

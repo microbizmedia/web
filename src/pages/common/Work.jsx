@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import TextAndPictureWindow from '../../components/reusable/text-picture-window'
 import TitleMessage from '../../components/reusable/title-message';
 const Work = () => {
