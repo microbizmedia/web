@@ -19,6 +19,7 @@ import Team from './pages/common/team/Team';
 import useJOSAnimation from './hooks/useJOSAnimation';
 import Layout from './components/layout/Layout';
 import Faq_01 from './pages/common/faq/faq_01/Faq_01';
+import Careers from './pages/common/Carrers';
 
 function App() {
   // Init JOS Animation
@@ -45,6 +46,7 @@ function App() {
           <Route path='services' element={<Services />} />
           <Route path='service-details' element={<Services_Details />} />
           <Route path='error-404' element={<Error_404 />} />
+          <Route path='careers' element={<Careers />} />
           <Route path='*' element={<Error_404 />} />
         </Route>
       </Routes>
