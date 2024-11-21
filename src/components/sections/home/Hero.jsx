@@ -42,10 +42,10 @@ const Hero = () => {
             {/* <div className='my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20'></div> */}
             
               <h2 className='jos mx-auto  mb-10 max-w-[715px] text-center '>
-                What we Offer
+                What We Offer
               </h2>
            
-            <div className='jos brand-slider ' data-jos_animation='fade'>
+            <div className='jos brand-slider pb-20 ' data-jos_animation='fade'>
               <Swiper
                 spaceEvenly={20}
                 slidesPerView={1}

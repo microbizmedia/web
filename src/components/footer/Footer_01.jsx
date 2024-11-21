@@ -12,7 +12,7 @@ const Footer_01 = () => {
 
   return (
     <>
-    <div className='relative jos text-center z-40 bottom-[400px]
+    <div className='relative jos text-center z-40 bottom-[300px]
       
     '>
      <h2 className=' pb-10'>Let's Start Your Story</h2>
