@@ -5,12 +5,13 @@ const Services = () => {
   return (
     <>
       <section id='section-services'>
-        <div className='relative   overflow-hidden   mb-[50vh] z-40'>
-          <div className='global-container'>
+        <div className='global-container relative   overflow-hidden   mb-[50vh] z-40'>
+          
             <TitleMessage
               header='Full Service Digital Partnership'
               paragraph='By working with us you get an entire team of experienced designers, developers, copy writers, data analists and 
                      system administrators, our goal is to produce real results and propel you towards endless growth'/>
+
             <h2 className='jos mx-auto  mb-6 lg:my-10 max-w-[715px] text-center' >Services</h2>
             <ServicesIcons />
 
@@ -68,7 +69,7 @@ const Services = () => {
               >
                  <legend className=' button border-none text-center bg-colorPurple px-8 py-2 rounded-[5px] '>Best Value</legend>
                 <div className='bg-colorBackground'>
-                  <h2 className='pt-10 text-center'>Business Basic</h2>
+                  <h2 className='pt-10 text-center'>Business Elite</h2>
                   <ul className='p-10 space-y-2'>
                     <li><span className='text-green-500'>&#10004;</span> Web Design and Development</li>
                     <li><span className='text-green-500'>&#10004;</span> Domain Registration and Hosting</li>
@@ -103,7 +104,7 @@ const Services = () => {
             </div>
 
           </div>
-        </div>
+     
       </section>
     </>
   );

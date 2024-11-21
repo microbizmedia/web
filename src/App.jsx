@@ -9,7 +9,7 @@ import Faq_02 from './pages/common/faq/faq_02/Faq_02';
 import Login from './pages/common/Login';
 import Portfolio_details from './pages/common/Portfolio_details';
 import Portfolio from './pages/common/Portfolio';
-import Pricing from './pages/common/Pricing';
+import Process from './pages/common/Process';
 import Reset_password from './pages/common/Reset_password';
 import Services_Details from './pages/common/Service_Details';
 import Services from './pages/common/Services';
@@ -40,7 +40,7 @@ function App() {
           <Route path='faq-2' element={<Faq_02 />} />
           <Route path='team' element={<Team />} />
           <Route path='team-details' element={<Team_details />} />
-          <Route path='pricing' element={<Pricing />} />
+          <Route path='process' element={<Process />} />
           <Route path='reset-password' element={<Reset_password />} />
           <Route path='services' element={<Services />} />
           <Route path='service-details' element={<Services_Details />} />

@@ -97,20 +97,9 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             onClick={(e) => handleSubMenu(e, 2)}
             className='nav-item nav-item-has-children'
           >
-            <Link to='#' className='nav-link-item drop-trigger'>
+            <Link to='/process' className='nav-link-item drop-trigger'>
               Process
             </Link>
-            <ul
-              className={`sub-menu ${mobileSubMenu === 2 && 'active'}`}
-              id='submenu-2'
-            >
-              <li className='sub-menu--item'>
-                <Link to='/services'>Services</Link>
-              </li>
-              <li className='sub-menu--item'>
-                <Link to='/service-details'>Service Details</Link>
-              </li>
-            </ul>
           </li>
           <li
             onClick={(e) => handleSubMenu(e, 3)}
