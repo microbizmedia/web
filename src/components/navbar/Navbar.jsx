@@ -4,54 +4,19 @@ import threadsIcon from '../footer/social_media_icons/threads_icon.png'
 import xIcon from '../footer/social_media_icons/x_icon_b.png'
 import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png' 
 
+
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
   const [mobileSubMenu, setMobileSubMenu] = useState('');
-  const [mobileSubMenuSub, setMobileSubMenuSub] = useState('');
-  const [menuTitle, setMenuTitle] = useState('');
 
   const handleMenu = () => {
     setMobileMenu(false);
     setMobileSubMenu('');
-    setMobileSubMenuSub('');
   };
 
-  const handleSubMenu = (e, id) => {
-    e.preventDefault();
-    setMobileSubMenu(id);
 
-    if (e.target.tagName === 'A') {
-      const content = e.target.firstChild.textContent;
-      setMenuTitle(content);
-    } else {
-      const content = e.target.parentElement.textContent;
-      setMenuTitle(content);
-    }
-  };
 
-  const handleSubMenuSub = (e, id) => {
-    e.preventDefault();
-    setMobileSubMenuSub(id);
-    if (e.target.tagName === 'A') {
-      const content = e.target.firstChild.textContent;
-      setMenuTitle(content);
-    } else {
-      const content = e.target.parentElement.textContent;
-      setMenuTitle(content);
-    }
-  };
-
-  const handleGoBack = () => {
-    if (mobileSubMenuSub) {
-      setMobileSubMenuSub('');
-      return;
-    }
-    if (mobileSubMenu) {
-      setMobileSubMenu('');
-      return;
-    }
-  };
-
+ 
   return (
     <div className='menu-block-wrapper'>
       <div
@@ -63,57 +28,55 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
         id='append-menu-header'
       >
         <div className={`mobile-menu-head ${mobileSubMenu && 'active'}`}>
-          <div onClick={handleGoBack} className='go-back'>
-            <img
-              className='dropdown-icon text-white'
-              src='assets/img/icon-black-long-arrow-right.svg'
-              alt='cheveron-right'
-              width={16}
-              height={16}
-            />
-            
-          </div>
-          <div className='current-menu-title'>{menuTitle}</div>
-          <div onClick={handleMenu} className='mobile-menu-close'>
-          &#11165;
+        
+          
+          <div onClick={handleMenu} className='mobile-menu-close rotate-[-90deg]'>
+          &#10095;
           </div>
         </div>
         <ul className={`site-menu-main  ${color}`}>
           {/* Global navbar */}
           <li
-            onClick={(e) => handleSubMenu(e, 1)}
-            className='nav-item nav-item-has-children'
+            onClick={handleMenu}
+            className='nav-item'
           >
-            <Link to='/work' className='nav-link-item drop-trigger nav-link-item pt-4 lg:pt-0'>
+            <Link to='/work' className='nav-link-item '>
               Work
             </Link>
           </li>
-          <li className='nav-item text-center'>
-            <Link to='/services' className='nav-link-item -l'>
+          <li onClick={handleMenu}
+          className='nav-item'>
+            <Link to='/services' className='nav-link-item '>
               Services
             </Link>
           </li>
           <li
-            onClick={(e) => handleSubMenu(e, 2)}
-            className='nav-item nav-item-has-children'
+            onClick={handleMenu}
+            className='nav-item'
           >
-            <Link to='/process' className='nav-link-item drop-trigger'>
+            <Link to='/process' className='nav-link-item'>
               Process
             </Link>
           </li>
           <li
-            onClick={(e) => handleSubMenu(e, 3)}
-            className='nav-item nav-item-has-children'
+            onClick={handleMenu}
+            className='nav-item '
           >
-            <Link to='/careers' className='nav-link-item drop-trigger nav-link-item '>
+            <Link to='/careers' className='nav-link-item '>
               Careers
             </Link>
            </li>
-          <li className='nav-item text-center pb-4 lg:pb-0'>
-            <Link to='/contact' className='nav-link-item nav-link-item '>
+          <li className='nav-item'
+          onClick={handleMenu}
+          >
+            <Link to='/contact' className='nav-link-item '>
               About
             </Link>
           </li>
+
+
+
+
           <li className='dropdown-menu-social-media-icons'>
           <img 
                 src={threadsIcon}
@@ -131,6 +94,11 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                 className='  size-10'
               />
           </li>
+
+
+
+
+
         </ul>
       </nav>
     </div>

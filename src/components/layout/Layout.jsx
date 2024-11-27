@@ -6,10 +6,7 @@ const Layout = () => {
   return (
     <div className='page-wrapper relative z-[1] bg-colorBackground'>
       {/*...::: Header Start :::... */}
-      <Header
-        loginCSS='button hidden rounded-[50px] border-[#7F8995] bg-transparent text-black after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block'
-        priceButton='button w-full p-4 rounded-0 border-black bg-colorPurple text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block'
-      />
+      <Header />
       {/*...::: Header End :::... */}
 
       {/*...::: Main Start :::... */}

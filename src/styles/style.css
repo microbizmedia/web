@@ -25,18 +25,19 @@
 }
 
 body {
+  /* font-family: 'Helvetica Neue', Arial, sans-serif; */
   min-height: 100vh;
-  font-family: 'MyCustomFont-Helvetica-NeueLight', sans-serif;
+  font-family: 'MyCustomFont-Helvetica-NeueLight', Arial,  'Segoe UI', 'Noto Sans', sans-serif;
   --tw-text-opacity: 1;
   /* color: rgb(25 25 25 / var(--tw-text-opacity)); */
-  background-color: #0c1015;
-  color:#ffffff;
+ 
+  color:#e2e2e2;
 }
 body .sub-title{
-  font-family: 'MyCustomFont-Helvetica-NeueThin', sans-serif;
+  font-family: 'MyCustomFont-Helvetica-NeueThin', Arial, sans-serif;
 }
 .button, .button-micro{
-  font-family: 'MyCustomFont-Helvetica-NeueMedium', sans-serif;
+  font-family: 'MyCustomFont-Helvetica-NeueMedium', Arial, sans-serif;
 }
 
 

@@ -27,10 +27,8 @@ const Header = ({ loginCSS, priceButton, navColor, light }) => {
           {/* Header Navigation */}
           {/* Header User Event */}
           <div className='flex items-center gap-6'>
-            {/* <Link to='/login' className={loginCSS}>
-              Login
-            </Link> */}
-            <Link to='/signup' className={priceButton}>
+           
+            <Link to='/signup' className='button w-full p-4 rounded-0 border-black bg-colorPurple after:bg-colorOrangyRed hover:border-colorOrangyRed lg:inline-block'>
               Pricing
             </Link>
             {/* Responsive Off-canvas Menu Button */}
