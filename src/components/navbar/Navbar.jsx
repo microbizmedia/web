@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import threadsIcon from '../footer/social_media_icons/threads_icon.png'
 import xIcon from '../footer/social_media_icons/x_icon_b.png'
-import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png' 
+import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png'
 
 
 // eslint-disable-next-line react/prop-types
@@ -16,7 +16,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
 
 
 
- 
+
   return (
     <div className='menu-block-wrapper'>
       <div
@@ -27,14 +27,8 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
         className={`menu-block ${mobileMenu && 'active'}`}
         id='append-menu-header'
       >
-        <div className={`mobile-menu-head ${mobileSubMenu && 'active'}`}>
-        
-          
-          <div onClick={handleMenu} className='mobile-menu-close rotate-[-90deg]'>
-          &#10095;
-          </div>
-        </div>
-        <ul className={`site-menu-main  ${color}`}>
+
+        <ul className={`site-menu-main py-4 ${color}`}>
           {/* Global navbar */}
           <li
             onClick={handleMenu}
@@ -45,7 +39,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             </Link>
           </li>
           <li onClick={handleMenu}
-          className='nav-item'>
+            className='nav-item'>
             <Link to='/services' className='nav-link-item '>
               Services
             </Link>
@@ -65,41 +59,39 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             <Link to='/careers' className='nav-link-item '>
               Careers
             </Link>
-           </li>
+          </li>
           <li className='nav-item'
-          onClick={handleMenu}
+            onClick={handleMenu}
           >
             <Link to='/contact' className='nav-link-item '>
               About
             </Link>
           </li>
-
-
-
-
-          <li className='dropdown-menu-social-media-icons'>
-          <img 
-                src={threadsIcon}
-                alt='hero-dashboard'
-                className='  size-10'
-              />
-              <img 
-                src={xIcon}
-                alt='hero-dashboard'
-                className='  size-10'
-              />
-              <img 
-                src={instagramIcon}
-                alt='hero-dashboard'
-                className='  size-10'
-              />
-          </li>
-
-
-
-
-
         </ul>
+
+        <div className='dropdown-menu-social-media-icons'>
+          <img
+            src={threadsIcon}
+            alt='hero-dashboard'
+            className='  size-10'
+          />
+          <img
+            src={xIcon}
+            alt='hero-dashboard'
+            className='  size-10'
+          />
+          <img
+            src={instagramIcon}
+            alt='hero-dashboard'
+            className='  size-10'
+          />
+        </div>
+        <div className={`mobile-menu-head ${mobileSubMenu && 'active'}`}>
+          <div onClick={handleMenu} className='mobile-menu-close rotate-[-90deg]'>
+            &#10095;
+          </div>
+        </div>
+
       </nav>
     </div>
   );

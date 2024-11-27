@@ -12,22 +12,21 @@ const Header = ({ loginCSS, priceButton, navColor, light }) => {
       className='site-header site-header--absolute is--white '
       id='sticky-menu'
     >
-      <div className='global-container'>
+      <div className=' max-w-[1024px] m-auto lg:px-[1rem] '>
         <div className='flex items-center justify-between gap-x-8'>
           {/* Header Logo */}
-          <Logo  light={light} mobileMenu={mobileMenu}/>
+          <Logo   mobileMenu={mobileMenu}/>
           {/* Header Logo */}
           {/* Header Navigation */}
           <Navbar
           
             mobileMenu={mobileMenu}
             setMobileMenu={setMobileMenu}
-            color={navColor}
+            // color={navColor}
           />
           {/* Header Navigation */}
           {/* Header User Event */}
-          <div className='flex items-center gap-6'>
-           
+          <div className='flex items-center '>
             <Link to='/signup' className='button w-full p-4 rounded-0 border-black bg-colorPurple after:bg-colorOrangyRed hover:border-colorOrangyRed lg:inline-block'>
               Pricing
             </Link>
@@ -36,11 +35,10 @@ const Header = ({ loginCSS, priceButton, navColor, light }) => {
               
               <button
                 onClick={() => setMobileMenu(true)}
-                className={`mobile-menu-trigger ${
-                  light ? 'is-white' : 'is-black'
-                }`}
+                className={`mobile-menu-trigger `}
               >
                 <span />
+                
               </button>
             </div>
           </div>
