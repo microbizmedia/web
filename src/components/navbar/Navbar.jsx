@@ -63,7 +63,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
           <li className='nav-item'
             onClick={handleMenu}
           >
-            <Link to='/contact' className='nav-link-item '>
+            <Link to='/about' className='nav-link-item '>
               About
             </Link>
           </li>

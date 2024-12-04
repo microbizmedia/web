@@ -12,8 +12,9 @@ const Services = () => {
               paragraph='By working with us you get an entire team of experienced designers, developers, copy writers, data analists and 
                      system administrators, our goal is to produce real results and propel you towards endless growth'/>
 
-            <h2 className='jos mx-auto  mb-6 lg:my-10 max-w-[715px] text-center' >Services</h2>
-            <ServicesIcons />
+            
+            <ServicesIcons 
+            title="Services" />
 
 
 

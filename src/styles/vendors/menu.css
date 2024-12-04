@@ -553,9 +553,6 @@
   .site-header .mobile-menu-trigger {
     display: flex;
     padding: 20px;
-    /* height: 30px;
-    width: 30px; */
-    /* margin-left: 40px; */
     cursor: pointer;
     align-items: center;
     justify-content: center;
@@ -564,25 +561,13 @@
   .site-header .mobile-menu-trigger span {
     display: block;
     margin-top: 12px;
-    /* justify-content: center;
-    align-items: center; */
     height: 6px;
     background-color: #ffffff;
     width: 35px;
     position: relative;
   }
 
-  /* .mobile-menu-trigger.is-white span {
-    background-color: #ffffff !important;
-  } */
-
-  /* .reveal-header .mobile-menu-trigger span {
-    background-color: #13111a !important;
-  }
-
-  .reveal-header .mobile-menu-trigger.is-white span {
-    background-color: #fff !important;
-  } */
+ 
 
   .site-header .mobile-menu-trigger span:before {
     content: "";
@@ -592,33 +577,10 @@
     height: 100%;
     background-color: #ffffff;
   }
-/* 
-  .site-header .mobile-menu-trigger.is-white span:before,
-  .site-header .mobile-menu-trigger.is-white span:after {
-    background-color: #fff;
-  } */
-/* 
-  .reveal-header .mobile-menu-trigger span:before,
-  .reveal-header .mobile-menu-trigger span:after {
-    background-color: #13111a !important;
-  } */
-
-  /* .dark-mode-texts .mobile-menu-trigger span {
-    background-color: #13111a;
-  } */
-
-  /* .dark-mode-texts .mobile-menu-trigger span:before,
-  .dark-mode-texts .mobile-menu-trigger span:after {
-    background-color: #13111a;
-  } */
 
   .site-header .mobile-menu-trigger span:before {
     top: -12px;
   }
-
-  /* .site-header .mobile-menu-trigger span:after {
-    top: 8px;
-  } */
 
   .site-header .item-right {
     align-items: center;
@@ -655,9 +617,7 @@
   .site-menu-main>li>a {
     line-height: 50px;
     height: 50px;
-    /* padding: 0 50px 0 15px; */
     display: block;
-    /* border-bottom: 1px solid rgba(231, 220, 220, 0.1); */
   }
 
   .site-menu-main>li>a i {
@@ -676,14 +636,7 @@
     height: 65px;
     align-items: center;
     justify-content: center;
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1);   */
-    
-   
-    /* position: relative; */
-    /* z-index: 501;
-    position: -webkit-sticky;
-    position: sticky; */ 
-    /* top: 0; */
+
   }
 
   .site-header .menu-block .mobile-menu-head .go-back {
