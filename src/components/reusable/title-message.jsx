@@ -18,7 +18,7 @@ const TitleMessage = ({ header, paragraph}) => {
 
                 {hiddenRoutes.includes(location.pathname) ? null : (
                 <div
-                    className='jos flex flex-wrap justify-center gap-2 pb-8 lg:pb-10'
+                    className='jos flex flex-wrap justify-center gap-2 mb-8 lg:mb-10'
                     data-jos_animation='fade'
                 >
                     <Link

@@ -3,7 +3,7 @@ const textAndPictureWindow = ( {header, paragraph, image, button }) => {
     return (
         <>
             <div
-                className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 
+                className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15
               flex flex-col-reverse
               mx-auto max-w-[1024px]
               lg:flex-row mb-14 '

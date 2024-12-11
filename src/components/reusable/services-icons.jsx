@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import SwiperIcon from './services-icon'
 import webDevelopmentIcon from '../../assets/icon_images/web_development_icon.png'
 import brandingAndDesignIcon from '../../assets/icon_images/branding_and_design_Icon.png'
@@ -6,10 +7,20 @@ import marketingIcon from '../../assets/icon_images/marketing_icon.png'
 import hostingIcon from '../../assets/icon_images/hosting_icon.png'
 import strategyIcon from '../../assets/icon_images/icon_strategy.svg'
 const servicesIcons = ({ title }) => {
+
+
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <>
-      <h2 className='jos mx-auto  mb-6 lg:my-10 max-w-[715px] text-center' >{title}</h2>
-      <div className='flex flex-wrap justify-center gap-8 '>
+      <h2 className='jos mx-auto  my-6 lg:mb-10 lg:mt-20  max-w-[715px] text-center ' >{title}</h2>
+      <div className={`flex flex-wrap justify-center gap-8
+      
+      overflow-hidden transition-all duration-300 
+        ${isExpanded ? "max-h-full" : "max-h-[610px]"}
+      
+      
+      
+      `}>
         <SwiperIcon
           image={webDevelopmentIcon}
           text='Web Development'
@@ -34,6 +45,21 @@ const servicesIcons = ({ title }) => {
           image={hostingIcon}
           text='Hosting'
         />
+        
+      
+      
+      </div>
+      {/* Toggle Button */}
+      <div className='flex justify-center'>
+      <button
+        onClick={() => setIsExpanded(!isExpanded)}
+        className={`button   sm:hidden bg-colorWhite text-colorBackground rounded-md px-[90px] my-4
+        
+         ${isExpanded ? "hidden" : "block"}
+        `}
+      >
+        View All &#x27a4;
+      </button>
       </div>
     </>
   );

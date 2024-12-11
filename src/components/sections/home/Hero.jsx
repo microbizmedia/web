@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <>
       {/*...::: Hero Section Start  :::... */}
-      <div className='relative  mb-[70vh] bg-[url("../assets\img\Hero_03.png")] bg-contain bg-top bg-no-repeat z-20  
+      <div className='relative bg-[url("../assets\img\Hero_03.png")] bg-contain bg-top bg-no-repeat z-20  
         lg:bg-contain
         '>
         <div className='global-container '>
@@ -110,11 +110,11 @@ const Hero = () => {
 
 
           {/*...::: Consultation window Section start :::... */}
-          <section id='funfact-section'>
+          <section id='consultation-window-section'>
 
             <div
               className='jos hero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px] 
-              flex flex-col-reverse mx-auto lg:flex-row mb-32 '
+              flex flex-col-reverse mx-auto lg:flex-row my-32 '
             >
               <div className='flex flex-col justify-center   px-8 py-20 lg:pl-24 lg:max-w-[50%]'>
                 <h2>Our consultations are always free</h2>
