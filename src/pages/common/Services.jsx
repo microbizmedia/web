@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <>
       <section id='section-services'>
-        <div className='global-container relative   overflow-hidden   mb-[50vh] z-40'>
+        <div className='global-container relative   overflow-hidden z-40'>
           
             <TitleMessage
               header='Full Service Digital Partnership'
@@ -19,9 +19,9 @@ const Services = () => {
 
 
 
-            <h2 className='jos mx-auto  mb-6 mt-10 lg:mb-10 lg:mt-20 max-w-[715px] text-center' >Packages</h2>
+            <h2 className='jos mx-auto  pb-4 lg:pb-8 max-w-[715px] text-center' >Packages</h2>
             {/* Packeges option section */}
-            <div className='flex justify-center flex-wrap gap-10' >
+            <div className='flex justify-center flex-wrap gap-10 mb-8 lg:mb-12' >
 
               <div
                 className='jos  overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15   inline-block  
@@ -63,7 +63,7 @@ const Services = () => {
                 data-jos_animation='zoom'
               >
 
-                 <div className='relative top-[-26px] left-[83px]  button inline-block border-none text-center bg-colorPurple px-8 py-2 rounded-[5px] '>Best Value</div>
+                 <div className='relative top-[-26px] left-[83px]  button inline-block border-none text-center bg-colorPurple px-8 py-2 rounded-[8px] '>Best Value</div>
 
                 <div className=''>
                   <h2 className='pt-2 text-center'>Business Elite</h2>

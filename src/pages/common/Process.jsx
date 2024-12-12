@@ -5,7 +5,7 @@ const Process = () => {
   return (
     <>
       <section id="section-process">
-        <div className='global-container main-wrapper relative overflow-hidden z-40 mb-[50vh]'>
+        <div className='global-container main-wrapper relative overflow-hidden z-40'>
           <TitleMessage
             header='Full-Cycle Process'
             paragraph="Working with an external agency doesn't mean you lose control or have to manage this project by yourself.

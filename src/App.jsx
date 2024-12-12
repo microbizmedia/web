@@ -22,10 +22,10 @@ function App() {
           <Route path='contact' element={<Contact />} />   
           <Route path='process' element={<Process />} />
           <Route path='services' element={<Services />} />
-          <Route path='error-404' element={<Error_404 />} />
           <Route path='careers' element={<Careers />} />
-          <Route path='*' element={<Error_404 />} />
           <Route path='about' element={<About />} />
+          <Route path='error-404' element={<Error_404 />} />
+          <Route path='*' element={<Error_404 />} />
         </Route>
       </Routes>
     </>

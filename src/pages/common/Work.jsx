@@ -4,7 +4,7 @@ const Work = () => {
     return (
         <>
             <section id='section-work'>
-                <div className='relative   overflow-hidden   mb-[50vh] z-40'>
+                <div className='relative   overflow-hidden z-40'>
                     <div className='global-container'>
                     <TitleMessage 
                      header='100+ B2B Partners'

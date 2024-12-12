@@ -11,8 +11,8 @@ const servicesIcons = ({ title }) => {
 
   const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <>
-      <h2 className='jos mx-auto  my-6 lg:mb-10 lg:mt-20  max-w-[715px] text-center ' >{title}</h2>
+    <div className="mb-6 lg:mb-16">
+      <h2 className='jos mx-auto   pb-4 lg:pb-8   max-w-[715px] text-center ' >{title}</h2>
       <div className={`flex flex-wrap justify-center gap-8
       
       overflow-hidden transition-all duration-300 
@@ -53,7 +53,7 @@ const servicesIcons = ({ title }) => {
       <div className='flex justify-center'>
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className={`button   sm:hidden bg-colorWhite text-colorBackground rounded-md px-[90px] my-4
+        className={`button sm:hidden bg-colorWhite text-colorBackground rounded-md px-[90px] mt-2
         
          ${isExpanded ? "hidden" : "block"}
         `}
@@ -61,7 +61,7 @@ const servicesIcons = ({ title }) => {
         View All &#x27a4;
       </button>
       </div>
-    </>
+    </div>
   );
 };
 

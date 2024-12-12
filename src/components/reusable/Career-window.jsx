@@ -6,7 +6,7 @@ const careerWindow = ({ header, career, description }) => {
                 className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 
              
               mx-auto 
-              mb-14 '
+              mb-8 lg:mb-12 '
                 data-jos_animation='zoom'
             >
                 <div className='bg-colorBackground w-full  px-6 sm:px-16 py-10 sm:pt-16 sm:pb-10  '>

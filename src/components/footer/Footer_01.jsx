@@ -7,20 +7,15 @@ import backgroundPicture from '../../assets/img/Segment_footer_bg_01.png'
 import footerGraphic from '../../assets/img/footer_graphic_01.png'
 
 
-
 const Footer_01 = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
   const location = useLocation();
-  const hiddenRoutes = ["/careers"];
+  const hiddenRoutes = ["/work", "/services", "/process", "/about",];
   return (
     <>
 
 
-
-      {hiddenRoutes.includes(location.pathname) ? null : (
-        <div className='global-container relative jos text-center pb-10 z-40'>
+      {hiddenRoutes.includes(location.pathname) ? (
+        <div className='global-container relative jos text-center py-10 md:py-16 z-40'>
           <h2 className=' pb-6'>Let's Start Your Story</h2>
           <Link
             to='/contact'
@@ -28,43 +23,24 @@ const Footer_01 = () => {
             Start A Free Consultation
           </Link>
         </div>
-      )}
-
-
-
-
+      ) : null}
 
 
       <footer className=' relative '>
-        {/* Footer Top */}
-
-        {/* Footer Text Slider */}
-        {hiddenRoutes.includes(location.pathname) ? null : (
-
-          
+        {/* Footer Top pictures */}
+        {hiddenRoutes.includes(location.pathname) ? (
         <div className='relative'>
           <img
-          src={backgroundPicture}
-            className='absolute  
-               bottom-[0%]
-             '
-
+            src={backgroundPicture}
+            className='absolute bottom-[0%]'
             />
-
             <img
               src={footerGraphic}
               alt='footer-graphic-website-images'
               className='relative   w-[100%] bottom-[100%] bg-bottom'
-
-            />
-            
-
-          
-          </div>
-        
-        
-     
-        )}
+            /> 
+          </div>   
+        ) :  null}
 
       
 
@@ -103,18 +79,10 @@ const Footer_01 = () => {
             <ul className='flex flex-col  capitalize'>
               <li>
                 <Link
-                  to='/'
+                  to='/work'
                   className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/about'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
-                >
-                  About Us
+                  work
                 </Link>
               </li>
               <li>
@@ -127,18 +95,26 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/pricing'
+                  to='/process'
                   className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
-                  pricing
+                  Process
                 </Link>
               </li>
               <li>
                 <Link
-                  to='/contact'
+                  to='/careers'
                   className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
-                  Contact
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to='/about'
+                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
+                >
+                  About Us
                 </Link>
               </li>
             </ul>
@@ -153,12 +129,20 @@ const Footer_01 = () => {
             {/* Footer Title */}
             {/* Footer Navbar */}
             <ul className='flex flex-col  capitalize'>
+            <li>
+                <Link
+                  to='/reset-password'
+                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
+                >
+                  Pricing
+                </Link>
+              </li>
               <li>
                 <Link
                   to='/signup'
                   className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
-                  Signup
+                  FAQ
                 </Link>
               </li>
               <li>
@@ -166,7 +150,7 @@ const Footer_01 = () => {
                   to='/login'
                   className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
-                  Login
+                  Affilliate Program
                 </Link>
               </li>
               <li>
@@ -174,7 +158,7 @@ const Footer_01 = () => {
                   to='/error-404'
                   className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
-                  404 Not found
+                  Customer Service
                 </Link>
               </li>
               <li>
@@ -182,7 +166,7 @@ const Footer_01 = () => {
                   to='/reset-password'
                   className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
                 >
-                  Password Reset
+                  Privacy Policy
                 </Link>
               </li>
             </ul>

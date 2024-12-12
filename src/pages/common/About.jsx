@@ -7,7 +7,7 @@ const About = () => {
     return (
         <>
             <section id='section-about'>
-                <div className='relative   overflow-hidden   mb-[50vh] z-40'>
+                <div className='relative   overflow-hidden z-40'>
                     <div className='global-container'>
                         <TitleMessage
                             header='About Us'
@@ -21,12 +21,12 @@ const About = () => {
 
 
 
-                        <h2 className='jos mx-auto  my-6 lg:mb-10 lg:mt-20  max-w-[715px] text-center ' >We work worldwide</h2>
+                        <h2 className='jos mx-auto  max-w-[715px] text-center pb-4 lg:pb-8' >We work worldwide</h2>
                         <div
                             className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 
               flex flex-col-reverse
               mx-auto max-w-[1024px]
-              lg:flex-row my-14 '
+              lg:flex-row  '
                             data-jos_animation='zoom'
                         >
                             <div className='flex flex-col justify-center flex-1 bg-colorBackground px-4 py-10 lg:pl-16'>

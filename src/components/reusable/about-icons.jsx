@@ -9,8 +9,8 @@ import raisedProfits from '../../assets/icon_images/Raised_Profits_icon.png'
 const aboutUsIcons = ({ title }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <>
-      <h2 className='jos mx-auto  mb-6 lg:my-10 max-w-[715px] text-center' >{title}</h2>
+    <div className='mb-4 lg:mb-12'>
+      <h2 className='jos mx-auto pb-4 lg:pb-8 lg:pt-8 max-w-[715px] text-center' >{title}</h2>
       <div className={`flex flex-wrap justify-center gap-8 
       
         overflow-hidden transition-all duration-300 
@@ -58,7 +58,7 @@ const aboutUsIcons = ({ title }) => {
         View All &#x27a4;
       </button>
       </div>
-    </>
+    </div>
   );
 };
 

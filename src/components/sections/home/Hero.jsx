@@ -114,11 +114,11 @@ const Hero = () => {
 
             <div
               className='jos hero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px] 
-              flex flex-col-reverse mx-auto lg:flex-row my-32 '
+              flex flex-col-reverse mx-auto lg:flex-row mb-6 lg:mb-16 '
             >
-              <div className='flex flex-col justify-center   px-8 py-20 lg:pl-24 lg:max-w-[50%]'>
+              <div className='flex flex-col justify-center   px-8 py-10 lg:pl-24 lg:max-w-[50%]'>
                 <h2>Our consultations are always free</h2>
-                <p className='lg:mt-6 lg:mb-10 mt-4 mb-14 text-base '>Give us an email and one of our agents will contact you as soon as we can</p>
+                <p className='lg:mt-6 lg:mb-10 mt-4 mb-8 text-base '>Give us an email and one of our agents will contact you as soon as we can</p>
                 <Link className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
               </div>
 
