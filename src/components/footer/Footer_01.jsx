@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import logoStandard from '../../assets/img/logo_standard.png'
 import threadsIcon from '../footer/social_media_icons/threads_icon.png'
 import xIcon from '../footer/social_media_icons/x_icon_b.png'
@@ -9,7 +10,7 @@ import footerGraphic from '../../assets/img/footer_graphic_01.png'
 
 const Footer_01 = () => {
   const location = useLocation();
-  const hiddenRoutes = ["/work", "/services", "/process", "/about",];
+  const hiddenRoutes = ["/micro-biz-media","/work", "/services", "/process", "/about",];
   return (
     <>
 
@@ -19,7 +20,7 @@ const Footer_01 = () => {
           <h2 className=' pb-6'>Let's Start Your Story</h2>
           <Link
             to='/contact'
-            className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white' >
+            className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 after:bg-violet-600 hover:border-violet-600 hover:text-white' >
             Start A Free Consultation
           </Link>
         </div>
@@ -80,7 +81,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/work'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
+                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   work
                 </Link>
@@ -88,7 +89,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/services'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
+                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Services
                 </Link>
@@ -96,7 +97,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/process'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
+                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Process
                 </Link>
@@ -104,7 +105,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/careers'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
+                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Careers
                 </Link>
@@ -112,7 +113,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/about'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
+                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   About Us
                 </Link>
@@ -130,17 +131,17 @@ const Footer_01 = () => {
             {/* Footer Navbar */}
             <ul className='flex flex-col  capitalize'>
             <li>
-                <Link
-                  to='/reset-password'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
+                <HashLink
+                  to='/services#target-pricing'
+                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Pricing
-                </Link>
+                </HashLink>
               </li>
               <li>
                 <Link
                   to='/signup'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
+                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   FAQ
                 </Link>
@@ -148,7 +149,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/login'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
+                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Affilliate Program
                 </Link>
@@ -156,7 +157,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/error-404'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
+                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Customer Service
                 </Link>
@@ -164,7 +165,7 @@ const Footer_01 = () => {
               <li>
                 <Link
                   to='/reset-password'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed font-light'
+                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Privacy Policy
                 </Link>

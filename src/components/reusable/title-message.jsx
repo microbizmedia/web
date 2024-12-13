@@ -23,7 +23,7 @@ const TitleMessage = ({ header, paragraph}) => {
                 >
                     <Link
                         to='/contact'
-                        className=' button-micro rounded-[10px]  border-#c7c5e2 bg-colorPurple py-4 after:bg-colorOrangyRed hover:border-colorOrangyRed'
+                        className=' button-micro rounded-[10px]  border-#c7c5e2 bg-colorPurple py-4 after:bg-violet-400 hover:border-violet-400'
                     >
                         Start A Free Consultation
                     </Link>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Navbar from '../navbar/Navbar';
 import Logo from '../logo/Logo';
 
@@ -27,9 +27,9 @@ const Header = ({ loginCSS, priceButton, navColor, light }) => {
           {/* Header Navigation */}
           {/* Header User Event */}
           <div className='flex items-center '>
-            <Link to='/signup' className='button w-full p-4 rounded-0 border-black bg-colorPurple after:bg-colorOrangyRed hover:border-colorOrangyRed lg:inline-block'>
+            <HashLink to='/services#target-pricing' className='button w-full p-4 rounded-0 border-black bg-colorPurple after:bg-violet-500 hover:border-violet-400 lg:inline-block'>
               Pricing
-            </Link>
+            </HashLink>
             {/* Responsive Off-canvas Menu Button */}
             <div className='block lg:hidden'>
               

@@ -19,7 +19,7 @@ const Services = () => {
 
 
 
-            <h2 className='jos mx-auto  pb-4 lg:pb-8 max-w-[715px] text-center' >Packages</h2>
+            <h2 id="target-pricing" className='jos mx-auto  pb-4 lg:pb-8 max-w-[715px] text-center' >Packages</h2>
             {/* Packeges option section */}
             <div className='flex justify-center flex-wrap gap-10 mb-8 lg:mb-12' >
 
@@ -29,7 +29,7 @@ const Services = () => {
               '
                 data-jos_animation='zoom'
               >
-                <div className='bg-colorBackground'>
+                <div  className='bg-colorBackground'>
                   <h2 className='pt-14 text-center'>Business Basic</h2>
                   <ul className='p-8  space-y-2'>
                     <li className=''><span className='text-green-500 font-bold'>✓</span> Web Design and Development</li>
