@@ -1,7 +1,6 @@
 
 const ProcessWindow = ({ header, paragraph }) => {
     return (
-        <>
               <div
                 className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
                 data-jos_animation='zoom'
@@ -10,8 +9,7 @@ const ProcessWindow = ({ header, paragraph }) => {
                     <h2>{header}</h2>
                     <p className='pt-6'>{paragraph}</p> 
                 </div>
-            </div>  
-        </>
+            </div>   
     );
 };
 

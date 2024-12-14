@@ -31,83 +31,12 @@ const Hero = () => {
               button="See More"
             />
 
-            {/* <div className='my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20'></div> */}
-
-            {/* <div className='jos brand-slider pb-20 ' data-jos_animation='fade'>
-              <Swiper
-                spaceEvenly={20}
-                slidesPerView={1}
-                centeredSlides={true}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-                modules={[Autoplay]}
-                breakpoints={{
-                  // Change slides per view and space between on different screen sizes
-                  480: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                    centeredSlides: false,
-                  },
-                  768: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                    centeredSlides: false,
-                  },
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                    centeredSlides: false,
-                  },
-                }}
-              >
-                <SwiperSlide >
-                  <SwiperIcon
-                    image={webDevelopmentIcon}
-                    text='Web Development'
-                  />
-                </SwiperSlide>
-                <SwiperSlide >
-                  <SwiperIcon
-                    image={brandingAndDesignIcon}
-                    text='Branding & Design'
-                  />
-                </SwiperSlide>
-                <SwiperSlide >
-                  <SwiperIcon
-                    image={SEOIcon}
-                    text='SEO'
-                  />
-                </SwiperSlide>
-                <SwiperSlide >
-                  <SwiperIcon
-                    image={strategyIcon}
-                    text='Strategy'
-                  />
-                </SwiperSlide>
-                <SwiperSlide >
-                  <SwiperIcon
-                    image={marketingIcon}
-                    text='Marketing'
-                  />
-                </SwiperSlide>
-                <SwiperSlide >
-                  <SwiperIcon
-                    image={hostingIcon}
-                    text='Hosting'
-                  />
-                </SwiperSlide>
-              </Swiper>
-            </div> */}
             <ServicesIcons
               title="What We Offer" />
 
 
           </section>
           {/*...::: Hero Section End :::... */}
-
-
 
           {/*...::: Consultation window Section start :::... */}
           <section id='consultation-window-section'>

@@ -148,7 +148,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/login'
+                  to='/affiliate'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Affilliate Program
@@ -156,7 +156,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/error-404'
+                  to='/customer-service'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Customer Service
