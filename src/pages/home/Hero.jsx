@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import emailUsIcon from '../../../assets/icon_images/email_us_icon.png'
-import TextAndPictureWindow from '../../reusable/text-picture-window.jsx'
-import TitleMessage from '../../reusable/title-message.jsx';
-import ServicesIcons from '../../reusable/services-icons.jsx';
+// import emailUsIcon from '../../../assets/icon_images/email_us_icon.png'
+import emailUsIcon from '../../assets/icon_images/email_us_icon.png'
+import TextAndPictureWindow from '../../components/reusable-elements/text-picture-window.jsx'
+import TitleMessage from '../../components/reusable-elements/title-message.jsx';
+import ServicesIcons from '../../components/reusable-elements/services-icons.jsx';
 const Hero = () => {
 
 

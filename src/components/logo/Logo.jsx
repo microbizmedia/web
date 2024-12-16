@@ -1,15 +1,12 @@
 import { Link } from 'react-router-dom';
-
 import logoStandard from '../../assets/img/logo_standard.png';
 import logoMobile from '../../assets/img/logo_mobile.png';
 
-
 // eslint-disable-next-line react/prop-types
-const LogoDark = ({ light, }) => {
+const LogoDark = () => {
   return (
     <Link to='/micro-biz-media'>
       <img
-        // src={light ? logoLight : logoDark}
         className='hidden lg:block'
         src={logoStandard}
         alt='AIMass'
@@ -23,7 +20,6 @@ const LogoDark = ({ light, }) => {
         width='60'
         height='24'
       />
-      
     </Link>
   );
 };

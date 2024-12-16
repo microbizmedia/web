@@ -1,5 +1,4 @@
-import TitleMessage from '../../reusable/title-message';
-import ProcessWindow from '../../reusable/process-window';
+import TitleMessage from '../../components/reusable-elements/title-message';
 const Affiliate = () => {
   return (
     <>

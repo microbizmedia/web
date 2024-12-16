@@ -1,5 +1,5 @@
-import TitleMessage from '../../components/reusable/title-message';
-import ServicesIcons from '../../components/reusable/services-icons';
+import TitleMessage from '../../components/reusable-elements/title-message';
+import ServicesIcons from '../../components/reusable-elements/services-icons';
 import { Link } from 'react-router-dom';
 const Services = () => {
   return (
@@ -45,11 +45,11 @@ const Services = () => {
                   <button className='button inline-block border-none rounded-xl bg-white bg-opacity-15 p-2 w-[80%] text-colorPurple 
                   text-5xl font-bold'><span className='sub-title text-3xl align-top'>$</span>999</button>
                   </div>
-                  <p className='sub-title text-center underline underline-offset-4 pt-2'>Normally valued at $1599</p>
+                  <p className='sub-title text-center underline underline-offset-4 pt-2 text-sm'>Normally valued at $1599</p>
                   <div class="flex items-center justify-center ">
                   <Link className='button w-full mx-4 inline-block bg-colorWhite text-colorBackground rounded-md mt-8 mb-2'> Book us &#x27a4;  </Link>
                   </div>
-                  <p className='sub-title text-center pb-8'>Terms of service Applies</p>
+                  <p className='sub-title text-center pb-8 text-sm'>Terms of service Applies</p>
                 </div>
 
               </div>
@@ -81,11 +81,11 @@ const Services = () => {
                   <button className='button inline-block border-none rounded-xl bg-white bg-opacity-15 p-2 w-[80%] text-colorPurple 
                   text-5xl font-bold'><span className='sub-title text-3xl align-top'>$</span>1499</button>
                   </div>
-                  <p className='sub-title text-center underline underline-offset-4 pt-2'>Normally valued at $2499</p>
+                  <p className='sub-title text-center underline underline-offset-4 pt-2 text-sm'>Normally valued at $2499</p>
                   <div class="flex items-center justify-center ">
                   <Link className='button w-full mx-4 inline-block bg-colorWhite text-colorBackground rounded-md mt-8 mb-2'> Book us &#x27a4;  </Link>
                   </div>
-                  <p className='sub-title text-center pb-8'>Terms of service Applies</p>
+                  <p className='sub-title text-center pb-8 text-sm'>Terms of service Applies</p>
                 </div>
 
               </div>

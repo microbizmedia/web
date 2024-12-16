@@ -205,11 +205,11 @@ const Footer_01 = () => {
         {/* Footer Center */}
         <div className='h-[1px] w-full bg-[#DBD6CF] opacity-25' />
         {/* Footer Bottom */}
-        <div className='py-6 text-center'>
-          <p>
+        
+          <p className='py-6 text-center text-sm'>
             © {new Date().getFullYear()} MicroBiz Media. All Rights Reserved.
           </p>
-        </div>
+        
         {/* Footer Bottom */}
       </div>
       {/* Footer Background Shape 1  */}

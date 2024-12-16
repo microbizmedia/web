@@ -1,5 +1,5 @@
-import TitleMessage from "../../components/reusable/title-message";
-import ProcessWindow from "../../components/reusable/process-window";
+import TitleMessage from "../../components/reusable-elements/title-message";
+import ProcessWindow from "../../components/reusable-elements/process-window";
 import tableProcessImg from "../../assets/img/segment_1_graphic_table_01.png"
 const Process = () => {
   return (

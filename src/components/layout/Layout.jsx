@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Footer_01 from '../footer/Footer_01';
 import Header from '../header/Header';
+import Pupup from '../pupup/pupup';
 
 const Layout = () => {
   return (

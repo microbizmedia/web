@@ -32,7 +32,7 @@
   }
 }
 
-.button, .button-micro {
+button, .button, .button-micro {
   position: relative;
   z-index: 1;
   display: inline-flex;
@@ -45,7 +45,6 @@
   text-align: center;
   font-size: 0.9rem;
   line-height: 1.5rem;
-  /* font-weight: 500; */
   line-height: 1.5;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

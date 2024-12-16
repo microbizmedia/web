@@ -14,9 +14,6 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
     setMobileSubMenu('');
   };
 
-
-
-
   return (
     <div className='menu-block-wrapper'>
       <div
@@ -27,7 +24,6 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
         className={`menu-block ${mobileMenu && 'active'}`}
         id='append-menu-header'
       >
-
         <ul className={`site-menu-main py-4 ${color}`}>
           {/* Global navbar */}
           <li

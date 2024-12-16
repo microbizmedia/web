@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import Hero from './components/sections/home/Hero';
+import Hero from './pages/home/Hero';
 import Work from './pages/common/Work';
-import Contact from './pages/common/Contact';
 import Error_404 from './pages/common/Error_404';
 import Process from './pages/common/Process';
 import Services from './pages/common/Services';
@@ -9,8 +8,8 @@ import useJOSAnimation from './hooks/useJOSAnimation';
 import Layout from './components/layout/Layout';
 import Careers from './pages/common/Carrers';
 import About from './pages/common/About'
-import Affiliate from './components/sections/home/Affiliate';
-import CustomerService from './components/sections/home/Customer-service';
+import Affiliate from './pages/common/Affiliate';
+import CustomerService from './components/contact/Customer-service';
 
 function App() {
   // Init JOS Animation
@@ -20,8 +19,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path='micro-biz-media' element={<Hero />} />
-          <Route path='work' element={<Work />} />
-          <Route path='contact' element={<Contact />} />   
+          <Route path='work' element={<Work />} />  
           <Route path='process' element={<Process />} />
           <Route path='services' element={<Services />} />
           <Route path='careers' element={<Careers />} />

@@ -1,5 +1,5 @@
-import TextAndPictureWindow from '../../components/reusable/text-picture-window'
-import TitleMessage from '../../components/reusable/title-message';
+import TextAndPictureWindow from '../../components/reusable-elements/text-picture-window'
+import TitleMessage from '../../components/reusable-elements/title-message';
 const Work = () => {
     return (
         <>

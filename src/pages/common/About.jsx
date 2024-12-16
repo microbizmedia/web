@@ -1,6 +1,6 @@
 
-import TitleMessage from '../../components/reusable/title-message';
-import AboutUsIcons from '../../components/reusable/about-icons';
+import TitleMessage from '../../components/reusable-elements/title-message';
+import AboutUsIcons from '../../components/reusable-elements/about-icons';
 import worldMap from '../../assets/img/Segment_2_graphic_01.png'
 
 const About = () => {

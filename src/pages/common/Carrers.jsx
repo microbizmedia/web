@@ -1,5 +1,5 @@
-import TitleMessage from "../../components/reusable/title-message";
-import CareerWindow from "../../components/reusable/Career-window";
+import TitleMessage from "../../components/reusable-elements/title-message";
+import CareerWindow from "../../components/reusable-elements/Career-window";
 const Careers = () => {
     return (
         <>
