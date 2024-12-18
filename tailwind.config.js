@@ -35,17 +35,22 @@ export default {
       },
 
       colors: {
-        colorCodGray: "#191919",
-        colorOrangyRed: "#FE330A",
-        colorLinenRuffle: "#EFEAE3",
-        colorViolet: "#321CA4",
-        colorGreen: "#39FF14",
         colorPurple:"#746eb8",
         colorBackground:" #0c1015",
         colorWhite:"#ffffff"
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' }, // Start and end position
+          '50%': { transform: 'translateY(15px)' }, // Midpoint - float down
+        },
+      },
+      animation: {
+        float: 'float 3s ease-in-out infinite', // Animation name, duration, and infinite loop
       },
     },
   },
   plugins: [],
 }
+
 

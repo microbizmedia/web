@@ -4,6 +4,7 @@ import emailUsIcon from '../../assets/icon_images/email_us_icon.png'
 import TextAndPictureWindow from '../../components/reusable-elements/text-picture-window.jsx'
 import TitleMessage from '../../components/reusable-elements/title-message.jsx';
 import ServicesIcons from '../../components/reusable-elements/services-icons.jsx';
+import TextVideoWindow from '../../components/reusable-elements/text-video-window.jsx';
 const Hero = () => {
 
 
@@ -25,10 +26,10 @@ const Hero = () => {
 
 
 
-            <TextAndPictureWindow
+            <TextVideoWindow
               header="Browse Our Catalog"
               paragraph='View some of the amazing work we already made for our existing partners'
-              image="assets/img/th-1/funfact-image.jpg"
+              // image="assets/img/th-1/funfact-image.jpg"
               button="See More"
             />
 
@@ -56,7 +57,7 @@ const Hero = () => {
                 <img
                   src={emailUsIcon}
                   alt='hero-dashboard'
-                  className='  size-1/3'
+                  className='animate-float  size-1/3'
                 />
               </div>
             </div>

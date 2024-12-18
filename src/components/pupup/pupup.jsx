@@ -2,11 +2,17 @@ import React, { useState, useEffect } from 'react';
 
 const Pupup = () => {
     const [showPopup, setShowPopup] = useState(true);
+    const [currentDate, setCurrentDate] = useState('');
 
     useEffect(() => {
         const timer = setTimeout(() => setShowPopup(false), 15000); // Auto close popup after 5 seconds
         return () => clearTimeout(timer);
     }, []);
+    useEffect(() => {
+        const today = new Date();
+        const formattedDate = today.toLocaleDateString();
+        setCurrentDate(formattedDate);
+      }, []);
 
     return (
         <>
@@ -18,15 +24,16 @@ const Pupup = () => {
                         <div className='flex justify-end'>
                                 <button
                                     onClick={() => setShowPopup(false)}
-                                    className="button  rounded-md bg-colorPurple border-none hover:bg-violet-600 py-2 m-6 px-4 md:mt-6 md:mr-6"
+                                    className="pupup-close-symbol button  rounded-md bg-colorPurple border-none py-3 m-4 md:m-6 px-1 md:mb-0 text-3xl"
                                 >
-                                    x
+                                    <span />
                                 </button>
                             </div>
 
                             <div className='global-container pb-8  '>
                             
-                                <h2 className="font-bold mb-4">We care about your privacy!</h2>
+                                <h2 className="font-bold mb-3">We care about your privacy!</h2>
+                                <p className="mb-3 text-sm">Last Updated: {currentDate}</p>
                                 <p className="hidden md:block ">
                                     By clicking Agree and Continue, the user acknoledges that they have read, understood and agreed to the entirety of these Terms of Service,
                                     exactly as specified by MicroBiz Media LLC. By continuing to access or utilize any of our services, you as user, visitor or a client agree
@@ -35,13 +42,13 @@ const Pupup = () => {
                                 <div className='flex flex-wrap gap-4 justify-end'>
                                     <button
                                         onClick={() => setShowPopup(false)}
-                                        className="button flex  justify-center rounded-md bg-colorWhite border-none hover:bg-purple-100 text-colorBackground w-full md:w-auto text-center "
+                                        className="button flex  justify-center rounded-md bg-colorWhite border-none text-colorBackground w-full md:w-auto text-center "
                                     >
                                         Read Terms of service
                                     </button>
                                     <button
                                         onClick={() => setShowPopup(false)}
-                                        className="button flex  justify-center rounded-md bg-colorPurple border-none hover:bg-violet-600  w-full md:w-auto"
+                                        className="button flex  justify-center rounded-md bg-colorPurple border-none w-full md:w-auto"
                                     >
                                         Agree and Continue &#x27a4;
                                     </button>

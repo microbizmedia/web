@@ -43,14 +43,14 @@
 }
 
 .site-header {
-  background-color:  #0c1015;
+  background-color: #0c1015;
   /* height: 69px; */
 }
 
 .site-header--absolute {
   position: absolute;
-  
- 
+
+
   top: 0;
   left: 0;
   width: 100%;
@@ -550,7 +550,7 @@
 
 /*responsive*/
 @media (max-width: 991px) {
-  .site-header .mobile-menu-trigger {
+  .mobile-menu-trigger {
     display: flex;
     padding: 20px;
     cursor: pointer;
@@ -558,7 +558,7 @@
     justify-content: center;
   }
 
-  .site-header .mobile-menu-trigger span {
+  .mobile-menu-trigger span {
     display: block;
     margin-top: 12px;
     height: 6px;
@@ -567,32 +567,32 @@
     position: relative;
   }
 
- 
-
-  .site-header .mobile-menu-trigger span:before {
+  .mobile-menu-trigger span:before {
     content: "";
     position: absolute;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: #ffffff;
-  }
-
-  .site-header .mobile-menu-trigger span:before {
     top: -12px;
   }
 
-  .site-header .item-right {
+
+
+
+
+
+  .item-right {
     align-items: center;
   }
 
-  .site-header .menu-block {
+  .menu-block {
     position: fixed;
     display: flex;
     flex-direction: column;
-    
+
     width: 100%;
-    border-radius:0 0 15px 15px ;
+    border-radius: 0 0 15px 15px;
     background-color: #0c1015;
     left: 0;
     top: 0;
@@ -603,7 +603,7 @@
     z-index: 1099;
   }
 
-  .site-header .menu-block.active {
+  .menu-block.active {
     transform: translateY(0%);
     border-radius: 0px 0px 40px 40px;
   }
@@ -631,7 +631,7 @@
     transform: rotate(-90deg);
   }
 
-  .site-header .menu-block .mobile-menu-head {
+  .menu-block .mobile-menu-head {
     display: flex;
     height: 65px;
     align-items: center;
@@ -639,7 +639,7 @@
 
   }
 
-  .site-header .menu-block .mobile-menu-head .go-back {
+  .menu-block .mobile-menu-head .go-back {
     height: 50px;
     width: 50px;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -651,17 +651,17 @@
     display: none;
   }
 
-  .site-header .menu-block .mobile-menu-head.active .go-back {
+  .menu-block .mobile-menu-head.active .go-back {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .site-header .menu-block .mobile-menu-head.active .go-back img {
+  .menu-block .mobile-menu-head.active .go-back img {
     transform: rotate(180deg);
   }
 
-  .site-header .menu-block .mobile-menu-head .current-menu-title {
+  .menu-block .mobile-menu-head .current-menu-title {
     font-size: 15px;
     font-weight: 500;
     color: #eb0404;
@@ -669,11 +669,11 @@
     text-transform: capitalize;
   }
 
-  .site-header .menu-block .mobile-menu-head.active .current-menu-title {
+  .menu-block .mobile-menu-head.active .current-menu-title {
     visibility: visible;
   }
 
-  .site-header .menu-block .mobile-menu-head .mobile-menu-close {
+  .menu-block .mobile-menu-head .mobile-menu-close {
     height: 50px;
     width: 50px;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
@@ -684,7 +684,7 @@
     font-size: 30px;
   }
 
-  .site-header .menu-block .site-menu-main {
+  .menu-block .site-menu-main {
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
@@ -803,7 +803,7 @@
 }
 
 /* code after the template */
-.dropdown-menu-social-media-icons{
+.dropdown-menu-social-media-icons {
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -813,10 +813,40 @@
   margin-left: 30px;
   border-top: 1px solid rgba(171, 174, 183, 0.22);
   border-bottom: 1px solid rgba(171, 174, 183, 0.22);
- 
+
 }
+
 @media (min-width: 992px) {
-.dropdown-menu-social-media-icons{
-  display: none;
+  .dropdown-menu-social-media-icons {
+    display: none;
+  }
 }
+
+/* added css after template */
+.pupup-close-symbol {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.pupup-close-symbol span {
+  display: block;
+  border-radius: 10px;
+  height: 5px;
+  background-color: #ffffff;
+  width: 25px;
+  position: relative;
+  rotate: 45deg;
+}
+
+.pupup-close-symbol span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  rotate: -90deg;
+  border-radius: 10px;
 }

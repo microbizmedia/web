@@ -32,7 +32,7 @@
   }
 }
 
-button, .button, .button-micro {
+ .button, .button-micro {
   position: relative;
   z-index: 1;
   display: inline-flex;
@@ -553,3 +553,16 @@ button, .button, .button-micro {
     transform: translateZ(0);
   }
 }
+@layer utilities {
+  input:-webkit-autofill,
+  textarea:-webkit-autofill {
+    background-color: #746eb8 !important; /* Set your desired background color */
+    -webkit-text-fill-color: #e2e2e2 !important; /* Force white text color */
+    text-decoration: none !important; /* Remove any underlines */
+    transition: background-color 5000s ease-in-out 0s; /* Prevent autofill flicker */
+   
+  }
+}
+
+ 
+ 
