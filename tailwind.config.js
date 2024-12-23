@@ -28,10 +28,7 @@ export default {
       fontFamily: {
         // Add your custom fonts
         dmSans: ["DM Sans", "sans-serif"],
-        clashDisplay: ["Clash Display", "sans-serif"],
-        raleway: ["Raleway", "sans-serif"],
-        spaceGrotesk: ["Space Grotesk", "sans-serif"],
-        body: ["Inter", "sans-serif"],
+        
       },
 
       colors: {

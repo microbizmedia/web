@@ -10,7 +10,7 @@ import footerGraphic from '../../assets/img/footer_graphic_01.png'
 
 const Footer_01 = () => {
   const location = useLocation();
-  const hiddenRoutes = ["/micro-biz-media","/work", "/services", "/process", "/about",];
+  const hiddenRoutes = ["/", "/micro-biz-media","/work", "/services", "/process", "/about",];
   return (
     <>
 
@@ -62,10 +62,10 @@ const Footer_01 = () => {
                 height={24}
               />
             </Link>
-            <p className='text-base '>
+            <li className='list-none'>
               Our mission is to empower businesses by providing
               innovative online solutions that enhance their digital presence.
-            </p>
+            </li>
 
           </div>
           {/* Footer Widget */}

@@ -13,7 +13,7 @@ const Careers = () => {
 
                     <h2 className="text-center pb-4 lg:pb-8 lg:pt-8"> Discover open positions</h2>
                     <CareerWindow
-                        header="Senor Web Developer"
+                        header="Senior Web Developer"
                         career='Technology Department'
                         description={`For more information visit our post on the job board.
                         Denver, Colorado | Munich, Germany | Remote`} />
@@ -33,7 +33,7 @@ const Careers = () => {
                         description={`For more information visit our post on the job board.
                         Remote`} />
                         <CareerWindow
-                        header="Senor UX Designer"
+                        header="Senior UX Designer"
                         career='Product Team'
                         description={`For more information visit our post on the job board.
                         Denver, Colorado | Remote`} />

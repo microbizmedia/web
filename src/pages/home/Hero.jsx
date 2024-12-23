@@ -45,7 +45,7 @@ const Hero = () => {
 
             <div
               className='jos hero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px] 
-              flex flex-col-reverse mx-auto lg:flex-row mb-6 lg:mb-16 '
+              flex flex-col-reverse mx-auto lg:flex-row mb-6 lg:mb-16 pt-16 pb-4  lg:p-0'
             >
               <div className='flex flex-col justify-center   px-8 py-10 lg:pl-24 lg:max-w-[50%]'>
                 <h2>Our consultations are always free</h2>
@@ -53,11 +53,11 @@ const Hero = () => {
                 <Link className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
               </div>
 
-              <div className='  pt-20  lg:pt-0 flex justify-center items-center'>
+              <div className='   flex justify-center items-center'>
                 <img
                   src={emailUsIcon}
                   alt='hero-dashboard'
-                  className='animate-float  size-1/3'
+                  className='animate-float  size-5/12'
                 />
               </div>
             </div>

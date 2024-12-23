@@ -6,40 +6,47 @@
 /* Post Custom Styles */
 @font-face {
   font-family: 'MyCustomFont-Helvetica-NeueThin';
-  src:  url('../assets/img/fonts/helvetica-neue-5/HelveticaNeueThin.otf') format('woff');    
+  src:  url('../assets/fonts/HelveticaNeueThin.otf') format('woff');    
   font-weight: normal;
   font-style: normal;
 }
 
+
 @font-face {
   font-family: 'MyCustomFont-Helvetica-NeueLight';
-  src: url('../assets/img/fonts/helvetica-neue-5/HelveticaNeueLight.otf') format('woff');    
+  src: url('../assets/fonts/HelveticaNeueLight.otf') format('woff');    
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyCustomFont-Helvetica-NeueRoman';
+  src: url('../assets/fonts/HelveticaNeueRoman.otf') format('woff');    
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'MyCustomFont-Helvetica-NeueMedium';
-  src: url('../assets/img/fonts/helvetica-neue-5/HelveticaNeueMedium.otf') format('woff');    
+  src: url('../assets/fonts/HelveticaNeueMedium.otf') format('woff');    
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  /* font-family: 'Helvetica Neue', Arial, sans-serif; */
   min-height: 100vh;
-  font-family: 'MyCustomFont-Helvetica-NeueLight', Arial,  'Segoe UI', 'Noto Sans', sans-serif;
+  font-family: 'MyCustomFont-Helvetica-NeueLight', Arial, sans-serif;
   --tw-text-opacity: 1;
-  /* color: rgb(25 25 25 / var(--tw-text-opacity)); */
- 
   color:#e2e2e2;
 }
 body .sub-title{
   font-family: 'MyCustomFont-Helvetica-NeueThin', Arial, sans-serif;
+  
 }
 .button, .button-micro{
   font-family: 'MyCustomFont-Helvetica-NeueMedium', Arial, sans-serif;
 }
-
+p {
+  font-family: 'MyCustomFont-Helvetica-NeueRoman', Arial, sans-serif;
+}
 
 h1 {
   font-size: 3.5rem;
@@ -47,49 +54,8 @@ h1 {
   font-family: 'MyCustomFont-Helvetica-NeueMedium';
  
 }
-
-
 h2 {
   font-size: 2rem;
-  line-height: 2.5rem;
-  font-weight: bold;
-}
-
-/* @media (min-width: 992px) {
-  h2 {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-}
-
-@media (min-width: 1200px) {
-  h2 {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-} */
-
-/* @media (min-width: 1400px) {
-  h2 {
-    font-size: 80px;
-  }
-} */
-
-h4 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  line-height: 1.33;
-  letter-spacing: 0em;
-}
-
-@media (min-width: 992px) {
-  h5 {
-    font-size: 28px;
-  }
-}
-
-h5 {
-  font-size: 1.5rem;
   line-height: 2rem;
-  line-height: 1.28;
+  font-family: 'MyCustomFont-Helvetica-NeueMedium';
 }
