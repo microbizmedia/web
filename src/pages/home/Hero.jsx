@@ -11,8 +11,8 @@ const Hero = () => {
   return (
     <>
       {/*...::: Hero Section Start  :::... */}
-      <div className='relative bg-[url("../assets\img\Hero_03.png")] bg-contain bg-top bg-no-repeat z-20  
-        lg:bg-contain
+      <div className='relative bg-[url("../assets\img\Hero_04_12.18.2024.jpg")] bg-cover lg:bg-contain bg-top bg-no-repeat z-20  
+        
         '>
         <div className='global-container '>
           <section id='section-hero' >
@@ -29,7 +29,6 @@ const Hero = () => {
             <TextVideoWindow
               header="Browse Our Catalog"
               paragraph='View some of the amazing work we already made for our existing partners'
-              // image="assets/img/th-1/funfact-image.jpg"
               button="See More"
             />
 
@@ -50,7 +49,7 @@ const Hero = () => {
               <div className='flex flex-col justify-center   px-8 py-10 lg:pl-24 lg:max-w-[50%]'>
                 <h2>Our consultations are always free</h2>
                 <p className='lg:mt-6 lg:mb-10 mt-4 mb-8 text-base '>Give us an email and one of our agents will contact you as soon as we can</p>
-                <Link className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
+                <Link to='/customer-service' className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
               </div>
 
               <div className='   flex justify-center items-center'>
@@ -68,6 +67,7 @@ const Hero = () => {
               paragraph='Read more about us and what inspired us to do what we do for you'
               image="assets/img/th-1/funfact-image.jpg"
               button='Learn More'
+              link='/about'
             />
 
 

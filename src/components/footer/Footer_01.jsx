@@ -140,7 +140,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/signup'
+                  to='/FAQ'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   FAQ
