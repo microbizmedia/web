@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <>
       {/*...::: Hero Section Start  :::... */}
-      <div className='relative bg-[url("../assets\img\Hero_04_12.18.2024.jpg")] bg-cover lg:bg-contain bg-top bg-no-repeat z-20  
+      <div className='relative bg-[url("../assets\img\Hero_01.jpg")] lg:bg-[url("../assets\img\Hero_04_12.18.2024.jpg")]  bg-contain bg-top bg-no-repeat z-20  
         
         '>
         <div className='global-container '>

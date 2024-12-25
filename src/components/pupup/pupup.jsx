@@ -48,9 +48,9 @@ const Pupup = () => {
 
                             <div className='global-container pb-4  '>
                             
-                                <h2 className="font-bold mb-2">We care about your privacy!</h2>
-                                <p className="mb-2 text-sm">Last Updated: {currentDate}</p>
-                                <p className="hidden md:block mb-2 ">
+                                <h2 className="mb-2">We care about your privacy!</h2>
+                                <p className="mb-2 text-sm sub-title">Last Updated: {currentDate}</p>
+                                <p className="hidden md:block mb-2 text-sm sub-title">
                                     By clicking Agree and Continue, the user acknoledges that they have read, understood and agreed to the entirety of these Terms of Service,
                                     exactly as specified by MicroBiz Media LLC. By continuing to access or utilize any of our services, you as user, visitor or a client agree
                                     to be bound by this Terms, which constitute a legally binding agreement.

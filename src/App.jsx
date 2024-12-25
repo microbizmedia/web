@@ -9,7 +9,7 @@ import Layout from './components/layout/Layout';
 import Careers from './pages/common/Carrers';
 import About from './pages/common/About'
 import Affiliate from './pages/common/Affiliate';
-import CustomerService from './components/contact/Customer-service';
+import Contact from './components/contact/Contact';
 import Faq_01 from './pages/common/faq/Faq_01';
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           <Route path='careers' element={<Careers />} />
           <Route path='about' element={<About />} />
           <Route path='affiliate' element={<Affiliate />} />
-          <Route path='customer-service' element={<CustomerService />} />
+          <Route path='contact' element={<Contact />} />
           <Route path='FAQ' element={<Faq_01 />} />
           <Route path='error-404' element={<Error_404 />} />
           <Route path='*' element={<Error_404 />} />

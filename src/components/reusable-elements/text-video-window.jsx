@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import video from '../../assets/videos/Segment_01_Scene_01_final_02.mp4'
-import videoFinal from '../../assets/videos/Segment_01_Promo_video_Final_02.webm'
-const textVideoWindow = ({ header, paragraph, image, button }) => {
+import videoWebsites from '../../assets/videos/MP4_H264_29fps_Segment_1.mp4'
+const textVideoWindow = ({ header, paragraph, button }) => {
+
     return (
         <>
             <div
@@ -16,23 +16,21 @@ const textVideoWindow = ({ header, paragraph, image, button }) => {
                     <p className='lg:mt-6 lg:mb-10 mt-4 mb-4 lg:max-w-[70%]'>{paragraph}</p>
                     <Link to='/work' className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'> {button} &#x27a4;  </Link>
                 </div>
-                
-                   
-                   
-                    
-              
-                <video width='480' height='360'  autoPlay muted loop playsinline 
-                className='flex-1 pt-4 lg:pr-20 bg-colorBackground  object-cover object-center  lg:pt-0'
-                >
-                    <source src={videoFinal} type="video/webm">
+                <div className='bg-colorBackground flex justify-center'>
+                    <video width='480' height='360' autoPlay muted loop playsInline
+                        className='flex-1 lg:pr-20 bg-colorBackground  object-cover object-center  lg:pt-0 '
+                    >
+                        <source src={videoWebsites} type="video/mp4">
                         </source>
-                            Your browser does not support the video tag.
-                        </video>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
-                        
-                    </div>
-                </>
-                );
+
+
+            </div>
+        </>
+    );
 };
 
-                export default textVideoWindow;
+export default textVideoWindow;
