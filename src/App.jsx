@@ -11,6 +11,7 @@ import About from './pages/common/About'
 import Affiliate from './pages/common/Affiliate';
 import Contact from './components/contact/Contact';
 import Faq_01 from './pages/common/faq/Faq_01';
+import PrivacyPolicy from './pages/common/PrivacyPolicy';
 
 function App() {
   // Init JOS Animation
@@ -28,6 +29,7 @@ function App() {
           <Route path='affiliate' element={<Affiliate />} />
           <Route path='contact' element={<Contact />} />
           <Route path='FAQ' element={<Faq_01 />} />
+          <Route path='privacy' element={<PrivacyPolicy />} />
           <Route path='error-404' element={<Error_404 />} />
           <Route path='*' element={<Error_404 />} />
         </Route>

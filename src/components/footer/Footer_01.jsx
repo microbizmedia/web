@@ -10,7 +10,7 @@ import footerGraphic from '../../assets/img/footer_graphic_01_v1.png'
 
 const Footer_01 = () => {
   const location = useLocation();
-  const hiddenRoutes = ["/", "/micro-biz-media/","/work", "/services", "/process", "/about",];
+  const hiddenRoutes = ["/", "/micro-biz-media/","/work", "/services", "/process", "/about", "/privacy"];
   return (
     <>
 
@@ -164,7 +164,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/reset-password'
+                  to='/privacy'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Privacy Policy

@@ -39,7 +39,7 @@ export default {
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0)' }, // Start and end position
-          '50%': { transform: 'translateY(15px)' }, // Midpoint - float down
+          '50%': { transform: 'translateY(-15px)' }, // Midpoint - float down
         },
       },
       animation: {
