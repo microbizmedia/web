@@ -10,7 +10,7 @@ import footerGraphic from '../../assets/img/footer_graphic_01_v1.png'
 
 const Footer_01 = () => {
   const location = useLocation();
-  const hiddenRoutes = ["/", "/micro-biz-media/","/work", "/services", "/process", "/about", "/privacy"];
+  const hiddenRoutes = ["/", "/micro-biz-media/", "/micro-biz-media", "/work", "/services", "/process", "/about", "/privacy"];
   return (
     <>
 

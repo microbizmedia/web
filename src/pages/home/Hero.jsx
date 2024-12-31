@@ -11,10 +11,28 @@ const Hero = () => {
   return (
     <>
       {/*...::: Hero Section Start  :::... */}
-      <div className='relative bg-[url("../assets\img\Hero_01.jpg")] lg:bg-[url("../assets\img\Hero_04_12.18.2024.jpg")]  bg-contain bg-top bg-no-repeat z-20  
+      {/* <div className='relative bg-[url("../assets\img\Hero_01.jpg")] lg:bg-[url("../assets\img\Hero_04_12.18.2024.jpg")]  bg-contain bg-top bg-no-repeat z-20  '> */}
+       <div className='relative z-20  '>
+       
+       <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#240454] to-colorBackground h-[200vh] w-full"></div>
+
+       <div className='blue-gradient-1 z-0  absolute -left-[0%] top-[-10vh]  h-[100vh] w-[30%] rounded-[0]
+        -rotate-[15.022deg] 
+        '></div>
+
         
-        '>
-        <div className='global-container '>
+
+        <div className='puple-light-gradient-3 z-0  absolute right-[0%] top-[10vh]  h-[30%] w-[45%] rounded-[400px]
+        -rotate-[6.022deg] 
+        '></div>
+
+<div className='purple-gradient-angle z-0  absolute right-[10%] top-[10vh] lg:right-[10%] lg:top-[40vh] xxl:right-[18%] xxl:top-[30vh]   h-[40%] w-[55%] rounded-[40px]
+        -rotate-[0.022deg] 
+        '></div>
+       
+       
+       
+        <div className='global-container relative '>
           <section id='section-hero' >
 
 

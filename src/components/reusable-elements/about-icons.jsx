@@ -6,6 +6,7 @@ import pulledByTheBootstraps from '../../assets/icon_images/Pulled_By_The_Bootst
 import DedicatedTeam from '../../assets/icon_images/A_Dedicated_Team_icon.png'
 import fullCycle from '../../assets/icon_images/Full _Cycle_All_-_In_-_One_icon.png'
 import raisedProfits from '../../assets/icon_images/Raised_Profits_icon.png'
+
 const aboutUsIcons = ({ title }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   return (

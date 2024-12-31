@@ -94,8 +94,8 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1024px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
 }
 
 .custom-container {
@@ -353,14 +353,22 @@
 }
 
 /* ...::: Custom Gradient :::... */
-.orange-gradient-1 {
-  background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
-  filter: blur(55px);
+.blue-gradient-1 {
+  background: radial-gradient(50% 50% at 85% 25%, #3425FE 5%, #2D4190 100%);
+  filter: blur(105px);
 }
 
-.orange-gradient-2 {
-  background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
-  filter: blur(55px);
+.purple-gradient-angle {
+  background: radial-gradient(70% 50% at 100% 10%, #CC23E6  50%, transparent 100%);
+  filter: blur(60px);
+}
+.purple-angle {
+  background: radial-gradient(50% 70% at 100% 10%, #CC23E6 50%, transparent 100%);
+  filter: blur(5px);
+}
+.puple-light-gradient-3 {
+  background: radial-gradient(50% 50% at 100% 0%, #4D2190 0%, #4D2190 100%);
+  filter: blur(125px);
 }
 
 .accordion-item .accordion-header {

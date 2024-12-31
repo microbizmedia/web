@@ -21,7 +21,7 @@ export default {
       xl: "1200px",
       // => @media (min-width: 1200px) { ... }
 
-      xxl: "1400px",
+      xxl: "1600px",
       // => @media (min-width: 1400px) { ... }
     },
     extend: {

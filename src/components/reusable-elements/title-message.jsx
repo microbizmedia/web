@@ -9,7 +9,7 @@ const TitleMessage = ({ header, paragraph}) => {
                  '>
                     {header}
                 </h1>
-                <p className='sub-title jos tracking-wider slide-from-bottom text-center  m-auto py-8'>
+                <p className='sub-title jos tracking-wider slide-from-bottom text-center  m-auto py-6 lg:py-8'>
                     {paragraph}
                 </p>
 
@@ -18,7 +18,7 @@ const TitleMessage = ({ header, paragraph}) => {
 
                 {hiddenRoutes.includes(location.pathname) ? null : (
                 <div
-                    className='jos flex flex-wrap justify-center gap-2 mb-8 lg:mb-10'
+                    className='jos flex flex-wrap justify-center gap-2 mb-6 lg:mb-10'
                     data-jos_animation='fade'
                 >
                     <Link

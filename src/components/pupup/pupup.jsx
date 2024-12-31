@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Pupup = () => {
     const [currentDate, setCurrentDate] = useState('');
@@ -56,12 +57,13 @@ const Pupup = () => {
                                     to be bound by this Terms, which constitute a legally binding agreement.
                                 </p>
                                 <div className='flex flex-wrap gap-4 justify-end'>
-                                    <button
+                                    <Link
                                         onClick={handleDecline}
+                                        to='/privacy'
                                         className="button flex  justify-center rounded-md bg-colorWhite border-none text-colorBackground w-full md:w-auto text-center "
                                     >
                                         Read Terms of service
-                                    </button>
+                                    </Link>
                                     <button
                                         onClick={handleAccept}
                                         className="button flex  justify-center rounded-md bg-colorPurple border-none w-full md:w-auto"

@@ -7,7 +7,7 @@ const LogoDark = () => {
   return (
     <Link to='/micro-biz-media'>
       <img
-        className='hidden lg:block mb-2'
+        className='hidden lg:block'
         src={logoStandard}
         alt='AIMass'
         width='156'
