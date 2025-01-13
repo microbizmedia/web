@@ -2,10 +2,10 @@
 import { Link, useLocation } from 'react-router-dom';
 const TitleMessage = ({ header, paragraph}) => {
     const location = useLocation();
-    const hiddenRoutes = ["/careers", "/about", "/affiliate", "/customer-service", "/FAQ", "/privacy"];
+    const hiddenRoutes = ["/careers", "/about", "/affiliate", "/contact", "/FAQ", "/privacy"];
     return (
         <>
-                <h1 className='jos slide-from-bottom text-center pt-28 lg:pt-34
+                <h1 className='jos slide-from-bottom text-center pt-16 lg:pt-26
                  '>
                     {header}
                 </h1>

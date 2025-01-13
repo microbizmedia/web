@@ -156,7 +156,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/customer-service'
+                  to='/contact'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Customer Service

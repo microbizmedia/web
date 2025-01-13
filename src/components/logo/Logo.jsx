@@ -10,15 +10,14 @@ const LogoDark = () => {
         className='hidden lg:block'
         src={logoStandard}
         alt='AIMass'
-        width='156'
+        width='135'
         height='24'
       />
       <img
         className='block lg:hidden'
         src={logoMobile}
         alt='AIMass'
-        width='60'
-        height='24'
+       
       />
     </Link>
   );

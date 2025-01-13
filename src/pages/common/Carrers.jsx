@@ -6,7 +6,7 @@ const Careers = () => {
             <section id="section-careers">
                 <div className='global-container main-wrapper relative overflow-hidden z-40'>
                     <TitleMessage
-                        header='Lets Form Lasting Relationships'W
+                        header='Lets Form Lasting Relationships'
                         paragraph='We are more than just another digital service agency. We are a collective of inovators, creators, developers
             and changemakers, who dare to dream and disrupt. Average is not a part of our DNA, our teams make us extraordinary, join us today!'/>
 

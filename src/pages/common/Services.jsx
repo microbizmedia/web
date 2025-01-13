@@ -25,7 +25,6 @@ const Services = () => {
 
               <div
                 className='jos  overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15   inline-block  
-
               '
                 data-jos_animation='zoom'
               >
@@ -34,9 +33,8 @@ const Services = () => {
                   <ul className='p-8  space-y-2'>
                     <li className=''><span className='text-green-500 font-bold'>✓</span> Web Design and Development</li>
                     <li className=''><span className='text-green-500 font-bold'>✓</span> Domain Registration and Hosting</li>
-                    <li className='text-slate-500'>&#x2717; Brand Strategy and Logo</li>
-                    <li className='text-slate-500'>&#x2717; Holistic Updates</li>
-                    <li className='text-slate-500'>&#x2717; Annual UX Improvements</li>
+                    <li className='text-slate-500'>&#x2717; Brand Strategy and Logo</li>      
+                    <li className='text-slate-500'>&#x2717; Annual Design Improvements</li>
                     <li className='text-slate-500'>&#x2717; Ongoing Maintanance</li>
                     <li className='text-slate-500'>&#x2717; Marketing Campaign Consulting</li>              
                   </ul>
@@ -65,14 +63,13 @@ const Services = () => {
 
                  <div className='relative top-[-26px] left-[83px]  button inline-block border-none text-center bg-colorPurple px-8 py-2 rounded-[8px] '>Best Value</div>
 
-                <div className=''>
+                <div>
                   <h2 className='pt-2 text-center'>Business Elite</h2>
                   <ul className='p-8 space-y-2'>
                     <li><span className='text-green-500 font-bold'>✓</span> Web Design and Development</li>
                     <li><span className='text-green-500 font-bold'>✓</span> Domain Registration and Hosting</li>
                     <li><span className='text-green-500 font-bold'>✓</span> Brand Strategy and Logo</li>
-                    <li><span className='text-green-500 font-bold'>✓</span> Holistic Updates</li>
-                    <li><span className='text-green-500 font-bold'>✓</span> Annual UX Improvements</li>
+                    <li><span className='text-green-500 font-bold'>✓</span> Annual Design Improvements</li>
                     <li><span className='text-green-500 font-bold'>✓</span> Ongoing Maintanance</li>
                     <li><span className='text-green-500 font-bold'>✓</span> Marketing Campaign Consulting</li>              
                   </ul>

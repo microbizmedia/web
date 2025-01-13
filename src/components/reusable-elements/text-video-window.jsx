@@ -17,7 +17,7 @@ const textVideoWindow = ({ header, paragraph, button }) => {
                     <Link to='/work' className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'> {button} &#x27a4;  </Link>
                 </div>
                 <div className='bg-colorBackground flex justify-center'>
-                    <video width='480' height='360' autoPlay muted loop playsInline
+                    <video width='420' autoPlay muted loop playsInline
                         className='flex-1 lg:pr-20 bg-colorBackground  object-cover object-center  lg:pt-0 '
                     >
                         <source src={videoWebsites} type="video/mp4">

@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+// @ts-ignore
 import JOS from 'jos-animation';
 
 // Custom hook for initializing JOS animations

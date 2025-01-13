@@ -24,7 +24,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
         className={`menu-block ${mobileMenu && 'active'}`}
         id='append-menu-header'
       >
-        <ul className={`site-menu-main py-4 ${color}`}>
+        <ul className={`site-menu-main`}>
           {/* Global navbar */}
           <li
             onClick={handleMenu}

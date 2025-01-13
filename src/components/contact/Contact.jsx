@@ -1,6 +1,7 @@
 import TitleMessage from '../reusable-elements/title-message';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import emailUsIcon from '../../assets/icon_images/email_us_icon.png'
 
 const CustomerService = () => {
   const [formData, setFormData] = useState({
@@ -75,11 +76,11 @@ const CustomerService = () => {
               <p className='lg:mb-8 mt-4 mb-4 lg:max-w-[70%]'>Tell us what we can do for you.</p>
               <a href="mailto:info@microbizmedia.com" target="_blank"><p className=' text-colorPurple'>info@microbizmedia.com</p> </a>
             </div>
-            <img
-              src="assets/img/th-1/funfact-image.jpg"
-              alt='hero-dashboard'
-              className='flex-1 pt-4 lg:pr-20 bg-colorBackground  object-cover object-center  max-h-[240px] lg:pt-0 w-full'
-            />
+            <a className='relative lg:right-[40px] flex-1 flex justify-center items-center pt-16 lg:pr-20   h-[240px] lg:pt-0 w-full ' href="mailto:info@microbizmedia.com" target="_blank"><img
+              src={emailUsIcon}
+              alt='letter-image'
+              className=' size-6/12 animate-float  object-center'
+            /></a>
           </div>
 
 
@@ -95,7 +96,7 @@ const CustomerService = () => {
 
 
             <form className="w-full  rounded-lg px-4 lg:px-16 py-8"
-             onSubmit={handleSubmit}>
+              onSubmit={handleSubmit}>
               <h2 className="mb-8">Let's Start Your Story</h2>
 
 
@@ -106,7 +107,7 @@ const CustomerService = () => {
 
 
               {/* Four placeholders */}
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 lg:grid grid-rows-2 grid-cols-2">
                 <input
                   name="name"
                   value={formData.name}
@@ -114,17 +115,17 @@ const CustomerService = () => {
                   required
                   type="text" spellCheck="false"
                   placeholder="What is your name?*"
-                  className="bg-colorPurple/70 placeholder:text-colorWhite/60  border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full lg:max-w-[412px]"
+                  className="bg-colorPurple/70 placeholder:text-colorWhite/60  border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full "
 
                 />
-                <input      
+                <input
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
                   type="tel"
                   spellCheck="false"
                   placeholder="What is your phone number?"
-                  className="bg-colorPurple/70 placeholder:text-colorWhite/60  border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full lg:max-w-[412px]"
+                  className="bg-colorPurple/70 placeholder:text-colorWhite/60  border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full "
                 />
                 <input
                   type="email"
@@ -135,7 +136,7 @@ const CustomerService = () => {
                   required
                   spellCheck="false"
                   placeholder="What is your email address?*"
-                  className="bg-colorPurple/70 placeholder:text-colorWhite/60  border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full lg:max-w-[412px]"
+                  className="bg-colorPurple/70 placeholder:text-colorWhite/60  border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full "
                 />
                 <input
                   type="text"
@@ -144,7 +145,7 @@ const CustomerService = () => {
                   onChange={handleChange}
                   spellCheck="false"
                   placeholder="What is your budget?"
-                  className="bg-colorPurple/70 placeholder:text-colorWhite/60  border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full lg:max-w-[412px]"
+                  className="bg-colorPurple/70 placeholder:text-colorWhite/60  border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full "
                 />
               </div>
 

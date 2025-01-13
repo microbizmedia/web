@@ -359,13 +359,10 @@
 }
 
 .purple-gradient-angle {
-  background: radial-gradient(70% 50% at 100% 10%, #CC23E6  50%, transparent 100%);
+  background: radial-gradient(70% 50% at 100% 10%, #7932b7  50%, transparent 100%);
   filter: blur(60px);
 }
-.purple-angle {
-  background: radial-gradient(50% 70% at 100% 10%, #CC23E6 50%, transparent 100%);
-  filter: blur(5px);
-}
+
 .puple-light-gradient-3 {
   background: radial-gradient(50% 50% at 100% 0%, #4D2190 0%, #4D2190 100%);
   filter: blur(125px);

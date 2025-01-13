@@ -10,14 +10,14 @@ const Header = () => {
 
   return (
     <header
-      className='site-header site-header--absolute is--white '
+      className='site-header '
       id='sticky-menu'
     >
       {/* Pupup terms and conditions */}
       <Pupup />
       {/* Pupup terms and conditions */}
-      <div className=' max-w-[1024px] m-auto lg:px-[1rem] '>
-        <div className='flex items-center justify-between gap-x-8'>
+      <div className=' max-w-full m-auto lg:pl-[36px]  '>
+        <div className='flex items-center justify-between h-[65px]'>
           {/* Header Logo */}
           <Logo mobileMenu={mobileMenu} />
           {/* Header Logo */}
@@ -30,7 +30,7 @@ const Header = () => {
           {/* Header Navigation */}
           {/* Header User Event */}
           <div className='flex items-center '>
-            <HashLink to='/services#target-pricing' className='button w-full p-4 rounded-0 border-colorPurple bg-colorPurple after:bg-violet-600 hover:border-violet-400 lg:inline-block'>
+            <HashLink to='/services#target-pricing' className='button w-full py-[20px] px-[36px] ml-[50px] rounded-0 border-colorPurple bg-colorPurple after:bg-violet-600 hover:border-violet-400 lg:inline-block'>
               Pricing
             </HashLink>
             {/* Responsive Off-canvas Menu Button */}

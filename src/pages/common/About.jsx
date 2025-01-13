@@ -17,10 +17,6 @@ const About = () => {
                             title="MicroBiz Media In a Nutshell" />
 
 
-
-
-
-
                         <h2 className='jos mx-auto  max-w-[715px] text-center pb-4 lg:pb-8' >We work worldwide</h2>
                         <div
                             className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 
@@ -33,7 +29,7 @@ const About = () => {
                                 <h2>Result Driven Work!</h2>
                                 <p className='my-6 lg:max-w-[90%] text-colorPurple font-bold'>Visit our Career center</p>
                                 <p className=' lg:max-w-[90%] font-bold'>We are an equal opportunity employer, Talent is everywhere so work where you are, we care about the resulets!</p>
-                                
+
                             </div>
                             <img
                                 src={worldMap}
