@@ -29,9 +29,9 @@ const servicesIcons = ({ title }) => {
           image={brandingAndDesignIcon}
           text='Branding & Design'
         />
-        <SwiperIcon
-          image={SEOIcon}
-          text='SEO'
+         <SwiperIcon
+          image={hostingIcon}
+          text='Hosting'
         />
         <SwiperIcon
           image={strategyIcon}
@@ -41,9 +41,10 @@ const servicesIcons = ({ title }) => {
           image={marketingIcon}
           text='Marketing'
         />
-        <SwiperIcon
-          image={hostingIcon}
-          text='Hosting'
+     
+          <SwiperIcon
+          image={SEOIcon}
+          text='SEO'
         />
         
       

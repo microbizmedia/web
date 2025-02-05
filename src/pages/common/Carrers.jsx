@@ -37,9 +37,10 @@ const Careers = () => {
                         career='Product Team'
                         description={`For more information visit our post on the job board.
                         Denver, Colorado | Remote`} />
-                        <div className='h-[1px] w-full bg-[#DBD6CF] opacity-25' />
+                         
                         
                 </div>
+                <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />
             </section>
 
         </>

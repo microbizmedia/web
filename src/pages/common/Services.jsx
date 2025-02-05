@@ -10,7 +10,7 @@ const Services = () => {
             <TitleMessage
               header='Full Service Digital Partnership'
               paragraph='By working with us you get an entire team of experienced designers, developers, copy writers, data analists and 
-                     system administrators, our goal is to produce real results and propel you towards endless growth'/>
+                     system administrators, our goal is to produce real results and propel you towards endless growth.'/>
 
             
             <ServicesIcons 

@@ -1,8 +1,9 @@
 {
-  "name": "azzle-ai",
+  "name": "micro-biz-media",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://martinstojmenovski.github.io/micro-biz-media",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

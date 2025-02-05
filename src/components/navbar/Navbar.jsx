@@ -6,7 +6,7 @@ import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png'
 
 
 // eslint-disable-next-line react/prop-types
-const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
+const Navbar = ({ mobileMenu, setMobileMenu }) => {
   const [mobileSubMenu, setMobileSubMenu] = useState('');
 
   const handleMenu = () => {
@@ -68,17 +68,17 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
         <div className='dropdown-menu-social-media-icons'>
           <img
             src={threadsIcon}
-            alt='hero-dashboard'
+            alt='threads-icon'
             className='  size-10'
           />
           <img
             src={xIcon}
-            alt='hero-dashboard'
+            alt='x-icon'
             className='  size-10'
           />
           <img
             src={instagramIcon}
-            alt='hero-dashboard'
+            alt='instagram-icon'
             className='  size-10'
           />
         </div>

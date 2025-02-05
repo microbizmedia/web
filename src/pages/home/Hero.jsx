@@ -42,7 +42,7 @@ const Hero = () => {
               // paragraph={`Take full control of your potential through our expert levels of design, 
               //   development and marketing for your brand and business.`}
 
-                paragraph={<p className='sub-title'>Take full control of your potential through our expert levels of design, <br />
+                paragraph={<p className='sub-title max-w-[600px] m-auto'>Take full control of your potential through our expert levels of design,
                 development and marketing for your brand and business.</p>}
                     />
 

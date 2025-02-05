@@ -38,10 +38,10 @@ const Faq_01 = () => {
   return (
 
     <>
-      <main className='main-wrapper relative overflow-hidden global-container'>
+      <main className='main-wrapper relative overflow-hidden '>
 
         {/*...::: FAQ Section Start :::... */}
-        <section className='faq-section'>
+        <section className='faq-section global-container'>
           <TitleMessage
             header='FAQ'
             paragraph='Frequently Asked Questions and answers.' />
@@ -87,6 +87,7 @@ const Faq_01 = () => {
             </div>   
 
         </section>
+        <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />
       </main>
     </>
   );

@@ -2,9 +2,9 @@ import TitleMessage from '../../components/reusable-elements/title-message';
 const Affiliate = () => {
   return (
     <>
-      <main className='main-wrapper global-container relative overflow-hidden'>
+      <main className='main-wrapper  relative overflow-hidden'>
         {/*...::: 404 Section Start :::... */}
-        <section id='affiliate-section'>
+        <section id='affiliate-section' className='global-container'>
           <TitleMessage 
           header='Affiliate Program'
           paragraph='We are currently working on this. Stay Tuned!'
@@ -20,11 +20,11 @@ const Affiliate = () => {
                 </div>
             </div> 
 
-          <div className='h-[1px] w-full bg-[#DBD6CF] opacity-25 max-w-[1024px] m-auto' />
+         
           {/* Section Spacer */}
         </section>
         {/*...::: 404 Section End :::... */}
-        
+        <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />
       </main>
     </>
   );

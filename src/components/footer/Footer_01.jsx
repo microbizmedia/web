@@ -202,8 +202,9 @@ const Footer_01 = () => {
           </div>
           {/* Footer Widget */}
         </div>
+        </div>
         {/* Footer Center */}
-        <div className='h-[1px] w-full bg-[#DBD6CF] opacity-25' />
+        <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />
         {/* Footer Bottom */}
         
           <p className='py-6 text-center text-sm'>
@@ -211,7 +212,7 @@ const Footer_01 = () => {
           </p>
         
         {/* Footer Bottom */}
-      </div>
+      
       {/* Footer Background Shape 1  */}
       {/* <div className='orange-gradient-2 absolute -top-[290px] right-[90px] -z-[1] h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]'></div> */}
       {/* Footer Background Shape 2  */}

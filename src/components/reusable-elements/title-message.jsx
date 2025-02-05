@@ -5,7 +5,7 @@ const TitleMessage = ({ header, paragraph}) => {
     const hiddenRoutes = ["/careers", "/about", "/affiliate", "/contact", "/FAQ", "/privacy"];
     return (
         <>
-                <h1 className='jos slide-from-bottom text-center pt-16 lg:pt-26
+                <h1 className='jos slide-from-bottom text-center pt-14 lg:pt-26
                  '>
                     {header}
                 </h1>
