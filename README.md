@@ -8,7 +8,7 @@ To run this project locally after downloading the code, follow these steps:
 
 ### Prerequisites
 - Node.js (Download from [Node.js Official Site](https://nodejs.org/))
-- Git (Download from [Git Official Site](https://git-scm.com/))
+- Git (Download from [Git Official Site](https://git-scm.com/)) 
 
 ### Steps to Install
 1. **Clone the Repository (or Download the Code):**
