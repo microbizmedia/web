@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://martinstojmenovski.github.io/micro-biz-media/",
+  "homepage": "https://microbizmedia.github.io/web/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
