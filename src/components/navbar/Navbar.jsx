@@ -36,7 +36,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
           </li>
           <li onClick={handleMenu}
             className='nav-item'>
-            <Link to='/services' className='nav-link-item '>
+            <Link to='/micro-biz-media/services' className='nav-link-item '>
               Services
             </Link>
           </li>
@@ -44,7 +44,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
             onClick={handleMenu}
             className='nav-item'
           >
-            <Link to='/process' className='nav-link-item'>
+            <Link to='/micro-biz-media/process' className='nav-link-item'>
               Process
             </Link>
           </li>
@@ -52,14 +52,14 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
             onClick={handleMenu}
             className='nav-item '
           >
-            <Link to='/careers' className='nav-link-item '>
+            <Link to='/micro-biz-media/careers' className='nav-link-item '>
               Careers
             </Link>
           </li>
           <li className='nav-item'
             onClick={handleMenu}
           >
-            <Link to='/about' className='nav-link-item '>
+            <Link to='/micro-biz-media/about' className='nav-link-item '>
               About
             </Link>
           </li>

@@ -3,10 +3,29 @@ import { HashLink } from 'react-router-hash-link';
 import Navbar from '../navbar/Navbar';
 import Logo from '../logo/Logo';
 import Pupup from '../pupup/pupup';
-
+import { useEffect } from 'react';
 // eslint-disable-next-line react/prop-types
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
+
+  
+  useEffect(() => {
+    const handleHashChange = () => {
+      const element = document.getElementById(window.location.hash.substring(1));
+      if (element) {
+        element.classList.remove("jos-active"); // Remove animation class
+        setTimeout(() => {
+          element.classList.add("jos-active"); // Re-add animation class to trigger it
+        }, 50);
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
 
   return (
     <header
@@ -29,8 +48,9 @@ const Header = () => {
           />
           {/* Header Navigation */}
           {/* Header User Event */}
+          {/* to='/micro-biz-media/services#target-pricing' */}
           <div className='flex items-center '>
-            <HashLink to='/services#target-pricing' className='button w-full py-[20px] px-[36px] ml-[50px] rounded-0 border-colorPurple bg-colorPurple after:bg-violet-600 hover:border-violet-400 lg:inline-block'>
+            <HashLink to="/micro-biz-media/services#target-pricing"  className='button w-full py-[20px] px-[36px] ml-[50px] rounded-0 border-colorPurple bg-colorPurple after:bg-violet-600 hover:border-violet-400 lg:inline-block'>
               Pricing
             </HashLink>
             {/* Responsive Off-canvas Menu Button */}

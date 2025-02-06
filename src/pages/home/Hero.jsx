@@ -12,26 +12,26 @@ const Hero = () => {
     <>
       {/*...::: Hero Section Start  :::... */}
       {/* <div className='relative bg-[url("../assets\img\Hero_01.jpg")] lg:bg-[url("../assets\img\Hero_04_12.18.2024.jpg")]  bg-contain bg-top bg-no-repeat z-20  '> */}
-       <div className='relative z-20 overflow-hidden '>
-       
-       <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#240454] to-colorBackground h-[200vh] w-full"></div>
+      <div className='relative z-20 overflow-hidden '>
 
-       <div className='blue-gradient-1 z-0  absolute -left-[0%] top-[-10vh]  h-[100vh] w-[30%] rounded-[0]
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#240454] to-colorBackground h-[200vh] w-full"></div>
+
+        <div className='blue-gradient-1 z-0  absolute -left-[0%] top-[-10vh]  h-[100vh] w-[30%] rounded-[0]
         -rotate-[15.022deg] 
         '></div>
 
-        
+
 
         <div className='puple-light-gradient-3 z-0  absolute right-[0%] top-[10vh]  h-[30%] w-[45%] rounded-[400px]
         -rotate-[6.022deg] 
         '></div>
 
-<div className='purple-gradient-angle z-0  absolute right-[10%] top-[10vh] lg:right-[10%] lg:top-[40vh] xxl:right-[18%] xxl:top-[30vh]   h-[40%] w-[55%] rounded-[40px]
+        <div className='purple-gradient-angle z-0  absolute right-[10%] top-[10vh] lg:right-[10%] lg:top-[40vh] xxl:right-[18%] xxl:top-[30vh]   h-[40%] w-[55%] rounded-[40px]
         -rotate-[0.022deg] 
         '></div>
-       
-       
-       
+
+
+
         <div className='global-container relative '>
           <section id='section-hero' >
 
@@ -39,12 +39,12 @@ const Hero = () => {
 
             <TitleMessage
               header='Your Digital Agency'
-              // paragraph={`Take full control of your potential through our expert levels of design, 
-              //   development and marketing for your brand and business.`}
 
-                paragraph={<p className='sub-title max-w-[600px] m-auto'>Take full control of your potential through our expert levels of design,
-                development and marketing for your brand and business.</p>}
-                    />
+
+              paragraph='Take full control of your potential through our expert levels of design,
+                development and marketing for your brand and business.'
+              className='sub-title max-w-[600px] m-auto'
+            />
 
 
 
@@ -75,7 +75,7 @@ const Hero = () => {
               </div>
 
               <a href="mailto:info@microbizmedia.com" target="_blank"
-              className=' relative  flex justify-center items-center lg:right-[40px]'>
+                className=' relative  flex justify-center items-center lg:right-[40px]'>
                 <img
                   src={emailUsIcon}
                   alt='letter-image'

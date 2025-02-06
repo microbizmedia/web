@@ -1,7 +1,10 @@
 import TitleMessage from '../../components/reusable-elements/title-message';
 import ServicesIcons from '../../components/reusable-elements/services-icons';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 const Services = () => {
+
+
   return (
     <>
       <section id='section-services'>
@@ -45,7 +48,7 @@ const Services = () => {
                   </div>
                   <p className='sub-title text-center underline underline-offset-4 pt-2 text-sm'>Normally valued at $1599</p>
                   <div class="flex items-center justify-center ">
-                  <Link className='button w-full mx-4 inline-block bg-colorWhite text-colorBackground rounded-md mt-8 mb-2'> Book us &#x27a4;  </Link>
+                  <Link to='/micro-biz-media/contact' className='button w-full mx-4 inline-block bg-colorWhite text-colorBackground rounded-md mt-8 mb-2'> Book us &#x27a4;  </Link>
                   </div>
                   <p className='sub-title text-center pb-8 text-sm'>Terms of service Applies</p>
                 </div>
@@ -80,7 +83,7 @@ const Services = () => {
                   </div>
                   <p className='sub-title text-center underline underline-offset-4 pt-2 text-sm'>Normally valued at $2499</p>
                   <div class="flex items-center justify-center ">
-                  <Link className='button w-full mx-4 inline-block bg-colorWhite text-colorBackground rounded-md mt-8 mb-2'> Book us &#x27a4;  </Link>
+                  <Link to='/micro-biz-media/contact' className='button w-full mx-4 inline-block bg-colorWhite text-colorBackground rounded-md mt-8 mb-2'> Book us &#x27a4;  </Link>
                   </div>
                   <p className='sub-title text-center pb-8 text-sm'>Terms of service Applies</p>
                 </div>

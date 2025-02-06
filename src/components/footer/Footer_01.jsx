@@ -10,7 +10,8 @@ import footerGraphic from '../../assets/img/footer_graphic_01_v1.png'
 
 const Footer_01 = () => {
   const location = useLocation();
-  const showRoutes = ["/", "/work", "/services", "/process", "/about", "/privacy"];
+  const showRoutes = ["/micro-biz-media/", "/micro-biz-media/work", "/micro-biz-media/services", 
+    "/micro-biz-media/process", "/micro-biz-media/about", "/micro-biz-media/privacy"];
   return (
     <>
 
@@ -19,7 +20,7 @@ const Footer_01 = () => {
         <div className='global-container relative jos text-center py-10 md:py-16 z-40'>
           <h2 className=' pb-6'>Let's Start Your Story</h2>
           <Link
-            to='/contact'
+            to='/micro-biz-media/contact'
             className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 after:bg-violet-600 hover:border-violet-600 hover:text-white' >
             Start A Free Consultation
           </Link>
@@ -54,7 +55,7 @@ const Footer_01 = () => {
         <div className='flex flex-wrap mb-4 md:justify-between'>
           {/* Footer Widget */}
           <div className='flex flex-col mt-2 gap-y-4 p-3 md:max-w-60'>
-            <Link to='/' className='inline-block'>
+            <Link to='/micro-biz-media/' className='inline-block'>
               <img
                 src={logoStandard}
                 alt='logo'
@@ -80,7 +81,7 @@ const Footer_01 = () => {
             <ul className='flex flex-col  capitalize'>
               <li>
                 <Link
-                  to='/work'
+                  to='/micro-biz-media/work'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   work
@@ -88,7 +89,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/services'
+                  to='/micro-biz-media/services'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Services
@@ -96,7 +97,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/process'
+                  to='/micro-biz-media/process'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Process
@@ -104,7 +105,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/careers'
+                  to='/micro-biz-media/careers'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Careers
@@ -112,7 +113,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/about'
+                  to='/micro-biz-media/about'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   About Us
@@ -132,7 +133,7 @@ const Footer_01 = () => {
             <ul className='flex flex-col  capitalize'>
             <li>
                 <HashLink
-                  to='/services#target-pricing'
+                  to='/micro-biz-media/services#target-pricing'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Pricing
@@ -140,7 +141,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/FAQ'
+                  to='/micro-biz-media/FAQ'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   FAQ
@@ -148,7 +149,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/affiliate'
+                  to='/micro-biz-media/affiliate'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Affilliate Program
@@ -156,7 +157,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/contact'
+                  to='/micro-biz-media/contact'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Customer Service
@@ -164,7 +165,7 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/privacy'
+                  to='/micro-biz-media/privacy'
                   className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                 >
                   Privacy Policy
