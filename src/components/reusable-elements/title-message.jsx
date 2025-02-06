@@ -3,12 +3,12 @@ import { Link, useLocation } from 'react-router-dom';
 const TitleMessage = ({ header, paragraph, className }) => {
     const location = useLocation();
     const hiddenRoutes = [
-        "/micro-biz-media/careers",
-        "/micro-biz-media/about",
-        "/micro-biz-media/affiliate",
-        "/micro-biz-media/contact",
-        "/micro-biz-media/FAQ",
-        "/micro-biz-media/privacy"
+        "/web/careers",
+        "/web/about",
+        "/web/affiliate",
+        "/web/contact",
+        "/web/FAQ",
+        "/web/privacy"
     ];
     return (
         <>
