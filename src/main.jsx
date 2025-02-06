@@ -17,9 +17,6 @@ import Affiliate from './pages/common/Affiliate';
 import Contact from './components/contact/Contact';
 import Faq_01 from './pages/common/faq/Faq_01';
 import PrivacyPolicy from './pages/common/PrivacyPolicy';
-import { useContext } from 'react';
-
-
 
 const gitHubUrl = '/web/';
 
