@@ -190,13 +190,6 @@
   }
 }
 
-
-
-
-
-
-
-
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
@@ -208,46 +201,6 @@
     padding-bottom: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .mobile-menu-head,
 .mobile-menu-trigger {
@@ -283,11 +236,6 @@
     top: -12px;
   }
 
-
-
-
-
-
   .item-right {
     align-items: center;
   }
@@ -314,8 +262,6 @@
     border-radius: 0px 0px 40px 40px;
   }
 
-
-
   .site-menu-main>li>a {
     line-height: 50px;
     height: 50px;
@@ -328,9 +274,7 @@
     height: 65px;
     align-items: center;
     justify-content: center;
-
   }
-
   .menu-block .mobile-menu-head .go-back {
     height: 50px;
     width: 50px;
@@ -376,12 +320,6 @@
     font-size: 30px;
   }
 
-  
-
-
-
-
-
   .menu-overlay {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
@@ -402,10 +340,6 @@
 }
 
 /*Custom Css for menu*/
-
-
-
-
 
 @media (min-width: 480px) {
   .d-xs-inline-flex {
