@@ -6,6 +6,6 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-    base: mode === 'development' ? '/' : '/micro-biz-media/',
+    base: mode === 'development' ? '/' : '/web/',
   };
 });
