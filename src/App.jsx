@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Outlet, Route, Routes, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Hero from './pages/home/Hero';
 import Work from './pages/common/Work';
 import Error_404 from './pages/common/Error_404';
@@ -13,16 +13,24 @@ import Contact from './components/contact/Contact';
 import Faq_01 from './pages/common/faq/Faq_01';
 import PrivacyPolicy from './pages/common/PrivacyPolicy';
 
+
+
 function App() {
   // Init JOS Animation
   useJOSAnimation();
   return (
     <>
-      <Routes>
+      
+    <Layout />
+      <Outlet />
+      {/* <Hero />
+      <Work /> */}
+      {/* <Routes>
+     
         <Route element={<Layout />}>
           <Route path='/' element={<Hero />} />
-          <Route path='work' element={<Work />} />  
-          <Route path='process' element={<Process />} />
+          <Route path='work' element={<Work />} /> */}
+          {/* <Route path='process' element={<Process />} />
           <Route path='services' element={<Services />} />
           <Route path='careers' element={<Careers />} />
           <Route path='about' element={<About />} />
@@ -31,9 +39,9 @@ function App() {
           <Route path='FAQ' element={<Faq_01 />} />
           <Route path='privacy' element={<PrivacyPolicy />} />
           <Route path='error-404' element={<Error_404 />} />
-          <Route path='*' element={<Error_404 />} />
-        </Route>
-      </Routes>
+          <Route path='*' element={<Error_404 />} /> */}
+        {/* </Route>
+      </Routes> */}
     </>
   );
 }

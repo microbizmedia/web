@@ -30,7 +30,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
             onClick={handleMenu}
             className='nav-item'
           >
-            <Link to='/work' className='nav-link-item '>
+            <Link to='/micro-biz-media/work' className='nav-link-item '>
               Work
             </Link>
           </li>

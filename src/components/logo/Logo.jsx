@@ -5,7 +5,7 @@ import logoMobile from '../../assets/img/Mobile_icon.png';
 // eslint-disable-next-line react/prop-types
 const LogoDark = () => {
   return (
-    <Link to='/'>
+    <Link to='/micro-biz-media/'>
       <img
         className='hidden lg:block'
         src={logoStandard}
