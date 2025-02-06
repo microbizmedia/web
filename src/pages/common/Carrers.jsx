@@ -40,7 +40,6 @@ const Careers = () => {
                          
                         
                 </div>
-                <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />
             </section>
 
         </>

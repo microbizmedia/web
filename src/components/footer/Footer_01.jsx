@@ -12,7 +12,7 @@ const Footer_01 = () => {
   const gitHubUrl = '/web/';
   const location = useLocation();
   const showRoutes = [gitHubUrl, gitHubUrl + "work", gitHubUrl + "services",
-    gitHubUrl + "process", gitHubUrl + "about", gitHubUrl + "privacy"];
+    gitHubUrl + "process", gitHubUrl + "about",];
   return (
     <>
 
@@ -26,7 +26,7 @@ const Footer_01 = () => {
             Start A Free Consultation
           </Link>
         </div>
-      ) : null}
+      ) : <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />}
 
 
       <footer className=' relative '>

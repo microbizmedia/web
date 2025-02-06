@@ -27,7 +27,6 @@ const Error_404 = () => {
             {/* 404 Content */}
           </div>
           {/* Section Container */}
-          <div className='h-[1px] bg-[#DBD6CF] opacity-25 max-w-[1024px] m-auto' />
         </section>
         {/*...::: 404 Section End :::... */}
       </main>

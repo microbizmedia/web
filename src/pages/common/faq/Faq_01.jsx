@@ -87,7 +87,6 @@ const Faq_01 = () => {
             </div>   
 
         </section>
-        <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />
       </main>
     </>
   );

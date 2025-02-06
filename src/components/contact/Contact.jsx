@@ -185,7 +185,6 @@ const CustomerService = () => {
           {/* Section Spacer */}
         </section>
         {/*...::: 404 Section End :::... */}
-        <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />
       </main>
     </>
   );
