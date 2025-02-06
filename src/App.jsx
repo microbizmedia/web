@@ -20,7 +20,7 @@ function App() {
     <>
       <Routes>
         <Route element={<Layout />}>
-          <Route path='micro-biz-media' element={<Hero />} />
+          <Route path='/' element={<Hero />} />
           <Route path='work' element={<Work />} />  
           <Route path='process' element={<Process />} />
           <Route path='services' element={<Services />} />

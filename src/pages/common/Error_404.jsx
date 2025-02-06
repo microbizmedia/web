@@ -22,7 +22,7 @@ const Error_404 = () => {
               Sorry for the inconvenience, let's go home.
             </p>
             <Link
-              to='/micro-biz-media'
+              to='/'
               className='button bg-colorWhite text-colorBackground rounded-md'> Take me home &#x27a4;  </Link>
             {/* 404 Content */}
           </div>

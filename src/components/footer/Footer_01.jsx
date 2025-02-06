@@ -10,12 +10,12 @@ import footerGraphic from '../../assets/img/footer_graphic_01_v1.png'
 
 const Footer_01 = () => {
   const location = useLocation();
-  const hiddenRoutes = ["/", "/micro-biz-media/", "/micro-biz-media", "/work", "/services", "/process", "/about", "/privacy"];
+  const showRoutes = ["/", "/work", "/services", "/process", "/about", "/privacy"];
   return (
     <>
 
 
-      {hiddenRoutes.includes(location.pathname) ? (
+      {showRoutes.includes(location.pathname) ? (
         <div className='global-container relative jos text-center py-10 md:py-16 z-40'>
           <h2 className=' pb-6'>Let's Start Your Story</h2>
           <Link
@@ -29,7 +29,7 @@ const Footer_01 = () => {
 
       <footer className=' relative '>
         {/* Footer Top pictures */}
-        {hiddenRoutes.includes(location.pathname) ? (
+        {showRoutes.includes(location.pathname) ? (
         <div className='relative'>
           <img
             src={backgroundPicture}
