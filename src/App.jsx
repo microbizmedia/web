@@ -1,4 +1,4 @@
-import { Outlet, Route, Routes, createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Hero from './pages/home/Hero';
 import Work from './pages/common/Work';
 import Error_404 from './pages/common/Error_404';
@@ -22,7 +22,7 @@ function App() {
     <>
       
     <Layout />
-      <Outlet />
+     
       {/* <Hero />
       <Work /> */}
       {/* <Routes>
