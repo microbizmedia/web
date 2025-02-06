@@ -50,7 +50,7 @@ const Header = () => {
           {/* Header User Event */}
           {/* to='/micro-biz-media/services#target-pricing' */}
           <div className='flex items-center '>
-            <HashLink to="/micro-biz-media/services#target-pricing"  className='button w-full py-[20px] px-[36px] ml-[50px] rounded-0 border-colorPurple bg-colorPurple after:bg-violet-600 hover:border-violet-400 lg:inline-block'>
+            <HashLink to="/web/services#target-pricing"  className='button w-full py-[20px] px-[36px] ml-[50px] rounded-0 border-colorPurple bg-colorPurple after:bg-violet-600 hover:border-violet-400 lg:inline-block'>
               Pricing
             </HashLink>
             {/* Responsive Off-canvas Menu Button */}

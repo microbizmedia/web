@@ -29,13 +29,13 @@ const TitleMessage = ({ header, paragraph, className }) => {
                     data-jos_animation='fade'
                 >
                     <Link
-                        to='/micro-biz-media/contact'
+                        to='/web/contact'
                         className=' button-micro rounded-[10px]  border-#c7c5e2 bg-colorPurple py-4 after:bg-violet-400 hover:border-violet-400'
                     >
                         Start A Free Consultation
                     </Link>
                     <Link
-                        to='/micro-biz-media/about'
+                        to='/web/about'
                         className=' button border-0 bg-transparent py-4'
                     >
                         Or read more about us &#x27a4;

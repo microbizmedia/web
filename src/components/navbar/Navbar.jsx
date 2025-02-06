@@ -7,6 +7,7 @@ import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png'
 
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ mobileMenu, setMobileMenu }) => {
+  const gitHubUrl = '/web/';
   const [mobileSubMenu, setMobileSubMenu] = useState('');
 
   const handleMenu = () => {
@@ -30,13 +31,13 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
             onClick={handleMenu}
             className='nav-item'
           >
-            <Link to='/micro-biz-media/work' className='nav-link-item '>
+            <Link to={gitHubUrl + 'work'} className='nav-link-item '>
               Work
             </Link>
           </li>
           <li onClick={handleMenu}
             className='nav-item'>
-            <Link to='/micro-biz-media/services' className='nav-link-item '>
+            <Link to='/web/services' className='nav-link-item '>
               Services
             </Link>
           </li>
@@ -44,7 +45,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
             onClick={handleMenu}
             className='nav-item'
           >
-            <Link to='/micro-biz-media/process' className='nav-link-item'>
+            <Link to={gitHubUrl + 'process'} className='nav-link-item'>
               Process
             </Link>
           </li>
@@ -52,14 +53,14 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
             onClick={handleMenu}
             className='nav-item '
           >
-            <Link to='/micro-biz-media/careers' className='nav-link-item '>
+            <Link to={gitHubUrl + 'careers'} className='nav-link-item '>
               Careers
             </Link>
           </li>
           <li className='nav-item'
             onClick={handleMenu}
           >
-            <Link to='/micro-biz-media/about' className='nav-link-item '>
+            <Link to={gitHubUrl + 'about'} className='nav-link-item '>
               About
             </Link>
           </li>

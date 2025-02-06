@@ -9,9 +9,10 @@ import footerGraphic from '../../assets/img/footer_graphic_01_v1.png'
 
 
 const Footer_01 = () => {
+  const gitHubUrl = '/web/';
   const location = useLocation();
-  const showRoutes = ["/micro-biz-media/", "/micro-biz-media/work", "/micro-biz-media/services", 
-    "/micro-biz-media/process", "/micro-biz-media/about", "/micro-biz-media/privacy"];
+  const showRoutes = [gitHubUrl, gitHubUrl + "work", gitHubUrl + "services",
+    gitHubUrl + "process", gitHubUrl + "about", gitHubUrl + "privacy"];
   return (
     <>
 
@@ -20,7 +21,7 @@ const Footer_01 = () => {
         <div className='global-container relative jos text-center py-10 md:py-16 z-40'>
           <h2 className=' pb-6'>Let's Start Your Story</h2>
           <Link
-            to='/micro-biz-media/contact'
+            to={gitHubUrl + 'contact'}
             className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 after:bg-violet-600 hover:border-violet-600 hover:text-white' >
             Start A Free Consultation
           </Link>
@@ -31,194 +32,194 @@ const Footer_01 = () => {
       <footer className=' relative '>
         {/* Footer Top pictures */}
         {showRoutes.includes(location.pathname) ? (
-        <div className='relative'>
-          <img
-            src={backgroundPicture}
-            className='absolute bottom-[0%]'
+          <div className='relative'>
+            <img
+              src={backgroundPicture}
+              className='absolute bottom-[0%]'
             />
             <img
               src={footerGraphic}
               alt='footer-graphic-website-images'
               className='relative   w-[100%] bottom-[100%] bg-bottom'
-            /> 
-          </div>   
-        ) :  null}
-
-      
-
-
-      {/* Footer Top */}
-      <div className='global-container pt-8 '>
-        {/* <div className='h-[1px] w-full bg-[#DBD6CF]' /> */}
-        {/* Footer Center */}
-        {/* <div className='lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]'> */}
-        <div className='flex flex-wrap mb-4 md:justify-between'>
-          {/* Footer Widget */}
-          <div className='flex flex-col mt-2 gap-y-4 p-3 md:max-w-60'>
-            <Link to='/micro-biz-media/' className='inline-block'>
-              <img
-                src={logoStandard}
-                alt='logo'
-                width={150}
-                height={24}
-              />
-            </Link>
-            <li className='list-none'>
-              Our mission is to empower businesses by providing
-              innovative online solutions that enhance their digital presence.
-            </li>
-
+            />
           </div>
-          {/* Footer Widget */}
-          {/* Footer Widget */}
-          <div className='flex flex-col gap-y-4 p-3'>
-            {/* Footer Title */}
-            <h4 className='text-[26px] text-bold capitalize'>
-              Menu
-            </h4>
-            {/* Footer Title */}
-            {/* Footer Navbar */}
-            <ul className='flex flex-col  capitalize'>
-              <li>
-                <Link
-                  to='/micro-biz-media/work'
-                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                >
-                  work
-                </Link>
+        ) : null}
+
+
+
+
+        {/* Footer Top */}
+        <div className='global-container pt-8 '>
+          {/* <div className='h-[1px] w-full bg-[#DBD6CF]' /> */}
+          {/* Footer Center */}
+          {/* <div className='lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]'> */}
+          <div className='flex flex-wrap mb-4 md:justify-between'>
+            {/* Footer Widget */}
+            <div className='flex flex-col mt-2 gap-y-4 p-3 md:max-w-60'>
+              <Link  to={gitHubUrl} className='inline-block'>
+                <img
+                  src={logoStandard}
+                  alt='logo'
+                  width={150}
+                  height={24}
+                />
+              </Link>
+              <li className='list-none'>
+                Our mission is to empower businesses by providing
+                innovative online solutions that enhance their digital presence.
               </li>
-              <li>
-                <Link
-                  to='/micro-biz-media/services'
-                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/micro-biz-media/process'
-                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                >
-                  Process
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/micro-biz-media/careers'
-                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                >
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/micro-biz-media/about'
-                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                >
-                  About Us
-                </Link>
-              </li>
-            </ul>
-          </div>
-          {/* Footer Widget */}
-          {/* Footer Widget */}
-          <div className='flex flex-col gap-y-4 p-3'>
-            {/* Footer Title */}
-            <h4 className='text-[26px] text-bold capitalize '>
-              Legal
-            </h4>
-            {/* Footer Title */}
-            {/* Footer Navbar */}
-            <ul className='flex flex-col  capitalize'>
-            <li>
-                <HashLink
-                  to='/micro-biz-media/services#target-pricing'
-                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                >
-                  Pricing
-                </HashLink>
-              </li>
-              <li>
-                <Link
-                  to='/micro-biz-media/FAQ'
-                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                >
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/micro-biz-media/affiliate'
-                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                >
-                  Affilliate Program
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/micro-biz-media/contact'
-                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                >
-                  Customer Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/micro-biz-media/privacy'
-                  className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-            </ul>
-          </div>
-          {/* Footer Widget */}
-          {/* Footer Widget */}
-          <div className='flex flex-col gap-y-4 p-3'>
-            {/* Footer Title */}
-            <h4 className='text-[26px] text-bold capitalize mr-10'>
-              Social Links
-            </h4>
-            {/* Footer Title */}
-            {/* Footer Subscriber Form */}
-            <div className='flex justify-between'>
-              <img
-                src={threadsIcon}
-                alt='hero-dashboard'
-                className='  size-10'
-              />
-              <img
-                src={xIcon}
-                alt='hero-dashboard'
-                className='  size-10'
-              />
-              <img
-                src={instagramIcon}
-                alt='hero-dashboard'
-                className='  size-10'
-              />
+
             </div>
-            {/* Footer Subscriber Form */}
+            {/* Footer Widget */}
+            {/* Footer Widget */}
+            <div className='flex flex-col gap-y-4 p-3'>
+              {/* Footer Title */}
+              <h4 className='text-[26px] text-bold capitalize'>
+                Menu
+              </h4>
+              {/* Footer Title */}
+              {/* Footer Navbar */}
+              <ul className='flex flex-col  capitalize'>
+                <li>
+                  <Link
+                     to={gitHubUrl + 'work'}
+                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
+                  >
+                    work
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                     to={gitHubUrl + 'services'}
+                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
+                  >
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                     to={gitHubUrl + 'process'}
+                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
+                  >
+                    Process
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                     to={gitHubUrl + 'carrers'}
+                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
+                  >
+                    Careers
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                     to={gitHubUrl + 'about'}
+                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
+                  >
+                    About Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            {/* Footer Widget */}
+            {/* Footer Widget */}
+            <div className='flex flex-col gap-y-4 p-3'>
+              {/* Footer Title */}
+              <h4 className='text-[26px] text-bold capitalize '>
+                Legal
+              </h4>
+              {/* Footer Title */}
+              {/* Footer Navbar */}
+              <ul className='flex flex-col  capitalize'>
+                <li>
+                  <HashLink
+                     to={gitHubUrl + 'services#target-pricing'}
+                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
+                  >
+                    Pricing
+                  </HashLink>
+                </li>
+                <li>
+                  <Link
+                     to={gitHubUrl + 'FAQ'}
+                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
+                  >
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                     to={gitHubUrl + 'affiliate'}
+                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
+                  >
+                    Affilliate Program
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                     to={gitHubUrl + 'contact'}
+                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
+                  >
+                    Customer Service
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                     to={gitHubUrl + 'privacy'}
+                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            {/* Footer Widget */}
+            {/* Footer Widget */}
+            <div className='flex flex-col gap-y-4 p-3'>
+              {/* Footer Title */}
+              <h4 className='text-[26px] text-bold capitalize mr-10'>
+                Social Links
+              </h4>
+              {/* Footer Title */}
+              {/* Footer Subscriber Form */}
+              <div className='flex justify-between'>
+                <img
+                  src={threadsIcon}
+                  alt='hero-dashboard'
+                  className='  size-10'
+                />
+                <img
+                  src={xIcon}
+                  alt='hero-dashboard'
+                  className='  size-10'
+                />
+                <img
+                  src={instagramIcon}
+                  alt='hero-dashboard'
+                  className='  size-10'
+                />
+              </div>
+              {/* Footer Subscriber Form */}
+            </div>
+            {/* Footer Widget */}
           </div>
-          {/* Footer Widget */}
-        </div>
         </div>
         {/* Footer Center */}
         <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />
         {/* Footer Bottom */}
-        
-          <p className='py-6 text-center text-sm'>
-            © {new Date().getFullYear()} MicroBiz Media. All Rights Reserved.
-          </p>
-        
+
+        <p className='py-6 text-center text-sm'>
+          © {new Date().getFullYear()} MicroBiz Media. All Rights Reserved.
+        </p>
+
         {/* Footer Bottom */}
-      
-      {/* Footer Background Shape 1  */}
-      {/* <div className='orange-gradient-2 absolute -top-[290px] right-[90px] -z-[1] h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]'></div> */}
-      {/* Footer Background Shape 2  */}
-      {/* <div className='orange-gradient-1 absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]'></div> */}
-    </footer >
+
+        {/* Footer Background Shape 1  */}
+        {/* <div className='orange-gradient-2 absolute -top-[290px] right-[90px] -z-[1] h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]'></div> */}
+        {/* Footer Background Shape 2  */}
+        {/* <div className='orange-gradient-1 absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]'></div> */}
+      </footer >
     </>
   );
 };

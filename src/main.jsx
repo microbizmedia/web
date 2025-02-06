@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
@@ -17,54 +17,59 @@ import Affiliate from './pages/common/Affiliate';
 import Contact from './components/contact/Contact';
 import Faq_01 from './pages/common/faq/Faq_01';
 import PrivacyPolicy from './pages/common/PrivacyPolicy';
+import { useContext } from 'react';
+
+
+
+const gitHubUrl = '/web/';
 
 const router = createBrowserRouter([
   {
-    path: "/micro-biz-media/",
+    path: gitHubUrl,
     element: <App />,
     children: [
       {
-        path: "/micro-biz-media/",
+        path: gitHubUrl,
         element: <Hero />,
       },
       {
-        path: "/micro-biz-media/work",
+        path: gitHubUrl + "work",
         element: <Work />,
       },
       {
-        path: "/micro-biz-media/*",
+        path: gitHubUrl + "*",
         element: <Error_404 />,
       },
       {
-        path: "/micro-biz-media/process",
+        path: gitHubUrl + "process",
         element: <Process />,
       },
       {
-        path: "/micro-biz-media/services",
+        path: gitHubUrl + "services",
         element: <Services />,
       },
       {
-        path: "/micro-biz-media/careers",
+        path: gitHubUrl + "careers",
         element: <Careers />,
       },
       {
-        path: "/micro-biz-media/about",
+        path: gitHubUrl + "about",
         element: <About />,
       },
       {
-        path: "/micro-biz-media/affiliate",
+        path: gitHubUrl + "affiliate",
         element: <Affiliate />,
       },
       {
-        path: "/micro-biz-media/contact",
+        path: gitHubUrl + "contact",
         element: <Contact />,
       },
       {
-        path: "/micro-biz-media/FAQ",
+        path: gitHubUrl + "FAQ",
         element: <Faq_01 />,
       },
       {
-        path: "/micro-biz-media/privacy",
+        path: gitHubUrl + "privacy",
         element: <PrivacyPolicy />,
       },
     ]
@@ -73,6 +78,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
