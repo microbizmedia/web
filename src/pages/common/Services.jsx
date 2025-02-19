@@ -32,7 +32,7 @@ const Services = () => {
                 data-jos_animation='zoom'
               >
                 <div  className='bg-colorBackground'>
-                  <h2 className='pt-14 text-center'>Business Basic</h2>
+                  <h3 className='pt-14 text-center'>Business Standard</h3>
                   <ul className='p-8  space-y-2'>
                     <li className=''><span className='text-green-500 font-bold'>✓</span> Web Design and Development</li>
                     <li className=''><span className='text-green-500 font-bold'>✓</span> Domain Registration and Hosting</li>
@@ -67,7 +67,7 @@ const Services = () => {
                  <div className='relative top-[-26px] left-[83px]  button inline-block border-none text-center bg-colorPurple px-8 py-2 rounded-[8px] '>Best Value</div>
 
                 <div>
-                  <h2 className='pt-2 text-center'>Business Elite</h2>
+                  <h3 className='pt-2 text-center'>Business Elite</h3>
                   <ul className='p-8 space-y-2'>
                     <li><span className='text-green-500 font-bold'>✓</span> Web Design and Development</li>
                     <li><span className='text-green-500 font-bold'>✓</span> Domain Registration and Hosting</li>

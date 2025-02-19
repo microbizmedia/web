@@ -78,10 +78,10 @@ const Faq_01 = () => {
                 data-jos_animation='zoom'
             >
                 <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                    <h2>7. I have a question that is not answered already!</h2>
+                    <h3>7. I have a question that is not answered already!</h3>
                     <p className='pt-6'>Thats great, our customer service team is happy to assist you.</p>
                     <div className='flex  justify-end pt-4'>
-                    <Link to='/customer-service' className='button w-full sm:w-auto inline-block sm:self-end bg-colorWhite text-colorBackground rounded-md'>Email Us &#x27a4;  </Link> 
+                    <Link to='/web/contact' className='button w-full sm:w-auto inline-block sm:self-end bg-colorWhite text-colorBackground rounded-md px-10'>Email Us &#x27a4;  </Link> 
                     </div>
                 </div>
             </div>   

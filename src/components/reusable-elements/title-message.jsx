@@ -9,6 +9,7 @@ const TitleMessage = ({ header, paragraph, className }) => {
         "/web/contact",
         "/web/FAQ",
         "/web/privacy",
+        "/web/TermsOfService",
     ];
     return (
         <>

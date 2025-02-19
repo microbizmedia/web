@@ -17,6 +17,7 @@ import Affiliate from './pages/common/Affiliate';
 import Contact from './components/contact/Contact';
 import Faq_01 from './pages/common/faq/Faq_01';
 import PrivacyPolicy from './pages/common/PrivacyPolicy';
+import TermsOfService from './pages/common/TermsOfService.jsx';
 
 const gitHubUrl = '/web/';
 
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
       {
         path: gitHubUrl + "privacy",
         element: <PrivacyPolicy />,
+      },
+      {
+        path: gitHubUrl + "TermsOfService",
+        element: <TermsOfService />,
       },
     ]
   }

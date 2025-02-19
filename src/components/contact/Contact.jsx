@@ -64,24 +64,7 @@ const CustomerService = () => {
 
 
 
-          <div
-            className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15
-              flex flex-col-reverse
-              mx-auto max-w-[1024px]
-              lg:flex-row mb-8 lg:mb-12'
-            data-jos_animation='zoom'
-          >
-            <div className='flex flex-col justify-center flex-1 bg-colorBackground px-4 py-6 lg:pl-16'>
-              <h2>Send us an email</h2>
-              <p className='lg:mb-8 mt-4 mb-4 lg:max-w-[70%]'>Tell us what we can do for you.</p>
-              <a href="mailto:info@microbizmedia.com" target="_blank"><p className=' text-colorPurple'>info@microbizmedia.com</p> </a>
-            </div>
-            <a className='relative lg:right-[40px] flex-1 flex justify-center items-center pt-16 lg:pr-20   h-[240px] lg:pt-0 w-full ' href="mailto:info@microbizmedia.com" target="_blank"><img
-              src={emailUsIcon}
-              alt='letter-image'
-              className=' size-6/12 animate-float  object-center'
-            /></a>
-          </div>
+
 
 
 
@@ -95,16 +78,9 @@ const CustomerService = () => {
             {/* <div className='flex flex-col justify-center items-center bg-colorBackground px-4 py-6 lg:pl-16 '> */}
 
 
-            <form className="w-full  rounded-lg px-4 lg:px-16 py-8"
+            <form className="w-full  rounded-lg px-4 lg:px-16 pt-8 md:pt-14 md:pb-4"
               onSubmit={handleSubmit}>
               <h2 className="mb-8">Let's Start Your Story</h2>
-
-
-              {isSubmitted && (
-                <p className="text-green-500 mb-4">Message sent successfully!</p>
-              )}
-
-
 
               {/* Four placeholders */}
               <div className="flex flex-wrap gap-4 lg:grid grid-rows-2 grid-cols-2">
@@ -172,16 +148,40 @@ const CustomerService = () => {
                 Contact
               </button>
               <p className='sub-title tracking-wider slide-from-bottom text-center  mx-auto mt-2 text-sm'>
-                By continuing you agree to the terms and conditions of MicroBiz Media LLC.
+                By continuing you agree to the Privacy Policy of MicroBiz Media LLC.
               </p>
+              {isSubmitted ? (
+                <p className="text-colorPurple text-center py-1 md:pt-3 md:pb-0">Message sent successfully!</p>
+              ) : <p className="text-colorPurple  text-center py-1 md:pt-3 md:pb-0 opacity-0">0</p>}
             </form>
 
+          </div>
+
+          <div
+            className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15
+              flex flex-col-reverse
+              mx-auto max-w-[1024px]
+              lg:flex-row mb-8 lg:mb-12'
+            data-jos_animation='zoom'
+          >
+            <div className='flex flex-col justify-center flex-1 bg-colorBackground px-4 py-6 lg:pl-16'>
+              <h2>Send us an email</h2>
+              <p className='lg:mb-8 mt-4 mb-4 lg:max-w-[70%]'>Tell us what we can do for you.</p>
+              <p className='text-colorPurple'><a href="mailto:info@microbizmedia.com?subject=General Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your services. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank">
+                info@microbizmedia.com
+              </a></p>
+            </div>
+            <a className='relative lg:right-[40px] flex-1 flex justify-center items-center pt-16 lg:pr-20   h-[240px] lg:pt-0 w-full '  href="mailto:info@microbizmedia.com?subject=General Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your services. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank"><img
+              src={emailUsIcon}
+              alt='letter-image'
+              className=' size-6/12 animate-float  object-center'
+            /></a>
           </div>
           {/* </div> */}
 
 
 
-         
+
           {/* Section Spacer */}
         </section>
         {/*...::: 404 Section End :::... */}

@@ -1,7 +1,7 @@
 
 import TitleMessage from "../../components/reusable-elements/title-message";
 
-const PrivacyPolicy2 = () => {
+const PrivacyPolicy = () => {
     return (
 
         <>
@@ -19,7 +19,7 @@ const PrivacyPolicy2 = () => {
                         className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
                         data-jos_animation='zoom'
                     >
-                        <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
+                        <div className='bg-colorBackground px-4 py-6 lg:py-8 lg:pl-16 lg:pr-8 whitespace-pre-line'>
                             <h3>1. Information We Collect</h3>
                             <p className='pt-6 sub-title'>We may collect the following types of information when you interact with our website or services:</p>
                             <p className='pt-4'>1.1 Personal Information:<span className='sub-title'> Name, email address, phone number, business details, and any other information you provide voluntarily.</span></p>
@@ -32,7 +32,7 @@ const PrivacyPolicy2 = () => {
                         className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
                         data-jos_animation='zoom'
                     >
-                        <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
+                        <div className='bg-colorBackground px-4 py-8 lg:py-8 lg:pl-16 lg:pr-8 whitespace-pre-line'>
                             <h3>2. How We Use Your Information</h3>
                             <p className='pt-6 sub-title'>We use your information for:</p>
                             <p className='pt-4'>2.1<span className="sub-title"> Providing, maintaining, and improving our services.</span></p>
@@ -46,7 +46,7 @@ const PrivacyPolicy2 = () => {
                         className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
                         data-jos_animation='zoom'
                     >
-                        <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
+                        <div className='bg-colorBackground px-4 py-10 lg:py-8 lg:pl-16 lg:pr-8 whitespace-pre-line'>
                             <h3>3. How We Share Your Information</h3>
                             <p className='pt-6'><span className="sub-title">We do</span> not <span className="sub-title">sell or rent your personal information. However, we may share it with:</span></p>
                             <p className='pt-4'>3.1 Service Providers: <span className='sub-title'> Third-party tools that help us operate ( e.g., hosting services, payment processors ).</span></p>
@@ -58,7 +58,7 @@ const PrivacyPolicy2 = () => {
                         className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
                         data-jos_animation='zoom'
                     >
-                        <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
+                        <div className='bg-colorBackground px-4 py-10 lg:py-8 lg:pl-16 lg:pr-8 whitespace-pre-line'>
                             <h3>4. Cookies & Tracking Technologies</h3>
                             <p className='pt-6 sub-title' >We use cookies and similar technologies to improve functionality and user experience.
                                 You can manage cookie preferences in your browser settings.</p>
@@ -69,7 +69,7 @@ const PrivacyPolicy2 = () => {
                         className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
                         data-jos_animation='zoom'
                     >
-                        <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
+                        <div className='bg-colorBackground px-4 py-10 lg:py-8 lg:pl-16 lg:pr-8 whitespace-pre-line'>
                             <h3>5. Data Security</h3>
                             <p className='pt-6 sub-title'>We implement security measures to protect your data,
                                 but no method is 100% secure. Please use caution when sharing personal information online.</p>
@@ -80,7 +80,7 @@ const PrivacyPolicy2 = () => {
                         className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
                         data-jos_animation='zoom'
                     >
-                        <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
+                        <div className='bg-colorBackground px-4 py-10 lg:py-8 lg:pl-16 lg:pr-8 whitespace-pre-line'>
                             <h3>6. Your Rights & Choices</h3>
                             <p className='pt-6 sub-title'>Depending on your location, you may have rights regarding your data, including:</p>
                             <p className='pt-4'>2.1<span className="sub-title"> Accessing, correcting, or deleting your personal data.</span></p>
@@ -95,7 +95,7 @@ const PrivacyPolicy2 = () => {
                         className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
                         data-jos_animation='zoom'
                     >
-                        <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
+                        <div className='bg-colorBackground px-4 py-10 lg:py-8 lg:pl-16 lg:pr-8 whitespace-pre-line'>
                             <h3>7. Third-Party Links</h3>
                             <p className='pt-6 sub-title'>Our website may contain links to third-party sites.
                                 We are not responsible for their privacy practices, so we encourage you to review their policies.</p>
@@ -106,7 +106,7 @@ const PrivacyPolicy2 = () => {
                         className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
                         data-jos_animation='zoom'
                     >
-                        <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
+                        <div className='bg-colorBackground px-4 py-10 lg:py-8 lg:pl-16 lg:pr-8 whitespace-pre-line'>
                             <h3>8. Changes to This Policy</h3>
                             <p className='pt-6 sub-title'>We may update this Privacy Policy occasionally.
                                 Changes will be posted on this page with a revised "Last Updated" date.</p>
@@ -121,16 +121,16 @@ const PrivacyPolicy2 = () => {
                         className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
                         data-jos_animation='zoom'
                     >
-                        <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
+                        <div className='bg-colorBackground px-4 py-10 lg:py-8 lg:pl-16 lg:pr-8 whitespace-pre-line'>
                             <h3>9. Contact Us</h3>
                             <p className='pt-6 sub-title'>If you have any questions about this Privacy Policy, you can contact us at:</p>
-                            <p className='pt-4 '>Email: <span className="sub-title">
+                            <p className='pt-4'>Email: <span className="  text-colorPurple">
                                 <a href="mailto:info@microbizmedia.com?subject=Privacy Policy Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your Privacy Policy. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank">
                                     info@microbizmedia.com
                                 </a>
                             </span>
                             </p>
-                            <p className='pt-4 '>Phone: <span className="sub-title"><a href="tel:+4733378901">+1 303 847 8771</a></span></p>
+                            <p className='pt-4 '>Phone: <span className="text-colorPurple"><a href="tel:+4733378901">+1 303 847 8771</a></span></p>
                         </div>
                     </div>
 
@@ -143,4 +143,4 @@ const PrivacyPolicy2 = () => {
     );
 };
 
-export default PrivacyPolicy2;
+export default PrivacyPolicy;

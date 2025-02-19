@@ -15,8 +15,9 @@ const Affiliate = () => {
                 data-jos_animation='zoom'
             >
                 <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                    <h2>We are currently working on lunghing our affiliate program tell us about you so we can contact you!</h2>
-                    <a href="mailto:info@microbizmedia.com" target="_blank"><p className='pt-6 text-colorPurple'>info@microbizmedia.com</p> </a>
+                    <h3>We are currently working on lunghing our affiliate program tell us about you so we can contact you!</h3>
+                    <a href="mailto:info@microbizmedia.com?subject=Affiliate Program Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your Affiliate Program. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank">
+                      <p className='pt-6 text-colorPurple'>info@microbizmedia.com</p> </a>
                 </div>
             </div> 
 
