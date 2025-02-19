@@ -8,7 +8,7 @@ const TitleMessage = ({ header, paragraph, className }) => {
         "/web/affiliate",
         "/web/contact",
         "/web/FAQ",
-        "/web/privacy"
+        "/web/privacy",
     ];
     return (
         <>

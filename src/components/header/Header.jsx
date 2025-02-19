@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import Navbar from '../navbar/Navbar';
 import Logo from '../logo/Logo';
-import Pupup from '../pupup/pupup';
+import PrivacyPupup from '../pupup/PrivacyPupUp';
 import { useEffect } from 'react';
 // eslint-disable-next-line react/prop-types
 const Header = () => {
@@ -33,7 +33,7 @@ const Header = () => {
       id='sticky-menu'
     >
       {/* Pupup terms and conditions */}
-      <Pupup />
+      <PrivacyPupup />
       {/* Pupup terms and conditions */}
       <div className=' max-w-full m-auto lg:pl-[36px]  '>
         <div className='flex items-center justify-between h-[65px]'>

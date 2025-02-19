@@ -10,7 +10,7 @@ const careerWindow = ({ header, career, description }) => {
                 data-jos_animation='zoom'
             >
                 <div className='bg-colorBackground w-full  px-6 sm:px-16 py-10 sm:pt-16 sm:pb-10  '>
-                    <h2>{header}</h2>
+                    <h3>{header}</h3>
                     <p className='text-colorPurple py-4'>{career}</p>
                     <div className='flex flex-wrap justify-between'>
 

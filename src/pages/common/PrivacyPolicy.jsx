@@ -1,7 +1,7 @@
 
 import TitleMessage from "../../components/reusable-elements/title-message";
 
-const PrivacyPolicy = () => {
+const PrivacyPolicy2 = () => {
     return (
 
         <>
@@ -11,27 +11,20 @@ const PrivacyPolicy = () => {
                 <section className='faq-section'>
                     <TitleMessage
                         header='We Value Your Privacy!'
-                        paragraph='Transparency and inclusion are the pillar stones of success for us, in this fashion we have prepared a comprehensive terms of service to explain our position.' />
-
-
-                    <h2 className="text-center pb-4 lg:pb-8 lg:pt-8">Terms Of Service</h2>
+                        paragraph='Welcome to MicroBiz Media LLC. Your privacy is important to us.
+                         This Privacy Policy explains how we collect, use, 
+                         disclose, and safeguard your information when you visit our website and use our services.' />
+                    <h2 className="text-center pb-4 lg:pb-8 lg:pt-8">Privacy Policy</h2>
                     <div
                         className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
                         data-jos_animation='zoom'
                     >
                         <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                            <h2>1. Overview of Services</h2>
-                            <p className='pt-6'>1.1 Service Offerings</p>
-                            <p className='pt-4 sub-title'>MicroBiz Media LLC specializes in delivering comprehensive digital solutions, including but not limited to:</p>
-
-                            <p className='pt-4 sub-title'>- Website design and development</p>
-                            <p className=' sub-title'>- Hosting services</p>
-                            <p className=' sub-title'>- Branding, marketing, and SEO strategies</p>
-                            <p className=' sub-title'>- Sales campaigns and digital marketing optimization</p>
-                            <p className=' sub-title'>- Specialized service extensions developed in alignment with customer requirements</p>
-                            <p className='pt-4 '>1.2 Service Modifications</p>
-                            <p className='pt-4 sub-title'>We reserve the right to expand, modify, or discontinue any service offerings at our discretion. New services may be introduced to fulfill
-                                specific client requirements, though the final decision remains solely with the Company.</p>
+                            <h3>1. Information We Collect</h3>
+                            <p className='pt-6 sub-title'>We may collect the following types of information when you interact with our website or services:</p>
+                            <p className='pt-4'>1.1 Personal Information:<span className='sub-title'> Name, email address, phone number, business details, and any other information you provide voluntarily.</span></p>
+                            <p className='pt-4'>1.2 Usage Data:<span className='sub-title'>  IP address, browser type, operating system, pages visited, and other analytics.</span></p>
+                            <p className='pt-4'>1.3 Cookies & Tracking Technologies:<span className='sub-title'> We use cookies to improve your browsing experience and analyze website traffic.</span></p>
                         </div>
                     </div>
 
@@ -40,15 +33,12 @@ const PrivacyPolicy = () => {
                         data-jos_animation='zoom'
                     >
                         <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                            <h2>2. Intellectual Property</h2>
-                            <p className='pt-6'>2.1 Ownership of Materials</p>
-                            <p className='pt-4 sub-title'>All content, designs, and intellectual property created, provided, or uploaded in conjunction with our services remain the exclusive
-                                property of MicroBiz Media LLC, unless explicitly stated otherwise in a separate agreement.</p>
-
-
-                            <p className='pt-4 '>2.2 Client-Generated Content</p>
-                            <p className='pt-4 sub-title'>We reserve the right to expand, modify, or discontinue any service offerings at our discretion. New services may be introduced to fulfill
-                                specific client requirements, though the final decision remains solely with the Company.</p>
+                            <h3>2. How We Use Your Information</h3>
+                            <p className='pt-6 sub-title'>We use your information for:</p>
+                            <p className='pt-4'>2.1<span className="sub-title"> Providing, maintaining, and improving our services.</span></p>
+                            <p className='pt-4'>2.2<span className="sub-title"> Responding to inquiries and customer support requests.</span></p>
+                            <p className='pt-4'>2.3<span className="sub-title"> Sending updates, promotions, or important notices ( if you opt-in ).</span></p>
+                            <p className='pt-4'>2.4<span className="sub-title"> Ensuring website security and preventing fraudulent activities.</span></p>
                         </div>
                     </div>
 
@@ -57,18 +47,10 @@ const PrivacyPolicy = () => {
                         data-jos_animation='zoom'
                     >
                         <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                            <h2>3. Data Collection and Usage</h2>
-                            <p className='pt-6'>3.1 Consent to Data Processing</p>
-                            <p className='pt-4 sub-title'>By engaging with our services, you consent to the collection and processing of data for purposes such as but not limited to:</p>
-
-
-                            <p className='pt-4 sub-title'>- Advertising</p>
-                            <p className=' sub-title'>- Service optimization and feature improvement</p>
-                            <p className=' sub-title'>- Operational analytics and customer engagement</p>
-
-                            <p className='pt-4 '>3.2 Compliance with Regulations</p>
-                            <p className='pt-4 sub-title'>We adhere to applicable data privacy laws, including the EU General Data Protection Regulation (GDPR) and the California Consumer
-                                bvvPrivacy Act (CCPA). Clients are expected to uphold similar standards when using our services.</p>
+                            <h3>3. How We Share Your Information</h3>
+                            <p className='pt-6'><span className="sub-title">We do</span> not <span className="sub-title">sell or rent your personal information. However, we may share it with:</span></p>
+                            <p className='pt-4'>3.1 Service Providers: <span className='sub-title'> Third-party tools that help us operate ( e.g., hosting services, payment processors ).</span></p>
+                            <p className='pt-4'>3.2 Legal Requirements: <span className='sub-title'>  If required by law or to protect our rights.</span></p>
                         </div>
                     </div>
 
@@ -77,37 +59,9 @@ const PrivacyPolicy = () => {
                         data-jos_animation='zoom'
                     >
                         <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                            <h2>4. Code of Conduct and Fair Use</h2>
-                            <p className='pt-6'>4.1 Prohibited Activities</p>
-                            <p className='pt-4 sub-title'>Users are prohibited from engaging in any activities deemed illegal, unethical, or harmful to the Company or other users.
-                                Such activities include but are not limited to:</p>
-
-                            <p className='pt-4 sub-title'>- Uploading malicious or unlawful content</p>
-                            <p className=' sub-title'>- Exploiting our services to harm third parties</p>
-                            <p className=' sub-title'>- Violating intellectual property rights</p>
-
-                            <p className='pt-4 '>4.2 Reporting Mechanism</p>
-                            <p className='pt-4 sub-title'>We encourage users to report any instances of misconduct through our public communication channels. All valid reports will be thoroughly
-                                reviewed, and corrective actions will be implemented.</p>
-                        </div>
-                    </div>
-
-
-                    <div
-                        className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
-                        data-jos_animation='zoom'
-                    >
-                        <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                            <h2>5. Platform Usage and Restrictions</h2>
-                            <p className='pt-6'>5.1 Content Ownership</p>
-                            <p className='pt-4 sub-title'>All content regardless of nature, that is uploaded to our platforms becomes subject to our oversight and dedication to forming lasting lawful
-                                relationships. We reserve the right to suspend or terminate users, user groups or partnerships as applicable in order to ensure that our
-                                policies or standards remain ubroken, to the best of our abilities. Use our report feature to bring bad actors to light.</p>
-
-
-                            <p className='pt-4 '>5.2 Quality Control</p>
-                            <p className='pt-4 sub-title'>We are committed to maintaining a fair and inclusive platform. To that end, we may remove or restrict access to content that does not meet
-                                our guidelines or infringes upon third-party rights without further comment.</p>
+                            <h3>4. Cookies & Tracking Technologies</h3>
+                            <p className='pt-6 sub-title' >We use cookies and similar technologies to improve functionality and user experience.
+                                You can manage cookie preferences in your browser settings.</p>
                         </div>
                     </div>
 
@@ -116,15 +70,22 @@ const PrivacyPolicy = () => {
                         data-jos_animation='zoom'
                     >
                         <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                            <h2>6. Service Standards and Limitations</h2>
-                            <p className='pt-6'>6.1 Uptime and Availability</p>
-                            <p className='pt-4 sub-title'>While we strive to ensure uninterrupted service, no specific uptime guarantees are provided. Service availability is contingent on our
-                                third-party partners, and we disclaim liability for unforeseen outages.</p>
+                            <h3>5. Data Security</h3>
+                            <p className='pt-6 sub-title'>We implement security measures to protect your data,
+                                but no method is 100% secure. Please use caution when sharing personal information online.</p>
+                        </div>
+                    </div>
 
-
-                            <p className='pt-4 '>6.2 Liability Disclaimer</p>
-                            <p className='pt-4 sub-title'>MicroBiz Media LLC operates as a Limited Liability Corporation. We make no explicit guarantees regarding outcomes but continue to
-                                ensure our best efforts are applied to all services rendered.</p>
+                    <div
+                        className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
+                        data-jos_animation='zoom'
+                    >
+                        <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
+                            <h3>6. Your Rights & Choices</h3>
+                            <p className='pt-6 sub-title'>Depending on your location, you may have rights regarding your data, including:</p>
+                            <p className='pt-4'>2.1<span className="sub-title"> Accessing, correcting, or deleting your personal data.</span></p>
+                            <p className='pt-4'>2.2<span className="sub-title"> Opting out of marketing emails.</span></p>
+                            <p className='pt-4'>2.3<span className="sub-title"> Restricting certain types of data processing.</span></p>
                         </div>
                     </div>
 
@@ -135,15 +96,9 @@ const PrivacyPolicy = () => {
                         data-jos_animation='zoom'
                     >
                         <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                            <h2>7. Legal Protections</h2>
-                            <p className='pt-6'>7.1 Limitation of Liability</p>
-                            <p className='pt-4 sub-title'>To the maximum extent permitted by law, the Company is not liable for any indirect, incidental, or consequential damages arising from
-                                the use or inability to use our services.</p>
-
-
-                            <p className='pt-4 '>7.2 Indemnification</p>
-                            <p className='pt-4 sub-title'>Users, visitors and partners agree to indemnify and hold MicroBiz Media LLC harmless from claims, damages, or legal actions resulting
-                                from the misuse of our services or any and all external factors.</p>
+                            <h3>7. Third-Party Links</h3>
+                            <p className='pt-6 sub-title'>Our website may contain links to third-party sites.
+                                We are not responsible for their privacy practices, so we encourage you to review their policies.</p>
                         </div>
                     </div>
 
@@ -152,29 +107,13 @@ const PrivacyPolicy = () => {
                         data-jos_animation='zoom'
                     >
                         <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                            <h2>8. Dispute Resolution</h2>
-                            <p className='pt-6'>8.1 Governing Law</p>
-                            <p className='pt-4 sub-title'>These Terms are governed by the laws of
-                                Colorado.</p>
-
-
-                            <p className='pt-4 '>8.2 Arbitration</p>
-                            <p className='pt-4 sub-title'>In the event of disputes, the parties agree to resolve matters through binding arbitration before pursuing formal litigation.</p>
+                            <h3>8. Changes to This Policy</h3>
+                            <p className='pt-6 sub-title'>We may update this Privacy Policy occasionally.
+                                Changes will be posted on this page with a revised "Last Updated" date.</p>
                         </div>
                     </div>
 
-                    <div
-                        className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
-                        data-jos_animation='zoom'
-                    >
-                        <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                            <h2>9. Amendments and Updates</h2>
-                            <p className='pt-6'>9.1 Changes to Terms</p>
-                            <p className='pt-4 sub-title'>MicroBiz Media LLC reserves the right to amend these Terms at any time. Interested parties will be notified only of significant changes,
-                                and continued use of the services constitutes of mutual understanding that the user, representative or otherwise associate will on their
-                                own accord and in their own time read the update by themselves.</p>
-                        </div>
-                    </div>
+
 
 
 
@@ -183,11 +122,15 @@ const PrivacyPolicy = () => {
                         data-jos_animation='zoom'
                     >
                         <div className='bg-colorBackground px-4 py-10 lg:py-14 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                            <h2>10. Contact Information</h2>
-                            <p className='pt-6'>For inquiries or clarifications, please contact us at:</p>
-                            <p className='pt-4 sub-title'>Email: info@microbizmedia.com</p>
-                            <p className=' sub-title'>Phone: 303 847 8771</p>
-                            <p className=' sub-title'>Address: 2100 Welton st. Denver CO 80205</p>
+                            <h3>9. Contact Us</h3>
+                            <p className='pt-6 sub-title'>If you have any questions about this Privacy Policy, you can contact us at:</p>
+                            <p className='pt-4 '>Email: <span className="sub-title">
+                                <a href="mailto:info@microbizmedia.com?subject=Privacy Policy Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your Privacy Policy. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank">
+                                    info@microbizmedia.com
+                                </a>
+                            </span>
+                            </p>
+                            <p className='pt-4 '>Phone: <span className="sub-title"><a href="tel:+4733378901">+1 303 847 8771</a></span></p>
                         </div>
                     </div>
 
@@ -200,4 +143,4 @@ const PrivacyPolicy = () => {
     );
 };
 
-export default PrivacyPolicy;
+export default PrivacyPolicy2;
