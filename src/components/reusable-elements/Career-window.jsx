@@ -1,5 +1,7 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+
 const careerWindow = ({ header, career, description }) => {
+   
     return (
         <>
             <div
@@ -15,7 +17,7 @@ const careerWindow = ({ header, career, description }) => {
                     <div className='flex flex-wrap justify-between'>
 
                         <p className='whitespace-pre-line pb-6 sm:pb-0'>{description}</p>
-                        <Link className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'> Easy Apply &#x27a4;  </Link>
+                        <Link to={`/web/careers/apply/${header.toLowerCase().replace(/\s+/g, "-")}`} className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'> Easy Apply &#x27a4;  </Link>
                     </div>
 
                 </div>

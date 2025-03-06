@@ -49,7 +49,8 @@ const Header = () => {
           {/* Header Navigation */}
           {/* Header User Event */}
           <div className='flex items-center '>
-            <HashLink to="/web/services#target-pricing"  className='button w-full py-[20px] px-[36px] ml-[50px] rounded-0 border-colorPurple bg-colorPurple after:bg-violet-600 hover:border-violet-400 lg:inline-block'>
+            <HashLink to="/web/services#target-pricing"  className='button w-full py-[20px] px-[36px] ml-[50px] rounded-0 
+            border-colorPurple bg-colorPurple after:bg-violet-600 hover:border-violet-400 lg:inline-block text-[1rem]'>
               Pricing
             </HashLink>
             {/* Responsive Off-canvas Menu Button */}

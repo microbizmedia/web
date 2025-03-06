@@ -11,8 +11,14 @@ import footerGraphic from '../../assets/img/footer_graphic_01_v1.png'
 const Footer_01 = () => {
   const gitHubUrl = '/web/';
   const location = useLocation();
-  const showRoutes = [gitHubUrl, gitHubUrl + "work", gitHubUrl + "services",
-    gitHubUrl + "process", gitHubUrl + "about",];
+  const showRoutes = [
+    gitHubUrl,
+    '/web',
+    gitHubUrl + "work",
+    gitHubUrl + "services",
+    gitHubUrl + "process",
+    gitHubUrl + "about",
+  ];
   return (
     <>
 
@@ -56,7 +62,7 @@ const Footer_01 = () => {
           <div className='flex flex-wrap mb-4 md:justify-between'>
             {/* Footer Widget */}
             <div className='flex flex-col mt-2 gap-y-4 p-3 md:max-w-60'>
-              <Link  to={gitHubUrl} className='inline-block'>
+              <Link to={gitHubUrl} className='inline-block'>
                 <img
                   src={logoStandard}
                   alt='logo'
@@ -82,7 +88,7 @@ const Footer_01 = () => {
               <ul className='flex flex-col  capitalize'>
                 <li>
                   <Link
-                     to={gitHubUrl + 'work'}
+                    to={gitHubUrl + 'work'}
                     className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                   >
                     work
@@ -90,7 +96,7 @@ const Footer_01 = () => {
                 </li>
                 <li>
                   <Link
-                     to={gitHubUrl + 'services'}
+                    to={gitHubUrl + 'services'}
                     className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                   >
                     Services
@@ -98,7 +104,7 @@ const Footer_01 = () => {
                 </li>
                 <li>
                   <Link
-                     to={gitHubUrl + 'process'}
+                    to={gitHubUrl + 'process'}
                     className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                   >
                     Process
@@ -106,7 +112,7 @@ const Footer_01 = () => {
                 </li>
                 <li>
                   <Link
-                     to={gitHubUrl + 'carrers'}
+                    to={gitHubUrl + 'carrers'}
                     className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                   >
                     Careers
@@ -114,7 +120,7 @@ const Footer_01 = () => {
                 </li>
                 <li>
                   <Link
-                     to={gitHubUrl + 'about'}
+                    to={gitHubUrl + 'about'}
                     className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                   >
                     About Us
@@ -134,7 +140,7 @@ const Footer_01 = () => {
               <ul className='flex flex-col  capitalize'>
                 <li>
                   <HashLink
-                     to={gitHubUrl + 'services#target-pricing'}
+                    to={gitHubUrl + 'services#target-pricing'}
                     className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                   >
                     Pricing
@@ -142,7 +148,7 @@ const Footer_01 = () => {
                 </li>
                 <li>
                   <Link
-                     to={gitHubUrl + 'FAQ'}
+                    to={gitHubUrl + 'FAQ'}
                     className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                   >
                     FAQ
@@ -150,7 +156,7 @@ const Footer_01 = () => {
                 </li>
                 <li>
                   <Link
-                     to={gitHubUrl + 'affiliate'}
+                    to={gitHubUrl + 'affiliate'}
                     className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                   >
                     Affilliate Program
@@ -158,7 +164,7 @@ const Footer_01 = () => {
                 </li>
                 <li>
                   <Link
-                     to={gitHubUrl + 'contact'}
+                    to={gitHubUrl + 'contact'}
                     className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                   >
                     Customer Service
@@ -166,7 +172,7 @@ const Footer_01 = () => {
                 </li>
                 <li>
                   <Link
-                     to={gitHubUrl + 'privacy'}
+                    to={gitHubUrl + 'privacy'}
                     className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
                   >
                     Privacy Policy

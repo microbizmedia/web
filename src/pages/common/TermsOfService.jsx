@@ -158,7 +158,7 @@ const PrivacyPolicy2 = () => {
                         data-jos_animation='zoom'
                     >
                         <div className='bg-colorBackground px-4 py-10 lg:py-8 lg:pl-16 lg:pr-8 whitespace-pre-line'>
-                            <h3>9. Contact Us</h3>
+                            <h3>13. Contact Us</h3>
                             <p className='pt-6 sub-title'>If you have any questions about these Terms, please contact us at:</p>
                             <p className='pt-4'>Email: <span className="  text-colorPurple">
                                 <a href="mailto:info@microbizmedia.com?subject=Privacy Policy Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your Privacy Policy. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank">

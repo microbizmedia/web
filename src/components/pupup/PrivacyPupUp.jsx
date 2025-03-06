@@ -63,7 +63,7 @@ const PrivacyPupup = () => {
                                 to='/web/privacy'
                                 className="button flex  justify-center rounded-md bg-colorWhite border-none text-colorBackground w-full md:w-auto text-center "
                             >
-                                Read Terms of service
+                                Read Privacy Policy
                             </Link>
                             <button
                                 onClick={handleAccept}

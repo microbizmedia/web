@@ -71,10 +71,10 @@ const Hero = () => {
               <div className='flex flex-col justify-center   px-8 py-10 lg:pl-[76px] lg:max-w-[50%]'>
                 <h2>Our consultations are always free</h2>
                 <p className='lg:mt-6 lg:mb-10 mt-4 mb-8 text-base '>Give us an email and one of our agents will contact you as soon as we can.</p>
-                <Link to='/contact' className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
+                <Link to='/web/contact' className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
               </div>
 
-              <a href="mailto:info@microbizmedia.com" target="_blank"
+              <a href="mailto:info@microbizmedia.com?subject=General Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your services. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank"
                 className=' relative  flex justify-center items-center lg:right-[40px]'>
                 <img
                   src={emailUsIcon}
@@ -91,7 +91,7 @@ const Hero = () => {
               aditionalClassName="scale-x-[-1] lg:pr-0 lg:pl-20"
               image={ourStoryImg}
               button='Learn More'
-              link='/about'
+              link='/web/about'
             />
 
 
