@@ -1,10 +1,6 @@
 import TitleMessage from '../reusable-elements/title-message';
 import React, { useState, useEffect } from 'react';
-import emailjs from 'emailjs-com';
 import emailUsIcon from '../../assets/icon_images/email_us_icon.png'
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
 
 const CustomerService = () => {
 
@@ -20,14 +16,12 @@ const CustomerService = () => {
   const [showMessage, setShowMessage] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-
   useEffect(() => {
     if (isSubmitted || validationErrors.length > 0) {
       setShowMessage(true);
       const timer = setTimeout(() => {
         setShowMessage(false);
       }, 60000); // 1 minute
-
       return () => clearTimeout(timer);
     }
   }, [isSubmitted, validationErrors]);
@@ -98,9 +92,6 @@ const CustomerService = () => {
                mb-8 lg:mb-12 '
             data-jos_animation='zoom'
           >
-            {/* <div className='flex flex-col justify-center items-center bg-colorBackground px-4 py-6 lg:pl-16 '> */}
-
-
             <form className="w-full  rounded-lg px-4 lg:px-16 pt-8 md:pt-14 md:pb-4"
               onSubmit={handleSubmit}    >
               <h2 className="mb-8">Let's Start Your Story</h2>
@@ -115,7 +106,6 @@ const CustomerService = () => {
                   type="text" spellCheck="false"
                   placeholder="Name*"
                   className="bg-colorPurple/70 placeholder:text-colorWhite/50  border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full "
-
                 />
                 <input
                   name="phone"
@@ -166,14 +156,12 @@ const CustomerService = () => {
               <button
                 type="submit"
                 className=" mt-4 w-full bg-colorWhite text-colorBackground font-bold py-2 px-4 rounded-lg"
-              disabled={isLoading}
+                disabled={isLoading}
               >
                 {isLoading ? 'Sending...' : 'Contact'}
-               
               </button>
               <p className='sub-title tracking-wider slide-from-bottom text-center  mx-auto mt-1.5 text-sm'>
                 By continuing you agree to the terms of service & privacy policy of MicroBiz Media LLC.
-
               </p>
               {showMessage ? (
                 isSubmitted ? (
@@ -190,9 +178,7 @@ const CustomerService = () => {
                 <p className="py-1 md:pt-3 md:pb-0 opacity-0">.</p> // Keeps the space occupied
               )}
             </form>
-
           </div>
-
           <div
             className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15
               flex flex-col-reverse
