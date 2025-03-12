@@ -73,7 +73,7 @@ const CareersAplications = () => {
         applicationData.append("resume", formData.resume); // Attach file
 
         try {
-            const response = await fetch("http://localhost:5000/apply", {
+            const response = await fetch("https://micro-biz-backend-microbizmedia-microbizmedias-projects.vercel.app/apply", {
                 method: "POST",
                 body: applicationData,
             });
@@ -150,13 +150,13 @@ const CareersAplications = () => {
                                     name="location"
                                     value={formData.location}
                                     onChange={handleChange}
-                                    type="tel"
+                                    type="text"
                                     spellCheck="false"
                                     placeholder="Location"
                                     className="bg-colorPurple/70 placeholder:text-colorWhite/50  border border-gray-600 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-gray-600 w-full "
                                 />
                                 <input
-                                    type="text"
+                                    type="number"
                                     name="yearsOfExperience"
                                     value={formData.yearsOfExperience}
                                     onChange={handleChange}

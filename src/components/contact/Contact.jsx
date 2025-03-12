@@ -43,7 +43,7 @@ const CustomerService = () => {
     applicationData.append("message", formData.message);
 
     try {
-      const response = await fetch("http://localhost:5000/contact", {
+      const response = await fetch("https://micro-biz-backend-microbizmedia-microbizmedias-projects.vercel.app/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" }, // Ensure JSON format
         body: JSON.stringify(Object.fromEntries(applicationData)),
