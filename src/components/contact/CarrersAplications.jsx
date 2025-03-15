@@ -73,7 +73,7 @@ const CareersAplications = () => {
         applicationData.append("resume", formData.resume); // Attach file
 
         try {
-            const response = await fetch("https://micro-biz-backend-microbizmedia-microbizmedias-projects.vercel.app/apply", {
+            const response = await fetch("https://micro-biz-backend.vercel.app/apply", {
                 method: "POST",
                 body: applicationData,
             });
@@ -106,9 +106,9 @@ const CareersAplications = () => {
         } catch (error) {
             // console.error("Error submitting application:", error);
             alert("An error occurred. Please try again.");
-        }finally {
+        } finally {
             setIsLoading(false); // Re-enable button after submission
-          }
+        }
     };
 
     return (
@@ -195,7 +195,6 @@ const CareersAplications = () => {
                                 className="hidden"
                                 ref={fileInputRef} // Attach the ref to the file input
                             />
-
                             <p className='text-colorPurple sub-title tracking-wider slide-from-bottom text-center  m-auto text-sm mt-1'>
                                 Fields that contain a *star*(*) are considered mandatory fields.
                             </p>
@@ -205,9 +204,6 @@ const CareersAplications = () => {
                                 value={isLoading ? 'Sending...' : 'Submit'}
                                 className=" mt-4 w-full bg-colorWhite text-colorBackground font-bold py-2 px-4 rounded-lg cursor-pointer"
                             />
-                           
-              
-                
                             <p className='sub-title tracking-wider slide-from-bottom text-center  mx-auto mt-1 text-sm'>
                                 By submitting your application, you agree to our Terms of Service and Privacy Policy.
                             </p>
