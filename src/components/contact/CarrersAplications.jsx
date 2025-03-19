@@ -62,6 +62,15 @@ const CareersAplications = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true); // Disable button while submitting
+
+        // Validate file size before sending the request
+        if (formData.resume && formData.resume.size > 5 * 1024 * 1024) {
+            setValidationErrors({ resume: "File size must be less than 5MB." });
+            setIsLoading(false);
+            return;
+        }
+
+
         // Create FormData object for file upload
         const applicationData = new FormData();
         applicationData.append("positionName", formattedJobTitle);
@@ -77,6 +86,12 @@ const CareersAplications = () => {
                 method: "POST",
                 body: applicationData,
             });
+            if (response.status === 413) {
+                // Handle large file error
+                setValidationErrors({ resume: "File size must be less than 5MB." });
+                setIsLoading(false);
+                return;
+            }
             const result = await response.json();
             if (response.ok) {
                 // console.log("Application submitted successfully:", result);
