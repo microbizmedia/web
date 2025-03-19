@@ -62,7 +62,6 @@ const CareersAplications = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true); // Disable button while submitting
-        console.log("Submit button clicked!"); // ✅ Debugging log
 
         // Validate file size before sending the request
         if (formData.resume && formData.resume.size > 5 * 1024 * 1024) {
@@ -80,14 +79,15 @@ const CareersAplications = () => {
         applicationData.append("location", formData.location);
         applicationData.append("yearsOfExperience", formData.yearsOfExperience);
         applicationData.append("message", formData.message);
-        if (formData.resume instanceof File) {
-            applicationData.append("resume", formData.resume);
-        } else {
-            console.error("No valid file selected.");
-            setValidationErrors([{ msg: "File size must be less than 5MB." }]);
-            setIsLoading(false);
-            return;
-        }
+        applicationData.append("resume", formData.resume);
+        // if (formData.resume instanceof File) {
+        //     applicationData.append("resume", formData.resume);
+        // } else {
+        //     console.error("No valid file selected.");
+        //     setValidationErrors([{ msg: "first error messsage: File size must be less than 5MB." }]);
+        //     setIsLoading(false);
+        //     return;
+        // }
 
         try {
             const response = await fetch("https://micro-biz-backend.vercel.app/apply", {
@@ -96,7 +96,7 @@ const CareersAplications = () => {
             });
             if (response.status === 413) {
                 console.error("Server rejected file due to size limit.");
-                setValidationErrors({ resume: "File size must be less than 5MB." });
+                setValidationErrors({ resume: "second error message: File size must be less than 5MB." });
                 setIsLoading(false);
                 return;
             }
