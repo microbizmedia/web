@@ -62,14 +62,15 @@ const CareersAplications = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true); // Disable button while submitting
+        console.log("Submit button clicked!"); // ✅ Debugging log
 
         // Validate file size before sending the request
         if (formData.resume && formData.resume.size > 5 * 1024 * 1024) {
-            setValidationErrors({ resume: "File size must be less than 5MB." });
+            console.error("File too large - prevented before sending to server.");
+            setValidationErrors([{ msg: "File size must be less than 5MB." }]);
             setIsLoading(false);
-            return;
+            return; // Stop the request
         }
-
 
         // Create FormData object for file upload
         const applicationData = new FormData();
@@ -79,7 +80,14 @@ const CareersAplications = () => {
         applicationData.append("location", formData.location);
         applicationData.append("yearsOfExperience", formData.yearsOfExperience);
         applicationData.append("message", formData.message);
-        applicationData.append("resume", formData.resume); // Attach file
+        if (formData.resume instanceof File) {
+            applicationData.append("resume", formData.resume);
+        } else {
+            console.error("No valid file selected.");
+            setValidationErrors({ resume: "Please select a valid file." });
+            setIsLoading(false);
+            return;
+        }
 
         try {
             const response = await fetch("https://micro-biz-backend.vercel.app/apply", {
@@ -87,7 +95,7 @@ const CareersAplications = () => {
                 body: applicationData,
             });
             if (response.status === 413) {
-                // Handle large file error
+                console.error("Server rejected file due to size limit.");
                 setValidationErrors({ resume: "File size must be less than 5MB." });
                 setIsLoading(false);
                 return;
@@ -119,13 +127,14 @@ const CareersAplications = () => {
                 }
             }
         } catch (error) {
-            // console.error("Error submitting application:", error);
+            console.error("Error submitting application:", error);
             alert("An error occurred. Please try again.");
+            setIsLoading(false);
         } finally {
             setIsLoading(false); // Re-enable button after submission
         }
     };
-
+    console.log(validationErrors)
     return (
         <>
             <main className='main-wrapper  relative overflow-hidden'>
