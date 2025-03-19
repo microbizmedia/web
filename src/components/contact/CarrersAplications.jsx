@@ -84,7 +84,7 @@ const CareersAplications = () => {
             applicationData.append("resume", formData.resume);
         } else {
             console.error("No valid file selected.");
-            setValidationErrors({ resume: "Please select a valid file." });
+            setValidationErrors([{ msg: "File size must be less than 5MB." }]);
             setIsLoading(false);
             return;
         }
@@ -134,7 +134,6 @@ const CareersAplications = () => {
             setIsLoading(false); // Re-enable button after submission
         }
     };
-    console.log(validationErrors)
     return (
         <>
             <main className='main-wrapper  relative overflow-hidden'>
