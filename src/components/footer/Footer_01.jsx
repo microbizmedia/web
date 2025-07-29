@@ -63,7 +63,7 @@ const Footer_01 = () => {
                   height={24}
                 />
               </Link>
-              <li className='list-none'>
+              <li className='list-none leading-[1.8rem]'>
                 Our mission is to empower businesses by providing
                 innovative online solutions that enhance their digital presence.
               </li>
