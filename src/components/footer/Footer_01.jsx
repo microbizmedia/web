@@ -21,8 +21,6 @@ const Footer_01 = () => {
   ];
   return (
     <>
-
-
       {showRoutes.includes(location.pathname) ? (
         <div className='global-container relative jos text-center py-10 md:py-16 z-40'>
           <h2 className=' pb-6'>Let's Start Your Story</h2>
@@ -33,7 +31,6 @@ const Footer_01 = () => {
           </Link>
         </div>
       ) : <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />}
-
 
       <footer className=' relative '>
         {/* Footer Top pictures */}
@@ -56,11 +53,7 @@ const Footer_01 = () => {
 
         {/* Footer Top */}
         <div className='global-container pt-8 '>
-          {/* <div className='h-[1px] w-full bg-[#DBD6CF]' /> */}
-          {/* Footer Center */}
-          {/* <div className='lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]'> */}
           <div className='flex flex-wrap mb-4 md:justify-between'>
-            {/* Footer Widget */}
             <div className='flex flex-col mt-2 gap-y-4 p-3 md:max-w-60'>
               <Link to={gitHubUrl} className='inline-block'>
                 <img
@@ -76,119 +69,40 @@ const Footer_01 = () => {
               </li>
 
             </div>
-            {/* Footer Widget */}
-            {/* Footer Widget */}
-            <div className='flex flex-col gap-y-4 p-3'>
-              {/* Footer Title */}
+
+            <div className='flex flex-col gap-y-6 p-3'>
               <h4 className='text-[26px] text-bold capitalize'>
                 Menu
               </h4>
-              {/* Footer Title */}
-              {/* Footer Navbar */}
-              <ul className='flex flex-col  capitalize'>
-                <li>
-                  <Link
-                    to={gitHubUrl + 'work'}
-                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                  >
-                    work
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={gitHubUrl + 'services'}
-                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                  >
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={gitHubUrl + 'process'}
-                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                  >
-                    Process
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={gitHubUrl + 'carrers'}
-                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                  >
-                    Careers
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={gitHubUrl + 'about'}
-                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                  >
-                    About Us
-                  </Link>
-                </li>
+              <ul className='flex flex-col  gap-y-4 text-[18px]'>
+                <li> <HashLink to={gitHubUrl + 'services#target-pricing'}> Pricing </HashLink> </li>
+                <li><Link to={gitHubUrl + 'work'} > Work</Link> </li>
+                <li><Link to={gitHubUrl + 'services'} >Services </Link></li>
+                <li><Link to={gitHubUrl + 'process'}> Process</Link></li>
+                <li> <Link to={gitHubUrl + 'carrers'} >Careers </Link> </li>
+                <li> <Link to={gitHubUrl + 'about'} > About Us </Link>  </li>
               </ul>
             </div>
-            {/* Footer Widget */}
-            {/* Footer Widget */}
-            <div className='flex flex-col gap-y-4 p-3'>
-              {/* Footer Title */}
+
+            <div className='flex flex-col gap-y-6 p-3'>
               <h4 className='text-[26px] text-bold capitalize '>
                 Legal
               </h4>
-              {/* Footer Title */}
-              {/* Footer Navbar */}
-              <ul className='flex flex-col  capitalize'>
-                <li>
-                  <HashLink
-                    to={gitHubUrl + 'services#target-pricing'}
-                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                  >
-                    Pricing
-                  </HashLink>
-                </li>
-                <li>
-                  <Link
-                    to={gitHubUrl + 'FAQ'}
-                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                  >
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={gitHubUrl + 'affiliate'}
-                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                  >
-                    Affilliate Program
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={gitHubUrl + 'contact'}
-                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                  >
-                    Customer Service
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={gitHubUrl + 'privacy'}
-                    className='transition-all duration-300 ease-linear hover:text-violet-400 font-light'
-                  >
-                    Privacy Policy
-                  </Link>
-                </li>
+              <ul className='flex flex-col gap-y-4 text-[18px]'>
+                <li><Link to={gitHubUrl + 'FAQ'} >&nbsp;</Link></li>
+                <li><Link to={gitHubUrl + 'FAQ'} > FAQ </Link></li>
+                <li> <Link to={gitHubUrl + 'affiliate'} > Affilliate Program </Link> </li>
+                <li><Link to={gitHubUrl + 'contact'}> Customer Service</Link> </li>
+                <li><Link to={gitHubUrl + 'privacy'}>Privacy Policy</Link></li>
+                <li><Link to={gitHubUrl + 'termsofservice'}>Terms Of Service</Link></li>
               </ul>
             </div>
-            {/* Footer Widget */}
-            {/* Footer Widget */}
-            <div className='flex flex-col gap-y-4 p-3'>
-              {/* Footer Title */}
+
+            <div className='flex flex-col gap-y-6 p-3'>
+
               <h4 className='text-[26px] text-bold capitalize mr-10'>
                 Social Links
               </h4>
-              {/* Footer Title */}
-              {/* Footer Subscriber Form */}
               <div className='flex justify-between'>
                 <img
                   src={threadsIcon}
@@ -206,25 +120,13 @@ const Footer_01 = () => {
                   className='  size-10'
                 />
               </div>
-              {/* Footer Subscriber Form */}
             </div>
-            {/* Footer Widget */}
           </div>
         </div>
-        {/* Footer Center */}
+        {/* Footer Bottom */}
         <div className='h-[1px] w-[96%] m-auto bg-[#DBD6CF] opacity-25 ' />
-        {/* Footer Bottom */}
+        <p className='py-6 text-center text-sm'> © {new Date().getFullYear()} MicroBiz Media. All Rights Reserved. </p>
 
-        <p className='py-6 text-center text-sm'>
-          © {new Date().getFullYear()} MicroBiz Media. All Rights Reserved.
-        </p>
-
-        {/* Footer Bottom */}
-
-        {/* Footer Background Shape 1  */}
-        {/* <div className='orange-gradient-2 absolute -top-[290px] right-[90px] -z-[1] h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]'></div> */}
-        {/* Footer Background Shape 2  */}
-        {/* <div className='orange-gradient-1 absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]'></div> */}
       </footer >
     </>
   );
