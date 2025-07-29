@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header
-      className='site-header '
+      className='site-header z-50' 
       id='sticky-menu'
     >
       {/* Pupup terms and conditions */}
@@ -44,7 +44,6 @@ const Header = () => {
           <Navbar
             mobileMenu={mobileMenu}
             setMobileMenu={setMobileMenu}
-          // color={navColor}
           />
           {/* Header Navigation */}
           {/* Header User Event */}

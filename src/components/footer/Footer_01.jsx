@@ -38,7 +38,7 @@ const Footer_01 = () => {
           <div className='relative'>
             <img
               src={backgroundPicture}
-              className='absolute z-10
+              className='absolute z-10 w-full
               bottom-[0%]
               '
             />
@@ -76,8 +76,8 @@ const Footer_01 = () => {
               <h4 className='text-[26px] text-bold capitalize'>
                 Menu
               </h4>
-              <ul className='flex flex-col  gap-y-4 text-[18px]'>
-                <li> <HashLink to={gitHubUrl + 'services#target-pricing'}> Pricing </HashLink> </li>
+              <ul className='flex flex-col  gap-y-3 text-[18px]'>
+                {/* <li> <HashLink to={gitHubUrl + 'services#target-pricing'}> Pricing </HashLink> </li> */}
                 <li><Link to={gitHubUrl + 'work'} > Work</Link> </li>
                 <li><Link to={gitHubUrl + 'services'} >Services </Link></li>
                 <li><Link to={gitHubUrl + 'process'}> Process</Link></li>
@@ -90,8 +90,8 @@ const Footer_01 = () => {
               <h4 className='text-[26px] text-bold capitalize '>
                 Legal
               </h4>
-              <ul className='flex flex-col gap-y-4 text-[18px]'>
-                <li><Link to={gitHubUrl + 'FAQ'} >&nbsp;</Link></li>
+              <ul className='flex flex-col gap-y-3 text-[18px]'>
+                {/* <li><Link to={gitHubUrl + 'FAQ'} >&nbsp;</Link></li> */}
                 <li><Link to={gitHubUrl + 'FAQ'} > FAQ </Link></li>
                 <li> <Link to={gitHubUrl + 'affiliate'} > Affilliate Program </Link> </li>
                 <li><Link to={gitHubUrl + 'contact'}> Customer Service</Link> </li>
