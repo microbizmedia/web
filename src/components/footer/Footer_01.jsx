@@ -38,12 +38,14 @@ const Footer_01 = () => {
           <div className='relative'>
             <img
               src={backgroundPicture}
-              className='absolute bottom-[0%]'
+              className='absolute z-10
+              bottom-[0%]
+              '
             />
             <img
               src={footerGraphic}
               alt='footer-graphic-website-images'
-              className='relative   w-[100%] bottom-[100%] bg-bottom'
+              className='relative   w-[100%] bottom-[100%] bg-bottom z-20'
             />
           </div>
         ) : null}

@@ -12,7 +12,7 @@ const Hero = () => {
     <>
       {/*...::: Hero Section Start  :::... */}
       {/* <div className='relative bg-[url("../assets\img\Hero_01.jpg")] lg:bg-[url("../assets\img\Hero_04_12.18.2024.jpg")]  bg-contain bg-top bg-no-repeat z-20  '> */}
-      <div className='relative z-20 overflow-hidden '>
+      <div className='absolute insert-0 w-full z-0 overflow-hidden h-[300vh]'>
 
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#240454] to-colorBackground h-[200vh] w-full"></div>
 
@@ -32,7 +32,9 @@ const Hero = () => {
 
 
 
-        <div className='global-container relative '>
+      </div>
+
+        <div className='global-container relative z-20'>
           <section id='section-hero' >
 
 
@@ -62,7 +64,7 @@ const Hero = () => {
           {/*...::: Hero Section End :::... */}
 
           {/*...::: Consultation window Section start :::... */}
-          <section id='consultation-window-section'>
+          <section id='consultation-window-section' >
 
             <div
               className='jos hero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px] 
@@ -98,8 +100,6 @@ const Hero = () => {
           </section>
           {/*...::: Consultation window Section end :::... */}
         </div>
-      </div>
-
 
     </>
   );
