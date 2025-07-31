@@ -38,8 +38,10 @@ const Footer_01 = () => {
           <div className='relative'>
             <img
               src={backgroundPicture}
-              className='absolute z-10 w-full
+              className='absolute z-10
               bottom-[0%]
+              w-full max-h-[120vh]  mx-auto left-1/2 -translate-x-1/2
+              
               '
             />
             <img
@@ -81,7 +83,7 @@ const Footer_01 = () => {
                 <li><Link to={gitHubUrl + 'work'} > Work</Link> </li>
                 <li><Link to={gitHubUrl + 'services'} >Services </Link></li>
                 <li><Link to={gitHubUrl + 'process'}> Process</Link></li>
-                <li> <Link to={gitHubUrl + 'carrers'} >Careers </Link> </li>
+                <li> <Link to={gitHubUrl + 'careers'} >Careers </Link> </li>
                 <li> <Link to={gitHubUrl + 'about'} > About Us </Link>  </li>
               </ul>
             </div>

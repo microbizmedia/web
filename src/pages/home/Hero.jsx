@@ -11,27 +11,11 @@ const Hero = () => {
   return (
     <>
       {/*...::: Hero Section Start  :::... */}
-      {/* <div className='relative bg-[url("../assets\img\Hero_01.jpg")] lg:bg-[url("../assets\img\Hero_04_12.18.2024.jpg")]  bg-contain bg-top bg-no-repeat z-20  '> */}
-      <div className='absolute insert-0 w-full z-0 overflow-hidden h-[300vh]'>
-
+      <div className='absolute insert-0 w-full z-0 overflow-hidden min-h-[calc(100%-65px)]'>
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#240454] to-colorBackground h-[200vh] w-full"></div>
-
-        <div className='blue-gradient-1 z-0  absolute -left-[0%] top-[-10vh]  h-[100vh] w-[30%] rounded-[0]
-        -rotate-[15.022deg] 
-        '></div>
-
-
-
-        <div className='puple-light-gradient-3 z-0  absolute right-[0%] top-[10vh]  h-[30%] w-[45%] rounded-[400px]
-        -rotate-[6.022deg] 
-        '></div>
-
-        <div className='purple-gradient-angle z-0  absolute right-[10%] top-[10vh] lg:right-[10%] lg:top-[40vh] xxl:right-[18%] xxl:top-[30vh]   h-[40%] w-[55%] rounded-[40px]
-        -rotate-[0.022deg] 
-        '></div>
-
-
-
+        <div className='blue-gradient-1 z-0  absolute -left-[0%] top-[-10vh]  h-[100vh] w-[30%] rounded-[0] -rotate-[15.022deg] '></div>
+        <div className='puple-light-gradient-3 z-0  absolute right-[0%] top-[10vh]  h-[30%] w-[45%] rounded-[400px] -rotate-[6.022deg] '></div>
+        <div className='purple-gradient-angle z-0  absolute right-[10%] top-[10vh] lg:right-[10%] lg:top-[40vh] xxl:right-[18%] xxl:top-[30vh]   h-[40%] w-[55%] rounded-[40px] -rotate-[0.022deg] '></div>
       </div>
 
         <div className='global-container relative z-20'>
@@ -59,13 +43,11 @@ const Hero = () => {
             <ServicesIcons
               title="What We Offer" />
 
-
           </section>
           {/*...::: Hero Section End :::... */}
 
           {/*...::: Consultation window Section start :::... */}
           <section id='consultation-window-section' >
-
             <div
               className='jos hero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px] 
               flex flex-col-reverse mx-auto lg:flex-row mb-6 lg:mb-16 pt-16 pb-4  lg:p-0'
@@ -75,7 +57,6 @@ const Hero = () => {
                 <p className='lg:mt-6 lg:mb-10 mt-4 mb-8 text-base '>Give us an email and one of our agents will contact you as soon as we can.</p>
                 <Link to='/web/contact' className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'>Free Consultation &#x27a4;  </Link>
               </div>
-
               <a href="mailto:info@microbizmedia.com?subject=General Inquiry&body=Hello,%0D%0A%0D%0AI have a question regarding your services. Here are the details:%0D%0A%0D%0A[Please describe your concern here]%0D%0A%0D%0AThank you." target="_blank"
                 className=' relative  flex justify-center items-center lg:right-[40px]'>
                 <img
@@ -86,7 +67,6 @@ const Hero = () => {
               </a>
             </div>
 
-
             <TextAndPictureWindow
               header="Our Story"
               paragraph='Read more about us and what inspired us to do what we do for you.'
@@ -95,8 +75,6 @@ const Hero = () => {
               button='Learn More'
               link='/web/about'
             />
-
-
           </section>
           {/*...::: Consultation window Section end :::... */}
         </div>
