@@ -147,18 +147,18 @@
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-
+/* 
 .faq-button.active {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
+} */
 
 
 /* Footer */
 
-.footer-top {
+/* .footer-top {
   padding-bottom: 60px;
   padding-top: 5rem;
 }
@@ -168,7 +168,7 @@
     padding-bottom: 100px;
     padding-top: 130px;
   }
-}
+} */
 
 /* ...::: Custom Gradient :::... */
 .blue-gradient-1 {
@@ -186,7 +186,7 @@
   filter: blur(125px);
 }
 
-
+/* 
 
 .footer-text-slider {
   animation: horizontal-slide-from-right-to-left 10s linear infinite normal
@@ -219,9 +219,9 @@
   to {
     transform: translateX(0);
   }
-}
+} */
 
-.sticky-menu.nav-hidden {
+/* .sticky-menu.nav-hidden {
   animation: fadeInDown 0.9s 1;
 }
 
@@ -235,7 +235,7 @@
     opacity: 1;
     transform: translateZ(0);
   }
-}
+} */
 @layer utilities {
   input:-webkit-autofill,
   textarea:-webkit-autofill {
@@ -245,6 +245,26 @@
     transition: background-color 5000s ease-in-out 0s; /* Prevent autofill flicker */
    
   }
+}
+
+/* Scroll bar stylings */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:  #0c1015; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7a7a7a; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b8b8b8; 
 }
 
  
