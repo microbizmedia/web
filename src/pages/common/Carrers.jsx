@@ -14,7 +14,7 @@ const Careers = () => {
             and changemakers, who dare to dream and disrupt. Average is not a part of our DNA, our teams make us extraordinary, join us today!'/>
 
 
-                    <h2 className="text-center pb-4 lg:pb-8 lg:pt-8"> Discover open positions</h2>
+                    <h2 className="jos text-center pb-4 lg:pb-8 lg:pt-8"> Discover open positions</h2>
                     <CareerWindow
                         header="Frontend Developer Intern (React.js)"
                         career='Technology Department'

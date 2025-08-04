@@ -22,11 +22,9 @@ const Footer_01 = () => {
   return (
     <>
       {showRoutes.includes(location.pathname) ? (
-        <div className='global-container relative jos text-center py-10 md:py-16 z-40'>
+        <div className='global-container relative jos text-center mt-4 mb-8 md:mb-12  z-40'>
           <h2 className=' pb-6'>Let's Start Your Story</h2>
-          <Link
-            to={gitHubUrl + 'contact'}
-            className='button-micro rounded-[10px] border-1 border-#c7c5e2 bg-colorPurple py-4 after:bg-violet-600 hover:border-violet-600 hover:text-white' >
+          <Link to={gitHubUrl + 'contact'} className='button-micro  hover:border-violet-400' >
             Start A Free Consultation
           </Link>
         </div>
@@ -36,24 +34,10 @@ const Footer_01 = () => {
         {/* Footer Top pictures */}
         {showRoutes.includes(location.pathname) ? (
           <div className='relative'>
-            <img
-              src={backgroundPicture}
-              className='absolute z-10
-              bottom-[0%]
-              w-full max-h-[120vh]  mx-auto left-1/2 -translate-x-1/2
-              
-              '
-            />
-            <img
-              src={footerGraphic}
-              alt='footer-graphic-website-images'
-              className='relative   w-[100%] bottom-[100%] bg-bottom z-20'
-            />
+            <img src={backgroundPicture} className='absolute z-10 bottom-[0%] w-full max-h-[110vh]  mx-auto left-1/2 -translate-x-1/2 ' />
+            <img src={footerGraphic} alt='footer-graphic-website-images' className='relative   w-[100%] bottom-[100%] bg-bottom z-20' />
           </div>
         ) : null}
-
-
-
 
         {/* Footer Top */}
         <div className='global-container pt-8 '>

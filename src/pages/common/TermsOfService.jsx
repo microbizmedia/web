@@ -14,7 +14,8 @@ const PrivacyPolicy2 = () => {
                         paragraph='Welcome to MicroBizMedia LLC! These Terms of Service ("Terms") govern your use of our website, 
                         services, and any interactions with us. By accessing or using our services, you agree to comply with and be bound by these Terms.
                          If you do not agree to these Terms, please do not use our services.' />
-                         <p className="sub-title pb-4 mt-[-15px] text-center">Effective Date: 2/19/2025</p>
+                         
+                         <p className="sub-title pb-4 mt-8 text-center">Effective Date: 2/19/2025</p>
                     <div
                         className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 lg:mb-12 mx-auto p-0'
                         data-jos_animation='zoom'

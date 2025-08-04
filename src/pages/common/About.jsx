@@ -1,5 +1,5 @@
 
-import TitleMessage from '../../components/reusable-elements/title-message';
+import TitleMessage from "../../components/reusable-elements/title-message";
 import AboutUsIcons from '../../components/reusable-elements/about-icons';
 import worldMap from '../../assets/img/Segment_2_graphic_01.png'
 
@@ -17,12 +17,11 @@ const About = () => {
                             title="MicroBiz Media In a Nutshell" />
 
 
+
+
                         <h2 className='jos mx-auto  max-w-[715px] text-center pb-4 lg:pb-8' >We work worldwide</h2>
-                        <div
-                            className='jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 
-              flex flex-col-reverse
-              mx-auto max-w-[1024px]
-              lg:flex-row  '
+                        <div className='jos hero-img overflow-hidden rounded-2xl  border-[12px]
+                         border-white border-opacity-15  flex flex-col-reverse mx-auto max-w-[1024px]  lg:flex-row  mb-8 md:mb-12'
                             data-jos_animation='zoom'
                         >
                             <div className='flex flex-col justify-center flex-1 bg-colorBackground px-4 py-10 lg:pl-16'>
