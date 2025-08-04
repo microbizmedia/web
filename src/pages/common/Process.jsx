@@ -35,7 +35,7 @@ const Process = () => {
 
 
                     <div
-                className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-14 mx-auto p-0
+                className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 md:mb-12 mx-auto p-0
                 hidden lg:block'
                 data-jos_animation='zoom'
             >

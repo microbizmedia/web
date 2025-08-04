@@ -22,7 +22,7 @@ const Footer_01 = () => {
   return (
     <>
       {showRoutes.includes(location.pathname) ? (
-        <div className='global-container relative jos text-center mt-4 mb-8 md:mb-12  z-40'>
+        <div className='global-container relative jos text-center pt-4 mb-8 md:mb-12  z-40'>
           <h2 className=' pb-6'>Let's Start Your Story</h2>
           <Link to={gitHubUrl + 'contact'} className='button-micro  hover:border-violet-400' >
             Start A Free Consultation
