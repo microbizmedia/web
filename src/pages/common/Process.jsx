@@ -26,7 +26,7 @@ const Process = () => {
             header='First Prototype/Demo'
             paragraph={`The UI team conducts interviews and uses mood boards to decide which colors, fonts, and graphics would work best. For your specific project, formulating these UI elements into a “ Standardized design language” helps us ensure consistent design across all relevant platforms and channels.\n 
                    Meanwhile, the UX team prepares visual prototypes of the task—high-fidelity, clickable designs that can be shown to real users. They help us to meet user needs, reduce errors, and reduce both time and costs when improving the UI. By approximately the 2nd week (depending on the complexity of the project this timeframe might change), we’ll be ready to share them with you.`} />
-                      <ProcessWindow
+          <ProcessWindow
             header='Design & Development Cycles'
             paragraph={`After reviewing the prototype and everything is approved, we build your project in iterations, continuously testing and quality-checking the work. Because our UX, UI and dev teams work on the same component in close succession, we deliver faster and reduce your time-to-market.\n 
                    We repeat the cycle shown in the timeline diagram bellow for every module. This means you can review each module as we build them, rather than waiting until the whole project is finished. This gives you greater control over both your expenditure and the features we develop.\n 
@@ -34,21 +34,11 @@ const Process = () => {
 
 
 
-                    <div
-                className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 md:mb-12 mx-auto p-0
-                hidden lg:block'
-                data-jos_animation='zoom'
-            >
-                <img 
-                className='bg-colorBackground p-10'
-                alt="Table-process-img"
-                src={tableProcessImg}
-                
-                
-                />
-                    
-                
-            </div> 
+          <div
+            className=' jos hero-img overflow-hidden rounded-2xl  border-[12px] border-white border-opacity-15 mb-8 md:mb-12 mx-auto p-0 hidden lg:block'
+            data-jos_animation='zoom'  >
+            <img className='bg-colorBackground p-10' alt="Table-process-img" src={tableProcessImg} />
+          </div>
 
         </div>
       </section>
