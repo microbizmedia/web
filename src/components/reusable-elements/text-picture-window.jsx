@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-const textAndPictureWindow = ( {header, paragraph, image, button, link, aditionalClassName }) => {
-    const imgClass = ` ${aditionalClassName} flex-1 pt-4 lg:pr-20 bg-colorBackground  object-cover object-center  max-h-[340px] lg:pt-0 w-full`
+const textAndPictureWindow = ({ header, paragraph, image, button, link, aditionalClassName }) => {
+    const imgClass = ` ${aditionalClassName} flex-1 relative left-4 pt-2 md:py-3    bg-colorBackground scale-105
+      object-cover object-center  max-h-[380px] w-full`
     return (
         <>
             <div
@@ -10,18 +11,22 @@ const textAndPictureWindow = ( {header, paragraph, image, button, link, aditiona
               lg:flex-row mb-8 lg:mb-12'
                 data-jos_animation='zoom'
             >
-                <div className='flex flex-col justify-center flex-1 bg-colorBackground px-4 py-6 lg:pl-16'>
+                <div className='flex flex-col justify-center flex-1 bg-colorBackground py-6 px-3 md:px-0 lg:pl-16'>
                     <h2>{header}</h2>
                     <p className='lg:mt-6 lg:mb-10 mt-4 mb-4 '>{paragraph}</p>
-                    <Link to={link} className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md'> {button} &#x27a4;  </Link>
+                    <a href={link} target="_blank" rel="noopener noreferrer"
+                        className='button inline-block lg:self-start bg-colorWhite text-colorBackground rounded-md' >
+                        {button} &#x27a4; </a>
                 </div>
-                
-                <img
+                <div className=' overflow-hidden'>
+<img
                     src={image}
                     alt='hero-dashboard'
                     className={imgClass}
-                    
-               /> 
+
+                />
+                </div>
+                
             </div>
         </>
     );

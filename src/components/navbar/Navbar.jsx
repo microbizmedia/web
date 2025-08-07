@@ -32,7 +32,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
             className='nav-item'
           >
             <Link to={gitHubUrl + 'work'} className='nav-link-item '>
-              Work
+              Our Work
             </Link>
           </li>
           <li onClick={handleMenu}
@@ -61,7 +61,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
             onClick={handleMenu}
           >
             <Link to={gitHubUrl + 'about'} className='nav-link-item '>
-              About
+              About Us
             </Link>
           </li>
         </ul>

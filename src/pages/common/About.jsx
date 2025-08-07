@@ -24,7 +24,7 @@ const About = () => {
                          border-white border-opacity-15  flex flex-col-reverse mx-auto max-w-[1024px]  lg:flex-row  mb-8 md:mb-12'
                             data-jos_animation='zoom'
                         >
-                            <div className='flex flex-col justify-center flex-1 bg-colorBackground px-4 py-10 lg:pl-16'>
+                            <div className='flex flex-col justify-center flex-1 bg-colorBackground px-3 py-10 lg:pl-16'>
                                 <h2>Result Driven Work!</h2>
                                 <p className='my-6 lg:max-w-[90%] text-colorPurple font-bold'>Visit our Career center</p>
                                 <p className=' lg:max-w-[90%] font-bold'>We are an equal opportunity employer, Talent is everywhere so work where you are, we care about the resulets!</p>
