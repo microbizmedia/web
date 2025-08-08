@@ -1,11 +1,5 @@
 import { useState } from 'react'
 import SwiperIcon from './services-icon'
-import webDevelopmentIcon from '../../assets/icon_images/web_development_icon.png'
-import brandingAndDesignIcon from '../../assets/icon_images/branding_and_design_Icon.png'
-import SEOIcon from '../../assets/icon_images/seo_icon.png'
-import marketingIcon from '../../assets/icon_images/marketing_icon.png'
-import hostingIcon from '../../assets/icon_images/hosting_icon.png'
-import strategyIcon from '../../assets/icon_images/icon_strategy.svg'
 const servicesIcons = ({ title }) => {
 
 
@@ -22,28 +16,28 @@ const servicesIcons = ({ title }) => {
       
       `}>
         <SwiperIcon
-          image={webDevelopmentIcon}
+          image="/assets/icon_images/web_development_icon.png"
           text='Web Development'
         />
         <SwiperIcon
-          image={brandingAndDesignIcon}
+          image='/assets/icon_images/branding_and_design_Icon.png'
           text='Branding & Design'
         />
          <SwiperIcon
-          image={hostingIcon}
+          image='/assets/icon_images/hosting_icon.png'
           text='Hosting'
         />
         <SwiperIcon
-          image={strategyIcon}
+          image='/assets/icon_images/icon_strategy.svg'
           text='Strategy'
         />
         <SwiperIcon
-          image={marketingIcon}
+          image='/assets/icon_images/marketing_icon.png'
           text='Marketing'
         />
      
           <SwiperIcon
-          image={SEOIcon}
+          image='/assets/icon_images/seo_icon.png'
           text='SEO'
         />
         

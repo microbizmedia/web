@@ -1,6 +1,6 @@
 import TitleMessage from '../reusable-elements/title-message';
 import React, { useState, useEffect } from 'react';
-import emailUsIcon from '../../assets/icon_images/email_us_icon.png'
+import emailUsIcon from '/assets/icon_images/email_us_icon.png'
 
 const CustomerService = () => {
 

@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import emailUsIcon from '../../assets/icon_images/email_us_icon.png'
+import emailUsIcon from '/assets/icon_images/email_us_icon.png'
 import TextAndPictureWindow from '../../components/reusable-elements/text-picture-window.jsx'
 import TitleMessage from '../../components/reusable-elements/title-message.jsx';
 import ServicesIcons from '../../components/reusable-elements/services-icons.jsx';
 import TextVideoWindow from '../../components/reusable-elements/text-video-window.jsx';
-import ourStoryImg from "../../assets/img/our-story-image.jpg"
+import ourStoryImg from "/assets/img/our-story-image.jpg"
 const Hero = () => {
 
 
