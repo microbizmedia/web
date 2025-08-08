@@ -1,5 +1,8 @@
 import TextAndPictureWindow from '../../components/reusable-elements/text-picture-window'
 import TitleMessage from '../../components/reusable-elements/title-message';
+import hawaiiWork from "/assets/img/work-hawaii-1.png"
+import googleWork from "/assets/img/work-placeholder-1.png"
+import nefiWork from "/assets/img/work-nefi-1.png"
 const Work = () => {
     return (
         <>
@@ -15,21 +18,21 @@ const Work = () => {
                                         paragraph='A clean and functional website for a local barbershop, allowing clients to
                                          book appointments, view services and hours, browse recent work, read reviews, and connect 
                                          via social media—all in one place.' 
-                                    image="/assets/img/work-hawaii-1.png"
+                                    image={hawaiiWork}
                                     button='Open Live Demo'
                                     link='https://microbizmedia.github.io/hawaii-barbershop/' />
                                      <TextAndPictureWindow header="Devado Vehicle Solutions" 
                                         paragraph=' The ultimate car enthusiast platform developed
                                        for both individuals and businesses boasting market
                                     leading features and a user-friendly interface' 
-                                    image="/assets/img/work-nefi-1.png"
+                                    image={nefiWork}
                                     button='Open Live Demo' 
                                     />
                                      <TextAndPictureWindow header="Devado Vehicle Solutions" 
                                         paragraph=' The ultimate car enthusiast platform developed
                                        for both individuals and businesses boasting market
                                     leading features and a user-friendly interface' 
-                                    image="/assets/img/work-placeholder-1.png"
+                                    image={googleWork}
                                     button='Open Live Demo' />
                                     
                     </div>

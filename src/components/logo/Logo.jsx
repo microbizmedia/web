@@ -1,18 +1,20 @@
 import { Link } from 'react-router-dom';
+import logoStandard from '/assets/img/logo_standard.png';
+import logoMobile from '/assets/img/Mobile_icon.png';
 
 const LogoDark = () => {
   return (
     <Link to='/web/'>
       <img
         className='hidden lg:block'
-        src='/assets/img/logo_standard.png'
+        src={logoStandard}
         alt='AIMass'
         width='135'
         height='24'
       />
       <img
         className='block lg:hidden'
-        src='/assets/img/Mobile_icon.png'
+        src={logoMobile}
         alt='AIMass'
        
       />

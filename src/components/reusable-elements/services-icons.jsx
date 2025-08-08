@@ -1,5 +1,11 @@
 import { useState } from 'react'
 import SwiperIcon from './services-icon'
+import webDevelopmentIcon from '/assets/icon_images/web_development_icon.png'
+import brandingAndDesignIcon from '/assets/icon_images/branding_and_design_Icon.png'
+import SEOIcon from '/assets/icon_images/seo_icon.png'
+import marketingIcon from '/assets/icon_images/marketing_icon.png'
+import hostingIcon from '/assets/icon_images/hosting_icon.png'
+import strategyIcon from '/assets/icon_images/icon_strategy.svg'
 const servicesIcons = ({ title }) => {
 
 
@@ -16,28 +22,28 @@ const servicesIcons = ({ title }) => {
       
       `}>
         <SwiperIcon
-          image="/assets/icon_images/web_development_icon.png"
+          image={webDevelopmentIcon}
           text='Web Development'
         />
         <SwiperIcon
-          image='/assets/icon_images/branding_and_design_Icon.png'
+          image={brandingAndDesignIcon}
           text='Branding & Design'
         />
          <SwiperIcon
-          image='/assets/icon_images/hosting_icon.png'
+          image={hostingIcon}
           text='Hosting'
         />
         <SwiperIcon
-          image='/assets/icon_images/icon_strategy.svg'
+          image={strategyIcon}
           text='Strategy'
         />
         <SwiperIcon
-          image='/assets/icon_images/marketing_icon.png'
+          image={marketingIcon}
           text='Marketing'
         />
      
           <SwiperIcon
-          image='/assets/icon_images/seo_icon.png'
+          image={SEOIcon}
           text='SEO'
         />
         
