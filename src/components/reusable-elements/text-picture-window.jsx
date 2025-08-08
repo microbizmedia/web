@@ -18,14 +18,14 @@ const textAndPictureWindow = ({ header, paragraph, image, button, link, aditiona
                         {button} &#x27a4; </a>
                 </div>
                 <div className=' overflow-hidden'>
-<img
-                    src={image}
-                    alt='hero-dashboard'
-                    className={imgClass}
+                    <img
+                        src={image}
+                        alt='hero-dashboard'
+                        className={imgClass}
 
-                />
+                    />
                 </div>
-                
+
             </div>
         </>
     );

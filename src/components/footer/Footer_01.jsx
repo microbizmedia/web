@@ -5,6 +5,7 @@ import xIcon from '../footer/social_media_icons/x_icon_b.png'
 import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png'
 import backgroundPicture from '../../assets/img/Segment_footer_bg_01.png'
 import footerGraphic from '../../assets/img/footer_graphic_01_v1.png'
+import footerGraphic2 from '../../assets/img/footer_graphic.png'
 
 
 const Footer_01 = () => {
@@ -34,7 +35,7 @@ const Footer_01 = () => {
         {showRoutes.includes(location.pathname) ? (
           <div className='relative'>
             <img src={backgroundPicture} className='absolute z-10 bottom-[0%] w-full max-h-[110vh]  mx-auto left-1/2 -translate-x-1/2 ' />
-            <img src={footerGraphic} alt='footer-graphic-website-images' className='relative   w-[100%] bottom-[100%] bg-bottom z-20' />
+            <img src={footerGraphic2} alt='footer-graphic-website-images' className='relative   w-[100%] bottom-[100%] bg-bottom z-20' />
           </div>
         ) : null}
 
