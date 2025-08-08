@@ -1,8 +1,8 @@
 import TextAndPictureWindow from '../../components/reusable-elements/text-picture-window'
 import TitleMessage from '../../components/reusable-elements/title-message';
-import hawaiiWork from "/assets/img/work-hawaii-1.png"
-import googleWork from "/assets/img/work-placeholder-1.png"
-import nefiWork from "/assets/img/work-nefi-1.png"
+import hawaiiWork from "../../assets/img/work-hawaii-1.png"
+import googleWork from "../../assets/img/work-placeholder-1.png"
+import nefiWork from "../../assets/img/work-nefi-1.png"
 const Work = () => {
     return (
         <>

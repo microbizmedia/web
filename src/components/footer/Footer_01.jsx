@@ -1,11 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
-import logoStandard from '/assets/img/logo_standard.png'
+import logoStandard from '../../assets/img/logo_standard.png'
 import threadsIcon from '../footer/social_media_icons/threads_icon.png'
 import xIcon from '../footer/social_media_icons/x_icon_b.png'
 import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png'
-import backgroundPicture from '/assets/img/Segment_footer_bg_01.png'
-import footerGraphic from '/assets/img/footer_graphic_01_v1.png'
+import backgroundPicture from '../../assets/img/Segment_footer_bg_01.png'
+import footerGraphic from '../../assets/img/footer_graphic_01_v1.png'
 
 
 const Footer_01 = () => {

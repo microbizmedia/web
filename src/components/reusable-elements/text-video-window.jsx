@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import videoWebsites from '/assets/videos/MP4_H264_29fps_Segment_1.mp4'
+import videoWebsites from '../../assets/videos/MP4_H264_29fps_Segment_1.mp4'
 const textVideoWindow = ({ header, paragraph, button }) => {
 
     return (

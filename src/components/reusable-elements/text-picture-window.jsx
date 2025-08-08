@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 const textAndPictureWindow = ({ header, paragraph, image, button, link, aditionalClassName }) => {
     const imgClass = ` ${aditionalClassName} flex-1 relative left-4 pt-2 md:py-3    bg-colorBackground scale-105
       object-cover object-center  max-h-[380px] w-full`
