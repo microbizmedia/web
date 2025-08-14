@@ -22,27 +22,27 @@ const useJOSAnimation = () => {
   }, []);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
     JOS.refresh();
   }, [location.pathname]);
 
-    // Scroll to hash target and refresh JOS
-  useEffect(() => {
-    if (location.hash) {
-      const el = document.querySelector(location.hash);
-      if (el) {
-        // Give DOM time to render
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  //   // Scroll to hash target and refresh JOS
+  // useEffect(() => {
+  //   if (location.hash) {
+  //     const el = document.querySelector(location.hash);
+  //     if (el) {
+  //       // Give DOM time to render
+  //       setTimeout(() => {
+  //         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-          // Wait for scroll before refreshing JOS
-          setTimeout(() => {
-            JOS.refresh();
-          }, 0.1);
-        }, 0.1); // Short delay before scrolling
-      }
-    }
-  }, [location.hash]);
+  //         // Wait for scroll before refreshing JOS
+  //         setTimeout(() => {
+  //           JOS.refresh();
+  //         }, 0.1);
+  //       }, 0.1); // Short delay before scrolling
+  //     }
+  //   }
+  // }, [location.hash]);
 
 };
 

@@ -49,7 +49,7 @@ const Hero = () => {
           {/*...::: Consultation window Section start :::... */}
           <section id='consultation-window-section' >
             <div
-              className='jos hero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px] 
+              className='jos hHelloero-img overflow-hidden rounded-[40px]  bg-gradient-to-t from-colorBackground to-colorPurple  max-w-[1024px] 
               flex flex-col-reverse mx-auto lg:flex-row mb-6 lg:mb-16 pt-16 pb-4  lg:p-0'
             >
               <div className='flex flex-col justify-center   px-8 py-10 lg:pl-[76px] lg:max-w-[50%]'>

@@ -1,9 +1,7 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import './styles/vendors/menu.css';
 import './styles/style.css';
 import Hero from './pages/home/Hero.jsx';
@@ -18,7 +16,6 @@ import Contact from './components/contact/Contact';
 import Faq_01 from './pages/common/faq/Faq_01';
 import PrivacyPolicy from './pages/common/PrivacyPolicy';
 import TermsOfService from './pages/common/TermsOfService.jsx';
-import TermsOfServiceDocument from './pages/common/TermsOfService.jsx';
 import CareersAplications from './components/contact/CarrersAplications.jsx';
 
 const gitHubUrl = '/web/';

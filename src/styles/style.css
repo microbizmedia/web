@@ -35,8 +35,12 @@ body {
   font-family: 'MyCustomFont-Helvetica-NeueLight', Arial, sans-serif;
   --tw-text-opacity: 1;
   color:#e2e2e2;
+  background-color: #0c1015;
 }
-body .sub-title{
+
+
+
+.sub-title{
   font-family: 'MyCustomFont-Helvetica-NeueLight', Arial, sans-serif;
   font-size:16px;
  

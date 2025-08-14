@@ -1,11 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
 import logoStandard from '../../assets/img/logo_standard.png'
 import threadsIcon from '../footer/social_media_icons/threads_icon.png'
-import xIcon from '../footer/social_media_icons/x_icon_b.png'
-import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png'
+import xIcon from '../footer/social_media_icons/x_icon.png'
+import instagramIcon from '../footer/social_media_icons/instagram_icon.png'
 import backgroundPicture from '../../assets/img/Segment_footer_bg_01.png'
-import footerGraphic from '../../assets/img/footer_graphic_01_v1.png'
-import footerGraphic2 from '../../assets/img/footer_graphic.png'
+import footerGraphic from '../../assets/img/footer_graphic.png'
 
 
 const Footer_01 = () => {
@@ -34,8 +33,8 @@ const Footer_01 = () => {
         {/* Footer Top pictures */}
         {showRoutes.includes(location.pathname) ? (
           <div className='relative'>
-            <img src={backgroundPicture} className='absolute z-10 bottom-[0%] w-full max-h-[110vh]  mx-auto left-1/2 -translate-x-1/2 ' />
-            <img src={footerGraphic2} alt='footer-graphic-website-images' className='relative   w-[100%] bottom-[100%] bg-bottom z-20' />
+            <img src={backgroundPicture} loading='lazy' className='absolute z-10 bottom-[0%] w-full max-h-[110vh]  mx-auto left-1/2 -translate-x-1/2 ' />
+            <img src={footerGraphic} loading='lazy' alt='footer-graphic-website-images' className='relative   w-[100%] bottom-[100%] bg-bottom z-20' />
           </div>
         ) : null}
 
@@ -49,42 +48,33 @@ const Footer_01 = () => {
                   alt='logo'
                   width={150}
                   height={24}
+                  loading='lazy'
                 />
               </Link>
-              <li className='list-none leading-[1.8rem]'>
+               <p className=' leading-[1.8rem]'>
                 Our mission is to empower businesses by providing
                 innovative online solutions that enhance their digital presence.
-              </li>
+              </p>
 
             </div>
 
-            <div className='flex flex-col gap-y-6 p-3'>
-              <h4 className='text-[26px] text-bold capitalize'>
-                Menu
-              </h4>
-              <ul className='flex flex-col  gap-y-3 text-[18px]'>
-                {/* <li> <HashLink to={gitHubUrl + 'services#target-pricing'}> Pricing </HashLink> </li> */}
-                <li><Link to={gitHubUrl + 'work'} > Work</Link> </li>
-                <li><Link to={gitHubUrl + 'services'} >Services </Link></li>
-                <li><Link to={gitHubUrl + 'process'}> Process</Link></li>
-                <li> <Link to={gitHubUrl + 'careers'} >Careers </Link> </li>
-                <li> <Link to={gitHubUrl + 'about'} > About Us </Link>  </li>
-              </ul>
-            </div>
+             <ul className='flex flex-col  gap-y-3 p-3'>
+              <li className='text-2xl font-medium mb-2'>Menu</li>
+              <li><Link to='/web/work' > Work</Link> </li>
+              <li><Link to='/web/services' >Services </Link></li>
+              <li><Link to='/web/process' > Process</Link></li>
+              <li> <Link to='/web/careers' >Careers </Link> </li>
+              <li> <Link to='/web/about' > About Us </Link>  </li>
+            </ul>
 
-            <div className='flex flex-col gap-y-6 p-3'>
-              <h4 className='text-[26px] text-bold capitalize '>
-                Legal
-              </h4>
-              <ul className='flex flex-col gap-y-3 text-[18px]'>
-                {/* <li><Link to={gitHubUrl + 'FAQ'} >&nbsp;</Link></li> */}
-                <li><Link to={gitHubUrl + 'FAQ'} > FAQ </Link></li>
-                <li> <Link to={gitHubUrl + 'affiliate'} > Affilliate Program </Link> </li>
-                <li><Link to={gitHubUrl + 'contact'}> Customer Service</Link> </li>
-                <li><Link to={gitHubUrl + 'privacy'}>Privacy Policy</Link></li>
-                <li><Link to={gitHubUrl + 'termsofservice'}>Terms Of Service</Link></li>
-              </ul>
-            </div>
+            <ul className='flex flex-col  gap-y-3 p-3'>
+              <li className='text-2xl font-medium mb-2'>Legal</li>
+              <li><Link to='FAQ' > FAQ </Link></li>
+              <li> <Link to='/web/affiliate' > Affilliate Program </Link> </li>
+              <li><Link to='/web/contact'> Customer Service</Link> </li>
+              <li><Link to='/web/privacy'>Privacy Policy</Link></li>
+              <li><Link to='/web/termsofservice'>Terms Of Service</Link></li>
+            </ul>
 
             <div className='flex flex-col gap-y-6 p-3'>
 
@@ -94,16 +84,19 @@ const Footer_01 = () => {
               <div className='flex justify-between'>
                 <img
                   src={threadsIcon}
+                  loading='lazy'
                   alt='hero-dashboard'
                   className='  size-10'
                 />
                 <img
                   src={xIcon}
+                  loading='lazy'
                   alt='hero-dashboard'
                   className='  size-10'
                 />
                 <img
                   src={instagramIcon}
+                  loading='lazy'
                   alt='hero-dashboard'
                   className='  size-10'
                 />

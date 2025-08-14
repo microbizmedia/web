@@ -20,7 +20,7 @@ const About = () => {
 
 
                         <h2 className='jos mx-auto  max-w-[715px] text-center pb-4 lg:pb-8' >We work worldwide</h2>
-                        <div className='jos hero-img overflow-hidden rounded-2xl  border-[12px]
+                        <div className='jos overflow-hidden rounded-2xl  border-[12px]
                          border-white border-opacity-15  flex flex-col-reverse mx-auto max-w-[1024px]  lg:flex-row  mb-8 md:mb-12'
                             data-jos_animation='zoom'
                         >
@@ -34,7 +34,8 @@ const About = () => {
                                 src={worldMap}
                                 alt='world-map'
                                 className='flex-1 pt-4 lg:pr-10 bg-colorBackground  object-contain object-center  max-h-[280px] lg:py-4 w-full'
-                            />
+                                loading="lazy"
+                           />
                         </div>
 
 

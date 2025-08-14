@@ -4,7 +4,7 @@ import Header from '../header/Header';
 
 const Layout = () => {
   return (
-    <div className='page-wrapper relative z-[1] bg-colorBackground'>
+    <div className='page-wrapper relative z-[1]'>
       {/*...::: Header Start :::... */}
       <Header />
       {/*...::: Header End :::... */}

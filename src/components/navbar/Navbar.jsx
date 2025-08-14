@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import threadsIcon from '../footer/social_media_icons/threads_icon.png'
-import xIcon from '../footer/social_media_icons/x_icon_b.png'
-import instagramIcon from '../footer/social_media_icons/instagram_icon_b.png'
+import xIcon from '../footer/social_media_icons/x_icon.png'
+import instagramIcon from '../footer/social_media_icons/instagram_icon.png'
 
 
 // eslint-disable-next-line react/prop-types

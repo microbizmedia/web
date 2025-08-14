@@ -14,8 +14,8 @@ const TitleMessage = ({ header, paragraph, className }) => {
 
     return (
         <>
-            <h1 className='jos slide-from-bottom text-center pt-14 lg:pt-26 '> {header}  </h1>
-            <p className={`sub-title jos tracking-wider slide-from-bottom text-center  m-auto py-6 lg:py-8  ${className}`}>  {paragraph}</p>
+            <h1 className='jos  text-center pt-14 lg:pt-26 '> {header}  </h1>
+            <p className={`jos sub-title  tracking-wider  text-center  m-auto py-6 lg:py-8  ${className}`}>  {paragraph}</p>
 
             {showRoutes.includes(location.pathname) ? (
                 <div
