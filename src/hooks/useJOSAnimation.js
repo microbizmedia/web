@@ -22,7 +22,6 @@ const useJOSAnimation = () => {
   }, []);
 
   useEffect(() => {
-    // window.scrollTo(0, 0);
     JOS.refresh();
   }, [location.pathname]);
 

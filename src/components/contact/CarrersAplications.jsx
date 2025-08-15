@@ -90,7 +90,7 @@ const CareersAplications = () => {
         // }
 
         try {
-            const response = await fetch("https://micro-biz-backend.vercel.app/apply", {
+            const response = await fetch("https://backend-microbizmedia.vercel.app/apply", {
                 method: "POST",
                 body: applicationData,
             });
